@@ -62,10 +62,10 @@
   **/
   "@teambit/variants": {
     "layout/breakpoints": {
-      
+
     },
     "theme/*": {
-      
+
     },
     "theme/sizes": {
       "@teambit/pkg": {
@@ -89,6 +89,13 @@
       }
     },
     "*": {
+      "@teambit/dependency-resolver": {
+        "policy": {
+          "devDependencies": {
+            "@types/mocha": "8.0.0"
+          }
+        }
+      },
       "@teambit/pkg": {
         "packageJson": {
           "name": "@teambit/base-ui.{name}"
@@ -99,7 +106,7 @@
         "config": {}
       }
     }
-    
+
     // /**
     //  * wildcards can be used to configure components under a specific namespace.
     //  * this configuration applies the react extensions on all components the `ui` namespace.
