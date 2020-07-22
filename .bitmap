@@ -948,6 +948,7 @@
             }
         ],
         "mainFile": "src/themes/theme-provider/index.tsx",
+        "trackDir": "src/themes/theme-provider",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
