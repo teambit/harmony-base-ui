@@ -1,7 +1,7 @@
 import React, { Component, ReactNode, ComponentType } from 'react';
 
-import { Container } from '../abs-container';
-import { ClickOutside } from '../click-outside';
+import { Container } from '@teambit/base-ui.surfaces.abs-container';
+import { ClickOutside } from '@teambit/base-ui.surfaces.click-outside';
 
 import { DefaultPlaceholder, DrawerPlaceholderProps } from './default-placeholder';
 

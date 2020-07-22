@@ -1,12 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import size from '../size-definition.module.scss';
-import shadow from '../shadow-definition.module.scss';
-import colors from '../color-definition.module.scss';
-import brands from '../brand-definition.module.scss';
-import margins from '../heading-margin-definition.module.scss';
-import font from '../book-font.module.scss';
+import size from '@teambit/base-ui.theme.size-definition';
+import shadow from '@teambit/base-ui.theme.shadow-definition';
+import colors from '@teambit/base-ui.theme.color-definition';
+import brands from '@teambit/base-ui.theme.brand-definition';
+import margins from '@teambit/base-ui.theme.heading-margin-definition';
+import font from '@teambit/base-ui.theme.fonts.book';
 import texts from './texts.module.scss';
 
 /**

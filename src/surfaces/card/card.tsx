@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './card.module.scss';
-import { elevationClass, ElevationHeight } from '../../css-components/elevation';
-import { roundnessClass, Roundness } from '../../css-components/roundness';
-import { backgrounds } from '../background';
+import { elevationClass, ElevationHeight } from '@teambit/base-ui.css-components.elevation';
+import { roundnessClass, Roundness } from '@teambit/base-ui.css-components.roundness';
+import { backgrounds } from '@teambit/base-ui.surfaces.background';
 
 export type CardProps = {
 	/**
