@@ -341,11 +341,12 @@
         "files": [
             {
                 "name": "_breakpoints.scss",
-                "relativePath": "src/layout/_breakpoints.scss",
+                "relativePath": "_breakpoints.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/layout/_breakpoints.scss",
+        "mainFile": "_breakpoints.scss",
+        "rootDir": "src/layout/breakpoints",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
