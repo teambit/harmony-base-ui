@@ -797,11 +797,12 @@
         "files": [
             {
                 "name": "brand-colors.module.scss",
-                "relativePath": "src/themes/brand-colors.module.scss",
+                "relativePath": "brand-colors.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/brand-colors.module.scss",
+        "mainFile": "brand-colors.module.scss",
+        "rootDir": "src/themes/brand-colors",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -810,11 +811,12 @@
         "files": [
             {
                 "name": "brand-definition.module.scss",
-                "relativePath": "src/themes/brand-definition.module.scss",
+                "relativePath": "brand-definition.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/brand-definition.module.scss",
+        "mainFile": "brand-definition.module.scss",
+        "rootDir": "src/themes/brand-definition",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -823,11 +825,12 @@
         "files": [
             {
                 "name": "color-definition.module.scss",
-                "relativePath": "src/themes/color-definition.module.scss",
+                "relativePath": "color-definition.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/color-definition.module.scss",
+        "mainFile": "color-definition.module.scss",
+        "rootDir": "src/themes/color-definition",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -855,11 +858,12 @@
         "files": [
             {
                 "name": "colors.module.scss",
-                "relativePath": "src/themes/colors.module.scss",
+                "relativePath": "colors.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/colors.module.scss",
+        "mainFile": "colors.module.scss",
+        "rootDir": "src/themes/colors",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -868,11 +872,12 @@
         "files": [
             {
                 "name": "book-font.module.scss",
-                "relativePath": "src/themes/book-font.module.scss",
+                "relativePath": "book-font.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/book-font.module.scss",
+        "mainFile": "book-font.module.scss",
+        "rootDir": "src/themes/fonts/book",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -881,11 +886,12 @@
         "files": [
             {
                 "name": "heading-margin-definition.module.scss",
-                "relativePath": "src/themes/heading-margin-definition.module.scss",
+                "relativePath": "heading-margin-definition.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/heading-margin-definition.module.scss",
+        "mainFile": "heading-margin-definition.module.scss",
+        "rootDir": "src/themes/heading-margin-definition",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -894,11 +900,12 @@
         "files": [
             {
                 "name": "shadow-definition.module.scss",
-                "relativePath": "src/themes/shadow-definition.module.scss",
+                "relativePath": "shadow-definition.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/shadow-definition.module.scss",
+        "mainFile": "shadow-definition.module.scss",
+        "rootDir": "src/themes/shadow-definition",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -907,11 +914,12 @@
         "files": [
             {
                 "name": "size-definition.module.scss",
-                "relativePath": "src/themes/size-definition.module.scss",
+                "relativePath": "size-definition.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/size-definition.module.scss",
+        "mainFile": "size-definition.module.scss",
+        "rootDir": "src/themes/size-definition",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -920,11 +928,12 @@
         "files": [
             {
                 "name": "sizes.ts",
-                "relativePath": "src/constants/sizes.ts",
+                "relativePath": "sizes.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/constants/sizes.ts",
+        "mainFile": "sizes.ts",
+        "rootDir": "src/themes/sizes",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
