@@ -58,10 +58,18 @@
   **/
   "@teambit/variants": {
     "layout/breakpoints": {
-
+      "@teambit/pkg": {
+        "packageJson": {
+          "name": "@teambit/base-ui.{name}"
+        }
+      }
     },
     "theme/*": {
-
+      "@teambit/pkg": {
+        "packageJson": {
+          "name": "@teambit/base-ui.{name}"
+        }
+      }
     },
     "theme/sizes": {
       "@teambit/pkg": {
