@@ -92,7 +92,11 @@
       "@teambit/dependency-resolver": {
         "policy": {
           "devDependencies": {
-            "@types/mocha": "8.0.0"
+            "@types/mocha": "8.0.0",
+            "react": "-"
+          },
+          "peerDependencies": {
+            "react": "^15.0.0 || ^16.0.0"
           }
         }
       },
