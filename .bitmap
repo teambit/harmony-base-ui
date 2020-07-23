@@ -5,17 +5,17 @@
         "files": [
             {
                 "name": "_storage.module.scss",
-                "relativePath": "src/constants/storage/_storage.module.scss",
+                "relativePath": "_storage.module.scss",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/constants/storage/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/constants/storage/index.ts",
-        "trackDir": "src/constants/storage",
+        "mainFile": "index.ts",
+        "rootDir": "src/constants/storage",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -23,23 +23,23 @@
     "css-components/elevation": {
         "files": [
             {
-                "relativePath": "src/css-components/elevation/elevation-height.ts",
+                "relativePath": "elevation-height.ts",
                 "test": false,
                 "name": "elevation-height.ts"
             },
             {
-                "relativePath": "src/css-components/elevation/elevations.module.scss",
+                "relativePath": "elevations.module.scss",
                 "test": false,
                 "name": "elevations.module.scss"
             },
             {
-                "relativePath": "src/css-components/elevation/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/css-components/elevation/index.ts",
-        "trackDir": "src/css-components/elevation",
+        "mainFile": "index.ts",
+        "rootDir": "src/css-components/elevation",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -48,17 +48,17 @@
         "files": [
             {
                 "name": "index.ts",
-                "relativePath": "src/css-components/pill/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             },
             {
                 "name": "pill.module.scss",
-                "relativePath": "src/css-components/pill/pill.module.scss",
+                "relativePath": "pill.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/css-components/pill/index.ts",
-        "trackDir": "src/css-components/pill",
+        "mainFile": "index.ts",
+        "rootDir": "src/css-components/pill",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -66,23 +66,23 @@
     "css-components/roundness": {
         "files": [
             {
-                "relativePath": "src/css-components/roundness/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/css-components/roundness/roundness-values.ts",
+                "relativePath": "roundness-values.ts",
                 "test": false,
                 "name": "roundness-values.ts"
             },
             {
-                "relativePath": "src/css-components/roundness/roundness.module.scss",
+                "relativePath": "roundness.module.scss",
                 "test": false,
                 "name": "roundness.module.scss"
             }
         ],
-        "mainFile": "src/css-components/roundness/index.ts",
-        "trackDir": "src/css-components/roundness",
+        "mainFile": "index.ts",
+        "rootDir": "src/css-components/roundness",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -90,23 +90,23 @@
     "elements/dots-loader": {
         "files": [
             {
-                "relativePath": "src/elements/dots-loader/dots-loader.module.scss",
+                "relativePath": "dots-loader.module.scss",
                 "test": false,
                 "name": "dots-loader.module.scss"
             },
             {
-                "relativePath": "src/elements/dots-loader/dots-loader.tsx",
+                "relativePath": "dots-loader.tsx",
                 "test": false,
                 "name": "dots-loader.tsx"
             },
             {
-                "relativePath": "src/elements/dots-loader/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/elements/dots-loader/index.ts",
-        "trackDir": "src/elements/dots-loader",
+        "mainFile": "index.ts",
+        "rootDir": "src/elements/dots-loader",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -115,17 +115,17 @@
         "files": [
             {
                 "name": "base-icon.tsx",
-                "relativePath": "src/elements/icon/base-icon.tsx",
+                "relativePath": "base-icon.tsx",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/elements/icon/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/elements/icon/index.ts",
-        "trackDir": "src/elements/icon",
+        "mainFile": "index.ts",
+        "rootDir": "src/elements/icon",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -134,27 +134,27 @@
         "files": [
             {
                 "name": "image.module.scss",
-                "relativePath": "src/elements/image/image.module.scss",
+                "relativePath": "image.module.scss",
                 "test": false
             },
             {
                 "name": "image.spec.tsx",
-                "relativePath": "src/elements/image/image.spec.tsx",
+                "relativePath": "image.spec.tsx",
                 "test": true
             },
             {
                 "name": "image.tsx",
-                "relativePath": "src/elements/image/image.tsx",
+                "relativePath": "image.tsx",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/elements/image/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/elements/image/index.ts",
-        "trackDir": "src/elements/image",
+        "mainFile": "index.ts",
+        "rootDir": "src/elements/image",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -163,27 +163,27 @@
         "files": [
             {
                 "name": "index.tsx",
-                "relativePath": "src/elements/label/index.tsx",
+                "relativePath": "index.tsx",
                 "test": false
             },
             {
                 "name": "label.module.scss",
-                "relativePath": "src/elements/label/label.module.scss",
+                "relativePath": "label.module.scss",
                 "test": false
             },
             {
                 "name": "label.spec.tsx",
-                "relativePath": "src/elements/label/label.spec.tsx",
+                "relativePath": "label.spec.tsx",
                 "test": true
             },
             {
                 "name": "label.tsx",
-                "relativePath": "src/elements/label/label.tsx",
+                "relativePath": "label.tsx",
                 "test": false
             }
         ],
-        "mainFile": "src/elements/label/index.tsx",
-        "trackDir": "src/elements/label",
+        "mainFile": "index.tsx",
+        "rootDir": "src/elements/label",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -192,17 +192,17 @@
         "files": [
             {
                 "name": "index.ts",
-                "relativePath": "src/elements/link/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             },
             {
                 "name": "link.tsx",
-                "relativePath": "src/elements/link/link.tsx",
+                "relativePath": "link.tsx",
                 "test": false
             }
         ],
-        "mainFile": "src/elements/link/index.ts",
-        "trackDir": "src/elements/link",
+        "mainFile": "index.ts",
+        "rootDir": "src/elements/link",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -211,27 +211,27 @@
         "files": [
             {
                 "name": "index.tsx",
-                "relativePath": "src/elements/separator/index.tsx",
+                "relativePath": "index.tsx",
                 "test": false
             },
             {
                 "name": "separator.module.scss",
-                "relativePath": "src/elements/separator/separator.module.scss",
+                "relativePath": "separator.module.scss",
                 "test": false
             },
             {
                 "name": "separator.tsx",
-                "relativePath": "src/elements/separator/separator.tsx",
+                "relativePath": "separator.tsx",
                 "test": false
             },
             {
                 "name": "separator.spec.tsx",
-                "relativePath": "src/elements/separator/separator.spec.tsx",
+                "relativePath": "separator.spec.tsx",
                 "test": false
             }
         ],
-        "mainFile": "src/elements/separator/index.tsx",
-        "trackDir": "src/elements/separator",
+        "mainFile": "index.tsx",
+        "rootDir": "src/elements/separator",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -239,23 +239,23 @@
     "geometry/curve-peek": {
         "files": [
             {
-                "relativePath": "src/geometry/curve-peek/curve-peek.tsx",
+                "relativePath": "curve-peek.tsx",
                 "test": false,
                 "name": "curve-peek.tsx"
             },
             {
-                "relativePath": "src/geometry/curve-peek/filling.module.scss",
+                "relativePath": "filling.module.scss",
                 "test": false,
                 "name": "filling.module.scss"
             },
             {
-                "relativePath": "src/geometry/curve-peek/indext.ts",
+                "relativePath": "indext.ts",
                 "test": false,
                 "name": "indext.ts"
             }
         ],
-        "mainFile": "src/geometry/curve-peek/curve-peek.tsx",
-        "trackDir": "src/geometry/curve-peek",
+        "mainFile": "curve-peek.tsx",
+        "rootDir": "src/geometry/curve-peek",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -264,27 +264,27 @@
         "files": [
             {
                 "name": "button.module.scss",
-                "relativePath": "src/input/button/button.module.scss",
+                "relativePath": "button.module.scss",
                 "test": false
             },
             {
                 "name": "button.spec.tsx",
-                "relativePath": "src/input/button/button.spec.tsx",
+                "relativePath": "button.spec.tsx",
                 "test": false
             },
             {
                 "name": "button.tsx",
-                "relativePath": "src/input/button/button.tsx",
+                "relativePath": "button.tsx",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/input/button/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/input/button/index.ts",
-        "trackDir": "src/input/button",
+        "mainFile": "index.ts",
+        "rootDir": "src/input/button",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -292,23 +292,23 @@
     "input/error": {
         "files": [
             {
-                "relativePath": "src/input/error/error.module.scss",
+                "relativePath": "error.module.scss",
                 "test": false,
                 "name": "error.module.scss"
             },
             {
-                "relativePath": "src/input/error/error.tsx",
+                "relativePath": "error.tsx",
                 "test": false,
                 "name": "error.tsx"
             },
             {
-                "relativePath": "src/input/error/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/input/error/index.ts",
-        "trackDir": "src/input/error",
+        "mainFile": "index.ts",
+        "rootDir": "src/input/error",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -317,22 +317,22 @@
         "files": [
             {
                 "name": "README.md",
-                "relativePath": "src/layout/align/README.md",
+                "relativePath": "README.md",
                 "test": false
             },
             {
                 "name": "align.module.scss",
-                "relativePath": "src/layout/align/align.module.scss",
+                "relativePath": "align.module.scss",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/layout/align/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/layout/align/index.ts",
-        "trackDir": "src/layout/align",
+        "mainFile": "index.ts",
+        "rootDir": "src/layout/align",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -355,27 +355,27 @@
         "files": [
             {
                 "name": "README.md",
-                "relativePath": "src/layout/col-span/README.md",
+                "relativePath": "README.md",
                 "test": false
             },
             {
                 "name": "col-span.module.scss",
-                "relativePath": "src/layout/col-span/col-span.module.scss",
+                "relativePath": "col-span.module.scss",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/layout/col-span/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             },
             {
                 "name": "make-spans.ts",
-                "relativePath": "src/layout/col-span/make-spans.ts",
+                "relativePath": "make-spans.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/layout/col-span/index.ts",
-        "trackDir": "src/layout/col-span",
+        "mainFile": "index.ts",
+        "rootDir": "src/layout/col-span",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -384,37 +384,37 @@
         "files": [
             {
                 "name": "README.md",
-                "relativePath": "src/layout/grid-component/README.md",
+                "relativePath": "README.md",
                 "test": false
             },
             {
                 "name": "grid-template.module.scss",
-                "relativePath": "src/layout/grid-component/grid-template/grid-template.module.scss",
+                "relativePath": "grid-template/grid-template.module.scss",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/layout/grid-component/grid-template/index.ts",
+                "relativePath": "grid-template/index.ts",
                 "test": false
             },
             {
                 "name": "grid.module.scss",
-                "relativePath": "src/layout/grid-component/grid.module.scss",
+                "relativePath": "grid.module.scss",
                 "test": false
             },
             {
                 "name": "grid.tsx",
-                "relativePath": "src/layout/grid-component/grid.tsx",
+                "relativePath": "grid.tsx",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/layout/grid-component/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/layout/grid-component/index.ts",
-        "trackDir": "src/layout/grid-component",
+        "mainFile": "index.ts",
+        "rootDir": "src/layout/grid-component",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -423,17 +423,17 @@
         "files": [
             {
                 "name": "four-way-grid.module.scss",
-                "relativePath": "src/layout/grid-presets/four-way-grid/four-way-grid.module.scss",
+                "relativePath": "four-way-grid.module.scss",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/layout/grid-presets/four-way-grid/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/layout/grid-presets/four-way-grid/index.ts",
-        "trackDir": "src/layout/grid-presets/four-way-grid",
+        "mainFile": "index.ts",
+        "rootDir": "src/layout/grid-presets/four-way-grid",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -442,17 +442,17 @@
         "files": [
             {
                 "name": "index.ts",
-                "relativePath": "src/layout/grid-presets/z-grid/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             },
             {
                 "name": "z-grid.module.scss",
-                "relativePath": "src/layout/grid-presets/z-grid/z-grid.module.scss",
+                "relativePath": "z-grid.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/layout/grid-presets/z-grid/index.ts",
-        "trackDir": "src/layout/grid-presets/z-grid",
+        "mainFile": "index.ts",
+        "rootDir": "src/layout/grid-presets/z-grid",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -461,22 +461,22 @@
         "files": [
             {
                 "name": "README.md",
-                "relativePath": "src/layout/page-frame/README.md",
+                "relativePath": "README.md",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/layout/page-frame/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             },
             {
                 "name": "page-frame.module.scss",
-                "relativePath": "src/layout/page-frame/page-frame.module.scss",
+                "relativePath": "page-frame.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "src/layout/page-frame/index.ts",
-        "trackDir": "src/layout/page-frame",
+        "mainFile": "index.ts",
+        "rootDir": "src/layout/page-frame",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -485,22 +485,22 @@
         "files": [
             {
                 "name": "index.ts",
-                "relativePath": "src/effects/ref-tooltip/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             },
             {
                 "name": "ref-tooltip.module.scss",
-                "relativePath": "src/effects/ref-tooltip/ref-tooltip.module.scss",
+                "relativePath": "ref-tooltip.module.scss",
                 "test": false
             },
             {
                 "name": "ref-tooltip.tsx",
-                "relativePath": "src/effects/ref-tooltip/ref-tooltip.tsx",
+                "relativePath": "ref-tooltip.tsx",
                 "test": false
             }
         ],
-        "mainFile": "src/effects/ref-tooltip/index.ts",
-        "trackDir": "src/effects/ref-tooltip",
+        "mainFile": "index.ts",
+        "rootDir": "src/effects/ref-tooltip",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -508,48 +508,48 @@
     "surfaces/abs-container": {
         "files": [
             {
-                "relativePath": "src/surfaces/abs-container/abs-container.module.scss",
+                "relativePath": "abs-container.module.scss",
                 "test": false,
                 "name": "abs-container.module.scss"
             },
             {
-                "relativePath": "src/surfaces/abs-container/containee/containee.tsx",
+                "relativePath": "containee/containee.tsx",
                 "test": false,
                 "name": "containee.tsx"
             },
             {
-                "relativePath": "src/surfaces/abs-container/containee/displacement.module.scss",
+                "relativePath": "containee/displacement.module.scss",
                 "test": false,
                 "name": "displacement.module.scss"
             },
             {
-                "relativePath": "src/surfaces/abs-container/containee/index.ts",
+                "relativePath": "containee/index.ts",
                 "test": false,
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/surfaces/abs-container/containee/positions.module.scss",
+                "relativePath": "containee/positions.module.scss",
                 "test": false,
                 "name": "positions.module.scss"
             },
             {
-                "relativePath": "src/surfaces/abs-container/container/container.tsx",
+                "relativePath": "container/container.tsx",
                 "test": false,
                 "name": "container.tsx"
             },
             {
-                "relativePath": "src/surfaces/abs-container/container/index.ts",
+                "relativePath": "container/index.ts",
                 "test": false,
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/surfaces/abs-container/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/surfaces/abs-container/index.ts",
-        "trackDir": "src/surfaces/abs-container",
+        "mainFile": "index.ts",
+        "rootDir": "src/surfaces/abs-container",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -557,18 +557,18 @@
     "surfaces/background": {
         "files": [
             {
-                "relativePath": "src/surfaces/background/background.module.scss",
+                "relativePath": "background.module.scss",
                 "test": false,
                 "name": "background.module.scss"
             },
             {
-                "relativePath": "src/surfaces/background/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/surfaces/background/index.ts",
-        "trackDir": "src/surfaces/background",
+        "mainFile": "index.ts",
+        "rootDir": "src/surfaces/background",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -576,18 +576,18 @@
     "surfaces/bedrock": {
         "files": [
             {
-                "relativePath": "src/surfaces/bedrock/bedrock.tsx",
+                "relativePath": "bedrock.tsx",
                 "test": false,
                 "name": "bedrock.tsx"
             },
             {
-                "relativePath": "src/surfaces/bedrock/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/surfaces/bedrock/index.ts",
-        "trackDir": "src/surfaces/bedrock",
+        "mainFile": "index.ts",
+        "rootDir": "src/surfaces/bedrock",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -596,27 +596,27 @@
         "files": [
             {
                 "name": "card.module.scss",
-                "relativePath": "src/surfaces/card/card.module.scss",
+                "relativePath": "card.module.scss",
                 "test": false
             },
             {
                 "name": "card.spec.tsx",
-                "relativePath": "src/surfaces/card/card.spec.tsx",
+                "relativePath": "card.spec.tsx",
                 "test": true
             },
             {
                 "name": "card.tsx",
-                "relativePath": "src/surfaces/card/card.tsx",
+                "relativePath": "card.tsx",
                 "test": false
             },
             {
                 "name": "index.tsx",
-                "relativePath": "src/surfaces/card/index.tsx",
+                "relativePath": "index.tsx",
                 "test": false
             }
         ],
-        "mainFile": "src/surfaces/card/index.tsx",
-        "trackDir": "src/surfaces/card",
+        "mainFile": "index.tsx",
+        "rootDir": "src/surfaces/card",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -624,18 +624,18 @@
     "surfaces/click-outside": {
         "files": [
             {
-                "relativePath": "src/surfaces/click-outside/click-outside.tsx",
+                "relativePath": "click-outside.tsx",
                 "test": false,
                 "name": "click-outside.tsx"
             },
             {
-                "relativePath": "src/surfaces/click-outside/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/surfaces/click-outside/index.ts",
-        "trackDir": "src/surfaces/click-outside",
+        "mainFile": "index.ts",
+        "rootDir": "src/surfaces/click-outside",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -643,28 +643,28 @@
     "surfaces/drawer": {
         "files": [
             {
-                "relativePath": "src/surfaces/drawer/default-placeholder.tsx",
+                "relativePath": "default-placeholder.tsx",
                 "test": false,
                 "name": "default-placeholder.tsx"
             },
             {
-                "relativePath": "src/surfaces/drawer/drawer.module.scss",
+                "relativePath": "drawer.module.scss",
                 "test": false,
                 "name": "drawer.module.scss"
             },
             {
-                "relativePath": "src/surfaces/drawer/drawer.tsx",
+                "relativePath": "drawer.tsx",
                 "test": false,
                 "name": "drawer.tsx"
             },
             {
-                "relativePath": "src/surfaces/drawer/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/surfaces/drawer/index.ts",
-        "trackDir": "src/surfaces/drawer",
+        "mainFile": "index.ts",
+        "rootDir": "src/surfaces/drawer",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -673,22 +673,22 @@
         "files": [
             {
                 "name": "heading.spec.tsx",
-                "relativePath": "src/text/heading/heading.spec.tsx",
+                "relativePath": "heading.spec.tsx",
                 "test": true
             },
             {
                 "name": "heading.tsx",
-                "relativePath": "src/text/heading/heading.tsx",
+                "relativePath": "heading.tsx",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/text/heading/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/text/heading/index.ts",
-        "trackDir": "src/text/heading",
+        "mainFile": "index.ts",
+        "rootDir": "src/text/heading",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -696,23 +696,23 @@
     "text/muted-text": {
         "files": [
             {
-                "relativePath": "src/text/muted-text/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/text/muted-text/muted-text.module.scss",
+                "relativePath": "muted-text.module.scss",
                 "test": false,
                 "name": "muted-text.module.scss"
             },
             {
-                "relativePath": "src/text/muted-text/muted-text.tsx",
+                "relativePath": "muted-text.tsx",
                 "test": false,
                 "name": "muted-text.tsx"
             }
         ],
-        "mainFile": "src/text/muted-text/index.ts",
-        "trackDir": "src/text/muted-text",
+        "mainFile": "index.ts",
+        "rootDir": "src/text/muted-text",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -721,27 +721,27 @@
         "files": [
             {
                 "name": "index.tsx",
-                "relativePath": "src/text/paragraph/index.tsx",
+                "relativePath": "index.tsx",
                 "test": false
             },
             {
                 "name": "paragraph.module.scss",
-                "relativePath": "src/text/paragraph/paragraph.module.scss",
+                "relativePath": "paragraph.module.scss",
                 "test": false
             },
             {
                 "name": "paragraph.spec.tsx",
-                "relativePath": "src/text/paragraph/paragraph.spec.tsx",
+                "relativePath": "paragraph.spec.tsx",
                 "test": true
             },
             {
                 "name": "paragraph.tsx",
-                "relativePath": "src/text/paragraph/paragraph.tsx",
+                "relativePath": "paragraph.tsx",
                 "test": false
             }
         ],
-        "mainFile": "src/text/paragraph/index.tsx",
-        "trackDir": "src/text/paragraph",
+        "mainFile": "index.tsx",
+        "rootDir": "src/text/paragraph",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -749,23 +749,23 @@
     "text/text-separator": {
         "files": [
             {
-                "relativePath": "src/text/text-separator/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/text/text-separator/text-separator.module.scss",
+                "relativePath": "text-separator.module.scss",
                 "test": false,
                 "name": "text-separator.module.scss"
             },
             {
-                "relativePath": "src/text/text-separator/text-separator.tsx",
+                "relativePath": "text-separator.tsx",
                 "test": false,
                 "name": "text-separator.tsx"
             }
         ],
-        "mainFile": "src/text/text-separator/index.ts",
-        "trackDir": "src/text/text-separator",
+        "mainFile": "index.ts",
+        "rootDir": "src/text/text-separator",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -773,23 +773,23 @@
     "text/themed-text": {
         "files": [
             {
-                "relativePath": "src/text/themed-text/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/text/themed-text/themed-text.module.scss",
+                "relativePath": "themed-text.module.scss",
                 "test": false,
                 "name": "themed-text.module.scss"
             },
             {
-                "relativePath": "src/text/themed-text/themed-text.tsx",
+                "relativePath": "themed-text.tsx",
                 "test": false,
                 "name": "themed-text.tsx"
             }
         ],
-        "mainFile": "src/text/themed-text/index.ts",
-        "trackDir": "src/text/themed-text",
+        "mainFile": "index.ts",
+        "rootDir": "src/text/themed-text",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -839,18 +839,18 @@
     "theme/color-palette": {
         "files": [
             {
-                "relativePath": "src/themes/color-palette/color-palette.module.scss",
+                "relativePath": "color-palette.module.scss",
                 "test": false,
                 "name": "color-palette.module.scss"
             },
             {
-                "relativePath": "src/themes/color-palette/index.ts",
+                "relativePath": "index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/themes/color-palette/index.ts",
-        "trackDir": "src/themes/color-palette",
+        "mainFile": "index.ts",
+        "rootDir": "src/themes/color-palette",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -943,22 +943,22 @@
         "files": [
             {
                 "name": "index.tsx",
-                "relativePath": "src/themes/theme-provider/index.tsx",
+                "relativePath": "index.tsx",
                 "test": false
             },
             {
                 "name": "texts.module.scss",
-                "relativePath": "src/themes/theme-provider/texts.module.scss",
+                "relativePath": "texts.module.scss",
                 "test": false
             },
             {
                 "name": "theme-provider.tsx",
-                "relativePath": "src/themes/theme-provider/theme-provider.tsx",
+                "relativePath": "theme-provider.tsx",
                 "test": false
             }
         ],
-        "mainFile": "src/themes/theme-provider/index.tsx",
-        "trackDir": "src/themes/theme-provider",
+        "mainFile": "index.tsx",
+        "rootDir": "src/themes/theme-provider",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -967,17 +967,17 @@
         "files": [
             {
                 "name": "ignore-popper-size.tsx",
-                "relativePath": "src/utils/popper-js/ignore-popper-size/ignore-popper-size.tsx",
+                "relativePath": "ignore-popper-size.tsx",
                 "test": false
             },
             {
                 "name": "index.ts",
-                "relativePath": "src/utils/popper-js/ignore-popper-size/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             }
         ],
-        "mainFile": "src/utils/popper-js/ignore-popper-size/index.ts",
-        "trackDir": "src/utils/popper-js/ignore-popper-size",
+        "mainFile": "index.ts",
+        "rootDir": "src/utils/popper-js/ignore-popper-size",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
@@ -986,17 +986,17 @@
         "files": [
             {
                 "name": "index.ts",
-                "relativePath": "src/utils/popper-js/resize-to-match-reference/index.ts",
+                "relativePath": "index.ts",
                 "test": false
             },
             {
                 "name": "resize-to-match-reference.tsx",
-                "relativePath": "src/utils/popper-js/resize-to-match-reference/resize-to-match-reference.tsx",
+                "relativePath": "resize-to-match-reference.tsx",
                 "test": false
             }
         ],
-        "mainFile": "src/utils/popper-js/resize-to-match-reference/index.ts",
-        "trackDir": "src/utils/popper-js/resize-to-match-reference",
+        "mainFile": "index.ts",
+        "rootDir": "src/utils/popper-js/resize-to-match-reference",
         "origin": "AUTHORED",
         "exported": false,
         "lanes": []
