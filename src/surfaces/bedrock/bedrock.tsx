@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { backgrounds } from '@teambit/base-ui.surfaces.background';
+import { backgrounds } from '@teambit/base-ui-temp.surfaces.background';
 
 type BedrockProps = React.HTMLAttributes<HTMLDivElement>;
 

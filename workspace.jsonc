@@ -10,7 +10,7 @@
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
-    "defaultScope": "teambit.base-ui",
+    "defaultScope": "teambit2.base-ui-temp",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
@@ -64,7 +64,7 @@
       },
       "@teambit/pkg": {
         "packageJson": {
-          "name": "@teambit/base-ui.{name}"
+          "name": "@teambit/base-ui-temp.{name}"
         }
       }
     },
@@ -75,7 +75,7 @@
       },
       "@teambit/pkg": {
         "packageJson": {
-          "name": "@teambit/base-ui.{name}"
+          "name": "@teambit/base-ui-temp.{name}"
         }
       }
     },
@@ -86,7 +86,7 @@
       },
       "@teambit/pkg": {
         "packageJson": {
-          "name": "@teambit/base-ui.{name}"
+          "name": "@teambit/base-ui-temp.{name}"
         }
       }
     },
@@ -97,7 +97,7 @@
       },
       "@teambit/pkg": {
         "packageJson": {
-          "name": "@teambit/base-ui.{name}"
+          "name": "@teambit/base-ui-temp.{name}"
         }
       }
     },
@@ -108,7 +108,7 @@
       },
       "@teambit/pkg": {
         "packageJson": {
-          "name": "@teambit/base-ui.{name}"
+          "name": "@teambit/base-ui-temp.{name}"
         }
       }
     },
@@ -126,7 +126,7 @@
       },
       "@teambit/pkg": {
         "packageJson": {
-          "name": "@teambit/base-ui.{name}"
+          "name": "@teambit/base-ui-temp.{name}"
         }
       },
       "@teambit/envs": {

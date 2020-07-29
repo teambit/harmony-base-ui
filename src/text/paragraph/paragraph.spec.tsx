@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { expect } from 'chai';
 
 import { Paragraph } from './paragraph';
-import { PossibleSizes } from '@teambit/base-ui.theme.sizes';
+import { PossibleSizes } from '@teambit/base-ui-temp.theme.sizes';
 
 it('should render', () => {
 	const { getByText } = render(<Paragraph>test text</Paragraph>);

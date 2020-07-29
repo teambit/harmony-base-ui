@@ -5,7 +5,7 @@ import classNames from 'classnames';
 // import Spinner from '@bit/bit.base-ui.ellipsis';
 
 import styles from './button.module.scss';
-import { DotsLoader } from '@teambit/base-ui.elements.dots-loader';
+import { DotsLoader } from '@teambit/base-ui-temp.elements.dots-loader';
 
 // const defaultSpinner = (
 // 	<Spinner color="#ffffff" size={18} style={{ verticalAlign: 'middle' }} />
