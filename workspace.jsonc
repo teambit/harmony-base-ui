@@ -58,6 +58,7 @@
   **/
   "@teambit/variants": {
     "layout/breakpoints": {
+      "@teambit/dependency-resolver": {},
       "@teambit/envs": {
         "env": "@teambit/default-env",
         "config": {}
@@ -69,6 +70,7 @@
       }
     },
     "theme/*": {
+      "@teambit/dependency-resolver": {},
       "@teambit/envs": {
         "env": "@teambit/default-env",
         "config": {}
@@ -80,6 +82,7 @@
       }
     },
     "theme/sizes": {
+      "@teambit/dependency-resolver": {},
       "@teambit/envs": {
         "env": "@teambit/default-env",
         "config": {}
@@ -91,6 +94,7 @@
       }
     },
     "theme/theme-provider": {
+      "@teambit/dependency-resolver": {},
       "@teambit/envs": {
         "env": "@teambit/default-env",
         "config": {}
@@ -102,6 +106,7 @@
       }
     },
     "theme/color-palette": {
+      "@teambit/dependency-resolver": {},
       "@teambit/envs": {
         "env": "@teambit/default-env",
         "config": {}
