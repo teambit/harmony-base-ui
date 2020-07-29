@@ -134,7 +134,6 @@
         "config": {}
       }
     }
-
     // /**
     //  * wildcards can be used to configure components under a specific namespace.
     //  * this configuration applies the react extensions on all components the `ui` namespace.
