@@ -1,0 +1,1 @@
+export { default } from './shadow-definition.module.scss';

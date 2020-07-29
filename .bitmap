@@ -717,7 +717,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/text/paragraph@0.0.5": {
+    "teambit2.base-ui-temp/text/paragraph@0.0.6": {
         "files": [
             {
                 "name": "index.tsx",
@@ -794,7 +794,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/brand-colors@0.0.5": {
+    "teambit2.base-ui-temp/theme/brand-colors@0.0.6": {
         "files": [
             {
                 "name": "brand-colors.module.scss",
@@ -808,35 +808,45 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/brand-definition@0.0.5": {
+    "teambit2.base-ui-temp/theme/brand-definition@0.0.6": {
         "files": [
             {
                 "name": "brand-definition.module.scss",
                 "relativePath": "brand-definition.module.scss",
                 "test": false
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
             }
         ],
-        "mainFile": "brand-definition.module.scss",
+        "mainFile": "index.ts",
         "rootDir": "src/themes/brand-definition",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/color-definition@0.0.5": {
+    "teambit2.base-ui-temp/theme/color-definition@0.0.6": {
         "files": [
             {
                 "name": "color-definition.module.scss",
                 "relativePath": "color-definition.module.scss",
                 "test": false
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
             }
         ],
-        "mainFile": "color-definition.module.scss",
+        "mainFile": "index.ts",
         "rootDir": "src/themes/color-definition",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/color-palette@0.0.5": {
+    "teambit2.base-ui-temp/theme/color-palette@0.0.6": {
         "files": [
             {
                 "name": "color-palette.module.scss",
@@ -869,63 +879,83 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/fonts/book@0.0.5": {
+    "teambit2.base-ui-temp/theme/fonts/book@0.0.6": {
         "files": [
             {
                 "name": "book-font.module.scss",
                 "relativePath": "book-font.module.scss",
                 "test": false
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
             }
         ],
-        "mainFile": "book-font.module.scss",
+        "mainFile": "index.ts",
         "rootDir": "src/themes/fonts/book",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/heading-margin-definition@0.0.5": {
+    "teambit2.base-ui-temp/theme/heading-margin-definition@0.0.6": {
         "files": [
             {
                 "name": "heading-margin-definition.module.scss",
                 "relativePath": "heading-margin-definition.module.scss",
                 "test": false
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
             }
         ],
-        "mainFile": "heading-margin-definition.module.scss",
+        "mainFile": "index.ts",
         "rootDir": "src/themes/heading-margin-definition",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/shadow-definition@0.0.5": {
+    "teambit2.base-ui-temp/theme/shadow-definition@0.0.6": {
         "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
             {
                 "name": "shadow-definition.module.scss",
                 "relativePath": "shadow-definition.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "shadow-definition.module.scss",
+        "mainFile": "index.ts",
         "rootDir": "src/themes/shadow-definition",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/size-definition@0.0.5": {
+    "teambit2.base-ui-temp/theme/size-definition@0.0.6": {
         "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
             {
                 "name": "size-definition.module.scss",
                 "relativePath": "size-definition.module.scss",
                 "test": false
             }
         ],
-        "mainFile": "size-definition.module.scss",
+        "mainFile": "index.ts",
         "rootDir": "src/themes/size-definition",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/sizes@0.0.5": {
+    "teambit2.base-ui-temp/theme/sizes@0.0.6": {
         "files": [
             {
                 "name": "sizes.ts",
@@ -939,7 +969,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit2.base-ui-temp/theme/theme-provider@0.0.5": {
+    "teambit2.base-ui-temp/theme/theme-provider@0.0.6": {
         "files": [
             {
                 "name": "index.tsx",

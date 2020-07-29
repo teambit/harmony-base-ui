@@ -1,0 +1,1 @@
+export { default } from './heading-margin-definition.module.scss';
