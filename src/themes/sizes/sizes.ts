@@ -1,4 +1,3 @@
-
 /**
  * Preset sizes enum, used across the application
  * @name PossibleSizes

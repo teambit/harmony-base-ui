@@ -1,1 +1,3 @@
-export { default } from './brand-definition.module.scss';
+import styles from './brand-definition.module.scss';
+const { brands } = styles;
+export { brands };

@@ -1,12 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import size from '@teambit/base-ui-temp.theme.size-definition';
-import shadow from '@teambit/base-ui-temp.theme.shadow-definition';
-import colors from '@teambit/base-ui-temp.theme.color-definition';
-import brands from '@teambit/base-ui-temp.theme.brand-definition';
-import margins from '@teambit/base-ui-temp.theme.heading-margin-definition';
-import font from '@teambit/base-ui-temp.theme.fonts.book';
+import { headingFontSize, textFontSize } from '@teambit/base-ui-temp.theme.size-definition';
+import { shadowTheme } from '@teambit/base-ui-temp.theme.shadow-definition';
+import { primaryPalette } from '@teambit/base-ui-temp.theme.color-definition';
+import { brands } from '@teambit/base-ui-temp.theme.brand-definition';
+import { headingMargins } from '@teambit/base-ui-temp.theme.heading-margin-definition';
+import { bookFont } from '@teambit/base-ui-temp.theme.fonts.book';
 import texts from './texts.module.scss';
 
 /**
@@ -32,15 +32,15 @@ export function Theme(props: React.HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(
-				size.heading,
-				size.text,
-				font.bookFont,
+				headingFontSize,
+				textFontSize,
+				bookFont,
+				shadowTheme,
+				primaryPalette,
+				brands,
+				headingMargins,
 				texts.defaults,
-				shadow.shadowTheme,
-				colors.primaryPalette,
-				brands.brands,
-				margins.headingMargins,
-				props.className,
+				props.className
 			)}
 		></div>
 	);

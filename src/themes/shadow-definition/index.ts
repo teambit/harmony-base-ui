@@ -1,1 +1,3 @@
-export { default } from './shadow-definition.module.scss';
+import styles from './shadow-definition.module.scss';
+const { shadowTheme } = styles;
+export { shadowTheme };

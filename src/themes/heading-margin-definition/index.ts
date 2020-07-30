@@ -1,1 +1,3 @@
-export { default } from './heading-margin-definition.module.scss';
+import styles from './heading-margin-definition.module.scss';
+const { headingMargins } = styles;
+export { headingMargins };

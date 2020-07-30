@@ -21,7 +21,7 @@
  * To use, add classes `heading` and `text` to your root component.
  */
 
-.heading {
+.headingFontSize {
 	--h-xxs: 18px;
 	--h-xs: 26px;
 	--h-sm: 36px;
@@ -31,7 +31,7 @@
 	--h-xxl: 80px;
 }
 
-.text {
+.textFontSize {
 	--p-xxs: 12px;
 	--p-xs: 14px;
 	--p-sm: 15px;

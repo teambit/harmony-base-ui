@@ -1,1 +1,3 @@
-export { default } from './book-font.module.scss';
+import styles from './book-font.module.scss';
+const { bookFont } = styles;
+export { bookFont };

@@ -1,1 +1,3 @@
-export { default } from './size-definition.module.scss';
+import styles from './size-definition.module.scss';
+const { headingFontSize, textFontSize } = styles;
+export { headingFontSize, textFontSize };
