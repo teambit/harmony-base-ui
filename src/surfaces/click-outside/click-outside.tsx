@@ -4,7 +4,7 @@ import onClickOutside, {
 	InjectedOnClickOutProps,
 } from 'react-onclickoutside';
 
-type Props = {
+export type Props = {
 	children: ReactNode;
 	disable?: boolean;
 	onClick: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;

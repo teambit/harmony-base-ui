@@ -14,3 +14,5 @@ export function Error(props: HTMLAttributes<HTMLDivElement>) {
 
 	return <div className={classNames(styles.error, className)} {...rest}>{children}</div>;
 }
+
+export const errorClass = styles.error;

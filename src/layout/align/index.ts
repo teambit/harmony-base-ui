@@ -1,6 +1,6 @@
 import styles from './align.module.scss';
 
-enum BreakPoints {
+export enum BreakPoints {
 	xs = 'xs',
 	sm = 'sm',
 	md = 'md',
@@ -9,13 +9,13 @@ enum BreakPoints {
 	xl = 'xl',
 }
 
-type TextOptions = {
+export type TextOptions = {
 	left: string;
 	center: string;
 	right: string;
 };
 
-type TextProps = {
+export type TextProps = {
 	left: string;
 	center: string;
 	right: string;

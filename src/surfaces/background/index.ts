@@ -1,6 +1,6 @@
 import styles from './background.module.scss';
 
-type BackgroundLayer = 'bedrock' | 'base' | 'layer' | 'crust' | 'topping' | 'dent';
+export type BackgroundLayer = 'bedrock' | 'base' | 'layer' | 'crust' | 'topping' | 'dent';
 
 export const backgrounds: { [key in BackgroundLayer]: string } = {
 	bedrock: styles.bedrock,
