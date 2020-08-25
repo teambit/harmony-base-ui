@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { PossibleSizes } from '@teambit/base-ui-temp.theme.sizes';
+import { PossibleSizes } from '@teambit/base-ui.theme.sizes';
 import styles from './paragraph.module.scss';
 
 export type ParagraphProps = {
