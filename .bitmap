@@ -1185,5 +1185,48 @@
         "exported": true,
         "lanes": []
     },
+    "utils/sub-paths": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "path-browserify.d.ts",
+                "test": false,
+                "name": "path-browserify.d.ts"
+            },
+            {
+                "relativePath": "sub-paths.ts",
+                "test": false,
+                "name": "sub-paths.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "src/utils/sub-paths",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "utils/time-ago": {
+        "files": [
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "time-ago.tsx",
+                "test": false,
+                "name": "time-ago.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "src/utils/time-ago",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
     "version": "14.8.9-dev.3"
 }
