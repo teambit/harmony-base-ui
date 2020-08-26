@@ -14,3 +14,39 @@
 	/* background: #1E1E1E; */
 	color: #878C9A;  /* $steel */
 }
+
+// &[data-split-layout^="row"]{
+// 	flex-direction: row;
+// }
+// &[data-split-layout^="row reverse"]{
+// 	flex-direction: row-reverse;
+// }
+// &[data-split-layout^="column"]{
+// 	flex-direction: column;
+// }
+// &[data-split-layout^="column reverse"]{
+// 	flex-direction: column-reverse;
+// }
+
+.columnHandle {
+	display: none;
+}
+.rowHandle {
+	display: none;
+}
+
+[data-split-layout^="column"] > .fatSplitter > .columnHandle {
+	display: inline;
+}
+
+[data-split-layout^="row"] > .fatSplitter > .rowHandle {
+	display: inline;
+}
+
+// .column-handle {
+	
+// }
+
+// .row-handle {
+	
+// }

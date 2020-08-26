@@ -1,5 +1,3 @@
-const SCREEN_BREAKPOINT = 768;
-
 export enum LayoutFeatures {
 	row = 'row',
 	column = 'column',
@@ -13,15 +11,16 @@ export enum Layout {
 	rowReverse = 'row reverse',
 	column = 'column',
 	columnReverse = 'column reverse',
+
 	top = 'column first',
-	topReverse = 'column first reverse',
+	bottom = 'column last',
+	topReverse = 'column reverse first',
+	bottomReverse = 'column reverse last ',
 
 	left = 'row first',
 	right = 'row last',
-
-	// leftReverse = 'row first reverse',
-	// bottom = 'column last',
-	// bottomReverse = 'column last reverse',
+	leftReverse = 'row reverse first',
+	rightReverse = 'row reverse last',
 }
 
 export const layoutToggleMap = {
@@ -30,13 +29,3 @@ export const layoutToggleMap = {
 };
 
 export const default_layout = Layout.row;
-
-export function layoutByWindowWidth(): Layout | undefined {
-	if (typeof window === 'undefined') return undefined;
-	const viewWidth = window.innerWidth;
-
-	if (viewWidth < SCREEN_BREAKPOINT) {
-		return Layout.columnReverse;
-	}
-	return undefined;
-}

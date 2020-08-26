@@ -1,30 +1,19 @@
-import React, { PureComponent } from 'react';
-import { SplitterProps } from './splitter-props';
-import cn from 'classnames';
-import './splitter.css';
+import React, { HTMLAttributes } from 'react';
+import classNames from 'classnames';
+import styles from './splitter.module.scss';
 
-export default class Splitter extends PureComponent<SplitterProps> {
-	handleMouseDown = () => {
-		this.props.onDragStarted();
-	};
-
-	handleTouchStart = () => {
-		this.props.onDragStarted();
-	};
-
-	render() {
-		const { className, children } = this.props;
-
-		return (
-			<div
-				className={cn(className, 'splitter')}
-				onMouseDown={this.handleMouseDown}
-				onTouchStart={this.handleTouchStart}
-			>
-				{children}
-			</div>
-		);
-	}
+export interface SplitterProps extends HTMLAttributes<HTMLDivElement> {
+	isDragging?: boolean;
+	onDragging?: (v: React.SetStateAction<boolean>) => void;
 }
 
-
+export function Splitter({ onDragging, isDragging, className, ...rest }: SplitterProps) {
+	return (
+		<div
+			{...rest}
+			className={classNames(styles.splitter, className)}
+			onMouseDown={() => onDragging?.(true)}
+			onTouchStart={() => onDragging?.(true)}
+		/>
+	);
+}
