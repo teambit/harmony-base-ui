@@ -70,6 +70,7 @@
         }
       },
       "teambit.bit/pkg": {
+        "packageManagerPublishArgs": ["--access public"],
         "packageJson": {
           "name": "@teambit/base-ui.{name}",
           "private": false
