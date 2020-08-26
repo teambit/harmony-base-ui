@@ -1,0 +1,16 @@
+.collapsedFileExplorer {
+	width: 18px;
+	background-color: #1d1d1d;
+	cursor: pointer;
+	padding: 5px 6.8px;
+	text-align: center;
+}
+
+.collapsedFileExplorer > .file-li-action > .playcon-slide-right {
+	color: #B9BDC8;
+	font-size: 15px;
+}
+
+.collapsedFileExplorer > .file-li-action > .playcon-slide-right:hover {
+	color: white;
+}
