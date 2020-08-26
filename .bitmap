@@ -693,8 +693,13 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/fat-splitter@0.1.5": {
+    "teambit.base-ui/surfaces/split-pane/fat-splitter@0.2.0": {
         "files": [
+            {
+                "relativePath": "fat-spliter.composition.tsx",
+                "test": false,
+                "name": "fat-spliter.composition.tsx"
+            },
             {
                 "relativePath": "fat-splitter.module.scss",
                 "test": false,
@@ -717,7 +722,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/layout@0.1.5": {
+    "teambit.base-ui/surfaces/split-pane/layout@0.2.0": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -736,7 +741,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/split-pane@0.1.5": {
+    "teambit.base-ui/surfaces/split-pane/pane@0.1.0": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -744,9 +749,48 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "pane.module.scss",
+                "test": false,
+                "name": "pane.module.scss"
+            },
+            {
                 "relativePath": "pane.tsx",
                 "test": false,
                 "name": "pane.tsx"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "src/surfaces/split-pane/pane",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
+    "teambit.base-ui/surfaces/split-pane/split-pane@0.2.0": {
+        "files": [
+            {
+                "relativePath": "calc-split.tsx",
+                "test": false,
+                "name": "calc-split.tsx"
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "limit.tsx",
+                "test": false,
+                "name": "limit.tsx"
+            },
+            {
+                "relativePath": "split-pane.composition.tsx",
+                "test": false,
+                "name": "split-pane.composition.tsx"
+            },
+            {
+                "relativePath": "split-pane.module.scss",
+                "test": false,
+                "name": "split-pane.module.scss"
             },
             {
                 "relativePath": "split-pane.tsx",
@@ -754,9 +798,19 @@
                 "name": "split-pane.tsx"
             },
             {
-                "relativePath": "types.tsx",
+                "relativePath": "to-relative-position.tsx",
                 "test": false,
-                "name": "types.tsx"
+                "name": "to-relative-position.tsx"
+            },
+            {
+                "relativePath": "use-drag-tracker.tsx",
+                "test": false,
+                "name": "use-drag-tracker.tsx"
+            },
+            {
+                "relativePath": "use-pointer-drag.tsx",
+                "test": false,
+                "name": "use-pointer-drag.tsx"
             }
         ],
         "mainFile": "index.ts",
@@ -765,7 +819,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/splitter@0.1.5": {
+    "teambit.base-ui/surfaces/split-pane/splitter@0.2.0": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -773,14 +827,9 @@
                 "name": "index.ts"
             },
             {
-                "relativePath": "splitter-props.ts",
+                "relativePath": "splitter.module.scss",
                 "test": false,
-                "name": "splitter-props.ts"
-            },
-            {
-                "relativePath": "splitter.css",
-                "test": false,
-                "name": "splitter.css"
+                "name": "splitter.module.scss"
             },
             {
                 "relativePath": "splitter.tsx",
@@ -790,30 +839,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/split-pane/splitter",
-        "origin": "AUTHORED",
-        "exported": true,
-        "lanes": []
-    },
-    "teambit.base-ui/surfaces/split-pane/tuple-split-pane@0.1.5": {
-        "files": [
-            {
-                "relativePath": "index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "tuple-split-pane.composition.tsx",
-                "test": false,
-                "name": "tuple-split-pane.composition.tsx"
-            },
-            {
-                "relativePath": "tuple-split-pane.tsx",
-                "test": false,
-                "name": "tuple-split-pane.tsx"
-            }
-        ],
-        "mainFile": "index.ts",
-        "rootDir": "src/surfaces/split-pane/tuple-split-pane",
         "origin": "AUTHORED",
         "exported": true,
         "lanes": []
