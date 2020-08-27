@@ -1,5 +1,7 @@
-export { Layout } from '@teambit/base-ui.surfaces.split-pane.layout';
-export { Pane } from '@teambit/base-ui.surfaces.split-pane.pane';
-export { Splitter } from '@teambit/base-ui.surfaces.split-pane.splitter';
+export * from '@teambit/base-ui.surfaces.split-pane.layout';
+export * from '@teambit/base-ui.surfaces.split-pane.pane';
+export * from '@teambit/base-ui.surfaces.split-pane.splitter';
 
-export * from './split-pane';
+export { SplitPane } from './split-pane';
+export type { Size, SplitPaneProps } from './split-pane';
+ 

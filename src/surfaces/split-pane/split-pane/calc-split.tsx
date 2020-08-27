@@ -1,4 +1,4 @@
-import { Size } from '.';
+import { Size } from './split-pane';
 import { Layout, LayoutFeatures } from '@teambit/base-ui.surfaces.split-pane.layout';
 import { DragSnapshot } from './use-drag-tracker';
 

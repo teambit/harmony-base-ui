@@ -1,1 +1,1 @@
-export {default} from './collapsed-pane';
+export { default } from './collapsed-pane';

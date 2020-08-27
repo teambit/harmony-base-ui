@@ -12,7 +12,6 @@ export type PaneProps = React.HTMLAttributes<HTMLDivElement> & {
 export function Pane({ size, style, className, layout, ...rest }: PaneProps) {
 	const runtimeStyles: CSSProperties = {
 		flexGrow: size === undefined ? 1 : undefined,
-		// flexShrink: size === undefined ? 1 : undefined,
 		flexBasis: size ?? 0,
 	};
 

@@ -669,7 +669,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/collapsed-pane@0.1.5": {
+    "teambit.base-ui/surfaces/split-pane/collapsed-pane@0.1.7": {
         "files": [
             {
                 "relativePath": "collapsed-pane.css",
@@ -693,7 +693,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/fat-splitter@0.2.0": {
+    "teambit.base-ui/surfaces/split-pane/fat-splitter@0.2.2": {
         "files": [
             {
                 "relativePath": "fat-spliter.composition.tsx",
@@ -722,7 +722,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/layout@0.2.0": {
+    "teambit.base-ui/surfaces/split-pane/layout@0.2.2": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -741,7 +741,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/pane@0.1.0": {
+    "teambit.base-ui/surfaces/split-pane/pane@0.1.3": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -765,7 +765,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/split-pane@0.2.0": {
+    "teambit.base-ui/surfaces/split-pane/split-pane@0.2.5": {
         "files": [
             {
                 "relativePath": "calc-split.tsx",
@@ -819,7 +819,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/splitter@0.2.0": {
+    "teambit.base-ui/surfaces/split-pane/splitter@0.2.2": {
         "files": [
             {
                 "relativePath": "index.ts",
@@ -1253,5 +1253,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.3"
+    "version": "14.8.9-dev.4"
 }
