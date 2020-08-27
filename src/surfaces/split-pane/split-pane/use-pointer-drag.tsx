@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export function useDragListener(onDrag: (event: MouseEvent | Touch) => void) {
   const draggingState = useState(false);
@@ -21,7 +21,7 @@ export function useDragListener(onDrag: (event: MouseEvent | Touch) => void) {
     };
 
     const handleMouseEnter = (e: MouseEvent) => {
-      //mouse has left, and returned, still holding the left button
+      // mouse has left the screen, and returned, still holding the left-button
       if (e && e.buttons === 1) return;
 
       handleDragEnded();
