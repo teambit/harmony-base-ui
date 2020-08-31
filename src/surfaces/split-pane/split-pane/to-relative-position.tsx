@@ -12,8 +12,8 @@ export function toRelativePosition({
   const boundingRect = element.getBoundingClientRect();
   const { left, top, width = 1, height = 1 } = boundingRect;
 
-  const x = limit(clientX - left, 0, width),
-    y = limit(clientY - top, 0, height);
+  const x = limit(clientX - left, 0, width);
+  const y = limit(clientY - top, 0, height);
 
   return {
     x,

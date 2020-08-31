@@ -1,6 +1,7 @@
-import React, { useState, useCallback, RefObject } from 'react';
-import { useDragListener } from './use-pointer-drag';
+import React, { RefObject, useCallback, useState } from 'react';
+
 import { toRelativePosition } from './to-relative-position';
+import { useDragListener } from './use-pointer-drag';
 
 export type DragSnapshot = {
   x: number;
@@ -15,19 +16,21 @@ type Coords = {
 };
 
 export function useDragTracker(containerRef: RefObject<HTMLDivElement>) {
-  const [snapshot, setSnapshot] = useState<DragSnapshot>(undefined);
+  const [snapshot, setSnapshot] = useState<DragSnapshot | undefined>(undefined);
+  
+  // TODO - resize observer
 
   const handleDrag = useCallback(
     ({ clientX, clientY }: Coords) => {
       if (!containerRef.current) return;
 
-      const snapshot = toRelativePosition({
+      const position = toRelativePosition({
         clientX,
         clientY,
         element: containerRef.current,
       });
 
-      setSnapshot(snapshot);
+      setSnapshot(position);
     },
     [containerRef]
   );
