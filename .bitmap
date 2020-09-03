@@ -1077,6 +1077,25 @@
         "exported": true,
         "lanes": []
     },
+    "teambit.base-ui/theme/dark-theme@0.0.2": {
+        "files": [
+            {
+                "relativePath": "dark-theme.module.scss",
+                "test": false,
+                "name": "dark-theme.module.scss"
+            },
+            {
+                "relativePath": "index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "src/themes/dark-theme",
+        "origin": "AUTHORED",
+        "exported": true,
+        "lanes": []
+    },
     "teambit.base-ui/theme/fonts/book@0.2.10": {
         "files": [
             {
