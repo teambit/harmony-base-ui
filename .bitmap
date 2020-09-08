@@ -1077,7 +1077,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/theme/dark-theme@0.0.2": {
+    "teambit.base-ui/theme/dark-theme@0.0.3": {
         "files": [
             {
                 "relativePath": "dark-theme.module.scss",
