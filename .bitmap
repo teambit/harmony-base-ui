@@ -640,7 +640,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/drawer@0.2.10": {
+    "teambit.base-ui/surfaces/drawer@0.2.11": {
         "files": [
             {
                 "name": "default-placeholder.tsx",
@@ -1301,5 +1301,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.9"
+    "version": "14.8.9-dev.14"
 }
