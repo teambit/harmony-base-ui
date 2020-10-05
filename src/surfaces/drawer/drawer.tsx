@@ -1,7 +1,9 @@
-import React, { Component, ReactNode, ComponentType } from 'react';
+import React, { Component, ReactNode, ComponentType, MutableRefObject } from 'react';
 
 import { Container } from '@teambit/base-ui.surfaces.abs-container';
-import { ClickOutside } from '@teambit/base-ui.surfaces.click-outside';
+import { ClickOutside } from '@teambit/base-ui.hook.use-click-outside';
+//@ts-ignore
+import createRef from 'react-create-ref';
 
 import { DefaultPlaceholder, DrawerPlaceholderProps } from './default-placeholder';
 
@@ -19,7 +21,7 @@ export type DrawerProps = {
 	onContainerToggle?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 	onPlaceholderToggle?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 	onContaineeToggle?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
-	onClickOutside?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+	onClickOutside?: (e: MouseEvent | TouchEvent) => void;
 } & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'>;
 
 type DrawerState = {
@@ -30,6 +32,8 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 	state: DrawerState = {
 		isOpen: this.props.open || false,
 	};
+
+	private ref: MutableRefObject<HTMLDivElement> = createRef();
 
 	static defaultProps = {
 		PlaceholderComponent: DefaultPlaceholder,
@@ -61,7 +65,7 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 		this.props.onChange && this.props.onChange(evt, nextOpen);
 	};
 
-	close = (evt: React.MouseEvent) => {
+	close = (evt?: React.MouseEvent) => {
 		const { isOpen } = this.state;
 		const nextOpen = false;
 
@@ -83,7 +87,7 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 		this.props.onChange && this.props.onChange(evt, nextOpen);
 	};
 
-	private handePlaceholderClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+	private handlePlaceholderClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		this.props.onPlaceholderToggle && this.props.onPlaceholderToggle(e);
 
 		if (!e.defaultPrevented) {
@@ -97,11 +101,11 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 		this.props.onClick && this.props.onClick(e);
 	};
 
-	private handleClickOutside = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+	private handleClickOutside = (e: MouseEvent | TouchEvent) => {
 		this.props.onClickOutside && this.props.onClickOutside(e);
 
 		if (!e.defaultPrevented) {
-			this.props.clickOutside && this.close(e);
+			this.props.clickOutside && this.close();
 		}
 	};
 
@@ -150,25 +154,25 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 		const { isOpen } = this.state;
 
 		return (
-			<ClickOutside
-				onClick={this.handleClickOutside}
-				disable={!isOpen && clickOutside}
-				//initial disable :(
-				disableOnClickOutside={!isOpen && clickOutside}
+			<Container
+				{...rest}
+				ref={this.ref}
+				open={isOpen}
+				onMouseLeave={this.handleLeaveContainer}
+				onMouseEnter={this.handleEnterContainer}
+				onClick={this.handleContainerClick}
 			>
-				<Container
-					{...rest}
-					open={isOpen}
-					onMouseLeave={this.handleLeaveContainer}
-					onMouseEnter={this.handleEnterContainer}
-					onClick={this.handleContainerClick}
-				>
-					{children}
-					<PlaceholderComponent onClick={this.handePlaceholderClick}>
-						{placeholder}
-					</PlaceholderComponent>
-				</Container>
-			</ClickOutside>
+				{children}
+				<PlaceholderComponent onClick={this.handlePlaceholderClick}>
+					{placeholder}
+				</PlaceholderComponent>
+
+				<ClickOutside
+					targetRef={this.ref}
+					enabled={!!clickOutside && isOpen}
+					handler={this.handleClickOutside}
+				/>
+			</Container>
 		);
 	}
 }
