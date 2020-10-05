@@ -1,0 +1,8 @@
+.pane {
+	transition: width 300ms, height 300ms;
+
+	[data-split-layout*="first"] > &, [data-split-layout*="last"] > & {
+		min-width: unset;
+		max-width: unset;
+	}
+}

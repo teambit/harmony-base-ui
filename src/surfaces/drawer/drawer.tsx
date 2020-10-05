@@ -1,7 +1,7 @@
 import React, { Component, ReactNode, ComponentType } from 'react';
 
-import { Container } from '@teambit/base-ui-temp.surfaces.abs-container';
-import { ClickOutside } from '@teambit/base-ui-temp.surfaces.click-outside';
+import { Container } from '@teambit/base-ui.surfaces.abs-container';
+import { ClickOutside } from '@teambit/base-ui.surfaces.click-outside';
 
 import { DefaultPlaceholder, DrawerPlaceholderProps } from './default-placeholder';
 
@@ -20,7 +20,7 @@ export type DrawerProps = {
 	onPlaceholderToggle?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 	onContaineeToggle?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 	onClickOutside?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
-} & React.HTMLAttributes<HTMLDivElement>;
+} & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'>;
 
 type DrawerState = {
 	isOpen: boolean;
@@ -84,10 +84,11 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 	};
 
 	private handePlaceholderClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-		//TODO - consider stopping event propagation
-		this.props.clickPlaceholderToggles && this.toggle(e);
-
 		this.props.onPlaceholderToggle && this.props.onPlaceholderToggle(e);
+
+		if (!e.defaultPrevented) {
+			this.props.clickPlaceholderToggles && this.toggle(e);
+		}
 	};
 
 	private handleContainerClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -97,22 +98,28 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 	};
 
 	private handleClickOutside = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
-		this.props.clickOutside && this.close(e);
-
 		this.props.onClickOutside && this.props.onClickOutside(e);
+
+		if (!e.defaultPrevented) {
+			this.props.clickOutside && this.close(e);
+		}
 	};
 
 	private handleLeaveContainer = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		//TODO - add grace period
-		this.props.hoverToOpen && this.close(e);
-
 		this.props.onMouseLeave && this.props.onMouseLeave(e);
+
+		if (!e.defaultPrevented) {
+			this.props.hoverToOpen && this.close(e);
+		}
 	};
 
 	private handleEnterContainer = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-		this.props.hoverToOpen && this.open(e);
-
 		this.props.onMouseEnter && this.props.onMouseEnter(e);
+
+		if (!e.defaultPrevented) {
+			this.props.hoverToOpen && this.open(e);
+		}
 	};
 
 	render() {
@@ -129,9 +136,12 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 			//virtualProps (should not be included in 'rest')
 			open,
 			hoverToOpen,
+			clickPlaceholderToggles,
+			clickToggles,
 
 			onChange,
 			onPlaceholderToggle,
+			onContainerToggle,
 			onContaineeToggle,
 			onClickOutside,
 

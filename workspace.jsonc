@@ -6,47 +6,25 @@
   /**
    * main configuration of the Bit workspace.
   **/
-  "@teambit/workspace": {
+  "teambit.bit/workspace": {
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
-    "defaultScope": "teambit2.base-ui-temp",
+    "defaultScope": "teambit.base-ui",
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
     "defaultDirectory": "src/components",
-    "vendorDirectory": "vendor",
-    "extensions": {
-      "@teambit/dependency-resolver": {
-        "policy": {
-          "devDependencies": {
-            "@types/mocha": "8.0.0",
-            "react": "-"
-          },
-          "peerDependencies": {
-            "react": "^15.0.0 || ^16.0.0"
-          }
-        }
-      },
-      "@teambit/pkg": {
-        "packageJson": {
-          "name": "@teambit/base-ui-temp.{name}"
-        }
-      },
-      "@teambit/envs": {
-        "env": "@teambit/react",
-        "config": {}
-      }
-    }
+    "vendorDirectory": "vendor"
   },
   /**
    * main configuration for component dependency resolution.
   **/
-  "@teambit/dependency-resolver": {
+  "teambit.bit/dependency-resolver": {
     /**
      * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
     */
-    "packageManager": "yarn",
+    "packageManager": "teambit.bit/pnpm",
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -78,30 +56,27 @@
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
   **/
-  "@teambit/variants": {
-    "layout/breakpoints": {
-      "@teambit/dependency-resolver": {},
-      "@teambit/envs": {
-        "env": "@teambit/default-env",
-        "config": {}
-      },
-      "@teambit/pkg": {
-        "packageJson": {
-          "name": "@teambit/base-ui-temp.{name}"
+  "teambit.bit/variants": {
+    "*":{
+      "teambit.bit/dependency-resolver": {
+        "policy": {
+          "devDependencies": {
+            "@types/mocha": "8.0.0",
+            "react": "-"
+          },
+          "peerDependencies": {
+            "react": "^15.0.0 || ^16.0.0"
+          }
         }
-      }
-    },
-    "theme/colors": {
-      "@teambit/dependency-resolver": {},
-      "@teambit/envs": {
-        "env": "@teambit/default-env",
-        "config": {}
       },
-      "@teambit/pkg": {
+      "teambit.bit/pkg": {
+        "packageManagerPublishArgs": ["--access public"],
         "packageJson": {
-          "name": "@teambit/base-ui-temp.{name}"
+          "name": "@teambit/base-ui.{name}",
+          "private": false
         }
-      }
+      },
+      "teambit.bit/react": {}
     }
   }
 }
