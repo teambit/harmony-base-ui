@@ -7,7 +7,8 @@ import createRef from 'react-create-ref';
 
 import { DefaultPlaceholder, DrawerPlaceholderProps } from './default-placeholder';
 
-export type DrawerProps = {
+export interface DrawerProps
+	extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange' | 'placeholder'> {
 	open?: boolean;
 	PlaceholderComponent?: ComponentType<DrawerPlaceholderProps>;
 	placeholder: ReactNode;
@@ -22,7 +23,7 @@ export type DrawerProps = {
 	onPlaceholderToggle?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 	onContaineeToggle?: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 	onClickOutside?: (e: MouseEvent | TouchEvent) => void;
-} & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'>;
+}
 
 type DrawerState = {
 	isOpen: boolean;
