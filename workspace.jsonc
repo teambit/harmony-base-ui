@@ -60,12 +60,18 @@
     "*":{
       "teambit.bit/dependency-resolver": {
         "policy": {
-          "devDependencies": {
-            "@types/mocha": "8.0.0",
+          "dependencies": {
             "react": "-"
           },
+          "devDependencies": {
+            "@types/react": "16.9.43",
+            "@types/jest": "~26.0.9",
+            "@types/mocha": "8.0.0",
+            "@types/react-router-dom": "^5.1.5"
+          },
           "peerDependencies": {
-            "react": "^15.0.0 || ^16.0.0"
+            "react": "^16.13.1",
+            "react-dom": "^16.13.1"
           }
         }
       },
