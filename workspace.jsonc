@@ -21,6 +21,12 @@
    * main configuration for component dependency resolution.
   **/
   "teambit.bit/dependency-resolver": {
+    "policy": {
+      "peerDependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+      }
+    },
     /**
      * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
     */
@@ -61,7 +67,8 @@
       "teambit.bit/dependency-resolver": {
         "policy": {
           "dependencies": {
-            "react": "-"
+            "react": "-",
+            "@babel/runtime": "^7.8.4"
           },
           "devDependencies": {
             "@types/react": "16.9.43",
