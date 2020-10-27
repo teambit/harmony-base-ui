@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/ {
+**/{
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -63,7 +63,7 @@
    * new set of dependencies.
   **/
   "teambit.bit/variants": {
-    "*":{
+    "*": {
       "teambit.bit/dependency-resolver": {
         "policy": {
           "dependencies": {
@@ -83,7 +83,9 @@
         }
       },
       "teambit.bit/pkg": {
-        "packageManagerPublishArgs": ["--access public"],
+        "packageManagerPublishArgs": [
+          "--access public"
+        ],
         "packageJson": {
           "name": "@teambit/base-ui.{name}",
           "private": false
