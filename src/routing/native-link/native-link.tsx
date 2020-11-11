@@ -7,14 +7,15 @@ export type LinkProps = {
 	external?: boolean;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
-const EXTERNAL_PROPS = { rel: 'noopener', target: '_blank' };
+/** anchor tag attributes that securely open link in a new tab. */
+const externalLinkAttributes = { rel: 'noopener', target: '_blank' };
 
 /**
  * Equivalent to an `<a/>` tag, with a few additional options.
  * Used to provide default fallbacks for react-router link
  */
 export function NativeLink({ href = '', external, replace, onClick, ...rest }: LinkProps) {
-	const externalProps = external ? EXTERNAL_PROPS : {};
+	const externalProps = external ? externalLinkAttributes : {};
 
 	const handleClick = useCallback(
 		(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {

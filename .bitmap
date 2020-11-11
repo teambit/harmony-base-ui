@@ -78,7 +78,7 @@
         "exported": false,
         "lanes": [],
     },
-    "routing/routing-provider": {
+    "routing/provider": {
         "files": [
             {
                 "name": "index.ts",
