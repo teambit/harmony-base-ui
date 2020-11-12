@@ -138,6 +138,11 @@
                 "test": false
             },
             {
+                "name": "image.spec.tsx",
+                "relativePath": "image.spec.tsx",
+                "test": false
+            },
+            {
                 "name": "image.tsx",
                 "relativePath": "image.tsx",
                 "test": false
@@ -164,6 +169,11 @@
             {
                 "name": "label.module.scss",
                 "relativePath": "label.module.scss",
+                "test": false
+            },
+            {
+                "name": "label.spec.tsx",
+                "relativePath": "label.spec.tsx",
                 "test": false
             },
             {
@@ -207,6 +217,11 @@
             {
                 "name": "separator.module.scss",
                 "relativePath": "separator.module.scss",
+                "test": false
+            },
+            {
+                "name": "separator.spec.tsx",
+                "relativePath": "separator.spec.tsx",
                 "test": false
             },
             {
@@ -284,6 +299,11 @@
             {
                 "name": "button.module.scss",
                 "relativePath": "button.module.scss",
+                "test": false
+            },
+            {
+                "name": "button.spec.tsx",
+                "relativePath": "button.spec.tsx",
                 "test": false
             },
             {
@@ -614,6 +634,11 @@
                 "test": false
             },
             {
+                "name": "card.spec.tsx",
+                "relativePath": "card.spec.tsx",
+                "test": false
+            },
+            {
                 "name": "card.tsx",
                 "relativePath": "card.tsx",
                 "test": false
@@ -884,6 +909,11 @@
     "teambit.base-ui/text/heading@0.5.2": {
         "files": [
             {
+                "name": "heading.spec.tsx",
+                "relativePath": "heading.spec.tsx",
+                "test": false
+            },
+            {
                 "name": "heading.tsx",
                 "relativePath": "heading.tsx",
                 "test": false
@@ -934,6 +964,11 @@
             {
                 "name": "paragraph.module.scss",
                 "relativePath": "paragraph.module.scss",
+                "test": false
+            },
+            {
+                "name": "paragraph.spec.tsx",
+                "relativePath": "paragraph.spec.tsx",
                 "test": false
             },
             {
@@ -1300,5 +1335,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.109"
+    "version": "14.8.9-dev.137"
 }
