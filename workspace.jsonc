@@ -6,7 +6,7 @@
   /**
    * main configuration of the Bit workspace.
   **/
-  "teambit.bit/workspace": {
+  "teambit.workspace/workspace": {
     /**
      * set the default scope when there is no matching for the component in the components array.
      **/
@@ -20,7 +20,7 @@
   /**
    * main configuration for component dependency resolution.
   **/
-  "teambit.bit/dependency-resolver": {
+  "teambit.dependencies/dependency-resolver": {
     "policy": {
       "peerDependencies": {
         "react": "^16.13.1",
@@ -30,7 +30,7 @@
     /**
      * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
     */
-    "packageManager": "teambit.bit/pnpm",
+    "packageManager": "teambit.dependencies/pnpm",
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -62,9 +62,9 @@
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
   **/
-  "teambit.bit/variants": {
+  "teambit.workspace/variants": {
     "*": {
-      "teambit.bit/dependency-resolver": {
+      "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {
             "react": "-",
@@ -82,7 +82,7 @@
           }
         }
       },
-      "teambit.bit/pkg": {
+      "teambit.pkg/pkg": {
         "packageManagerPublishArgs": [
           "--access public"
         ],
@@ -91,7 +91,7 @@
           "private": false
         }
       },
-      "teambit.bit/react": {}
+      "teambit.react/react": {}
     }
   }
 }
