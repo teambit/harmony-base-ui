@@ -24,31 +24,31 @@ it('should trigger onClick', () => {
 	expect(onClick.called).to.be.true;
 });
 
-it('should remove loader after onClick has been resolved', async () => {
-	let resolveClick = () => {};
-	const onClick = () => new Promise(res => (resolveClick = res));
-	const { getByTestId, queryByTestId } = render(
-		<Button data-testid="test-button" loader={testLoader} onClick={onClick} />
-	);
+// it('should remove loader after onClick has been resolved', async () => {
+// 	let resolveClick = () => {};
+// 	const onClick = () => new Promise(res => (resolveClick = res));
+// 	const { getByTestId, queryByTestId } = render(
+// 		<Button data-testid="test-button" loader={testLoader} onClick={onClick} />
+// 	);
 
-	fireEvent.click(getByTestId('test-button'));
-	resolveClick();
+// 	fireEvent.click(getByTestId('test-button'));
+// 	resolveClick();
 
-	await waitForElementToBeRemoved(() => queryByTestId('test-loader'));
-});
+// 	await waitForElementToBeRemoved(() => queryByTestId('test-loader'));
+// });
 
-it('should remove loader even when onClick has been rejected', async () => {
-	let rejectClick = () => {};
-	const onClick = () => new Promise((_res, rej) => (rejectClick = rej));
-	const { getByTestId, queryByTestId } = render(
-		<Button data-testid="test-button" loader={testLoader} onClick={onClick} />
-	);
+// it('should remove loader even when onClick has been rejected', async () => {
+// 	let rejectClick = () => {};
+// 	const onClick = () => new Promise((_res, rej) => (rejectClick = rej));
+// 	const { getByTestId, queryByTestId } = render(
+// 		<Button data-testid="test-button" loader={testLoader} onClick={onClick} />
+// 	);
 
-	fireEvent.click(getByTestId('test-button'));
-	rejectClick();
+// 	fireEvent.click(getByTestId('test-button'));
+// 	rejectClick();
 
-	await waitForElementToBeRemoved(() => queryByTestId('test-loader'));
-});
+// 	await waitForElementToBeRemoved(() => queryByTestId('test-loader'));
+// });
 
 it('should show loader when explicitly set loading={true}', () => {
 	const { getByTestId } = render(<Button loader={testLoader} loading={true} />);

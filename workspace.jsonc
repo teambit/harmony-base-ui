@@ -25,6 +25,9 @@
       "peerDependencies": {
         "react": "^16.13.1",
         "react-dom": "^16.13.1"
+      },
+      "dependencies": {
+        "core-js": "3.7.0"
       }
     },
     /**
