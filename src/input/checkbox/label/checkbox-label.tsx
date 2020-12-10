@@ -1,6 +1,6 @@
 import React, { ReactNode, ChangeEvent } from 'react';
-import { HiddenCheckbox } from '@teambit/base-ui.input.hidden-checkbox';
-import { CheckedIndicator, classes } from '@teambit/base-ui.input.checked-indicator';
+import { HiddenCheckbox } from '@teambit/base-ui.input.checkbox.hidden';
+import { CheckboxIndicator, classes } from '@teambit/base-ui.input.checkbox.indicator';
 
 export interface CheckboxLabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
 	/**
@@ -40,7 +40,7 @@ export function CheckboxLabel({
 			disabled={disabled}
 		/>
 	),
-	indicator = <CheckedIndicator className={classes.defaultCheckbox} />,
+	indicator = <CheckboxIndicator className={classes.defaultCheckbox} />,
 	children,
 	...rest
 }: CheckboxLabelProps) {

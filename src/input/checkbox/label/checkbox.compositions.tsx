@@ -1,3 +1,4 @@
+import { HiddenCheckbox } from '@teambit/base-ui.input.checkbox.hidden';
 import React, { useState } from 'react';
 import { CheckboxLabel } from './checkbox-label';
 import { CheckmarkLabel } from './designed/checkbox-label';
@@ -59,6 +60,29 @@ export function DisabledAndChecked() {
 			<CheckmarkLabel disabled defaultChecked>
 				<span> disabled checkmarkbox</span>
 			</CheckmarkLabel>
+		</div>
+	);
+}
+
+export function CustomInput() {
+	const [state, setState] = useState(false);
+	return (
+		<div>
+			<CheckboxLabel
+				input={
+					<HiddenCheckbox
+						onChange={(e) => setState(e.target.checked)}
+						checked={state}
+						alt="custom checkbox"
+					/>
+				}
+			>
+				{' '}
+				Checkmarbox with a label
+			</CheckboxLabel>
+			<div>
+				-{'>'} {state ? 'checked' : 'unchecked'}
+			</div>
 		</div>
 	);
 }
