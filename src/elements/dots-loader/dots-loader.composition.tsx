@@ -1,11 +1,11 @@
 import React from 'react';
+import { DotsLoader } from './dots-loader';
 import { Theme } from '@teambit/base-ui.theme.theme-provider';
-import { Error } from './error';
 
-export const ErrorMessage = () => (
+export const BasicDotsLoader = () => (
 	<Theme>
 		<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-			<Error>error message!</Error>
+			<DotsLoader />
 		</div>
 	</Theme>
 );
