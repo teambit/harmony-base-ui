@@ -7,12 +7,6 @@ export type LinkProps = {
 	external?: boolean;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
-/**
- * Base component for link, equivalent to a `<a/>` tag.
- *
- * This component is a placeholder for future implementations,
- * where different applications can override this component with their underlying navigation system.
- */
 export function Link(props: LinkProps) {
 	const { external, children, ...rest } = props;
 

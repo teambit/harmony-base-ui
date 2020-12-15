@@ -3,16 +3,15 @@ import { render } from '@testing-library/react';
 import { expect } from 'chai';
 
 import { BaseImage } from './image';
+import { BaseImageExample } from './image.composition';
 
 it('should render', () => {
-	const { getByTestId } = render(
-		<BaseImage data-testid="test-img" alt="alt world" src="https://bit.dev" />
-	);
+	const { getByTestId } = render(<BaseImageExample />);
 	const rendered = getByTestId('test-img');
 
 	expect(rendered.tagName).to.equal('IMG');
 	expect(rendered.getAttribute('alt')).to.equal('alt world');
-	expect(rendered.getAttribute('src')).to.equal('https://bit.dev');
+	expect(rendered.getAttribute('src')).to.equal('https://static.bit.dev/bit-logo.svg');
 });
 
 it('should pass classname', () => {

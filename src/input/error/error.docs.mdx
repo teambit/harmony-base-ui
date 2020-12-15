@@ -1,0 +1,16 @@
+---
+labels: ['react', 'typescript', 'error']
+description: 'error message'
+---
+
+import { Error } from './error';
+
+### Overview
+Shows an error message.  
+Avoids rendering when prop `children` is empty.  
+Uses error color from css variable `--error-color`.
+<br />
+
+```js live=true
+<Error>error message!</Error>
+```

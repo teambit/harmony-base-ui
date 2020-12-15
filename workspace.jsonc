@@ -27,11 +27,6 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@teambit/documenter.theme.theme-context": "0.2.3",
-        "@teambit/documenter.ui.heading": "0.2.3",
-        "@teambit/documenter.ui.paragraph": "0.2.3",
-        "@teambit/documenter.ui.section": "0.2.3",
-        "@teambit/documenter.ui.separator": "0.2.3",
         "core-js": "3.7.0"
       },
       "peerDependencies": {

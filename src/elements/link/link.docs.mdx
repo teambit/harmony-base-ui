@@ -1,0 +1,23 @@
+---
+labels: ['react', 'typescript', 'link']
+description: 'base link component'
+---
+
+import { Link } from './link';
+
+### Overview
+Base component for link, equivalent to a `<a/>` tag.  
+This component is a placeholder for future implementations, where different applications can override this component with their underlying navigation system.
+<br />
+
+Simple link:
+```js live=true
+<Link href="https://bit.dev">bit.dev</Link>
+```
+
+Link with target blank:
+```js live=true
+<Link href="https://bit.dev" external={true} data-testid="test-link">
+	bit.dev
+</Link>
+```

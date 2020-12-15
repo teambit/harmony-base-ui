@@ -90,8 +90,23 @@
     "teambit.base-ui/elements/dots-loader@0.5.3": {
         "files": [
             {
+                "name": "dots-loader.composition.tsx",
+                "relativePath": "dots-loader.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "dots-loader.docs.mdx",
+                "relativePath": "dots-loader.docs.mdx",
+                "test": false
+            },
+            {
                 "name": "dots-loader.module.scss",
                 "relativePath": "dots-loader.module.scss",
+                "test": false
+            },
+            {
+                "name": "dots-loader.spec.tsx",
+                "relativePath": "dots-loader.spec.tsx",
                 "test": false
             },
             {
@@ -133,6 +148,16 @@
     "teambit.base-ui/elements/image@0.5.3": {
         "files": [
             {
+                "name": "image.composition.tsx",
+                "relativePath": "image.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "image.docs.mdx",
+                "relativePath": "image.docs.mdx",
+                "test": false
+            },
+            {
                 "name": "image.module.scss",
                 "relativePath": "image.module.scss",
                 "test": false
@@ -167,6 +192,16 @@
                 "test": false
             },
             {
+                "name": "label.composition.tsx",
+                "relativePath": "label.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "label.docs.mdx",
+                "relativePath": "label.docs.mdx",
+                "test": false
+            },
+            {
                 "name": "label.module.scss",
                 "relativePath": "label.module.scss",
                 "test": false
@@ -196,6 +231,21 @@
                 "test": false
             },
             {
+                "name": "link.composition.tsx",
+                "relativePath": "link.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "link.docs.mdx",
+                "relativePath": "link.docs.mdx",
+                "test": false
+            },
+            {
+                "name": "link.spec.tsx",
+                "relativePath": "link.spec.tsx",
+                "test": false
+            },
+            {
                 "name": "link.tsx",
                 "relativePath": "link.tsx",
                 "test": false
@@ -212,6 +262,16 @@
             {
                 "name": "index.tsx",
                 "relativePath": "index.tsx",
+                "test": false
+            },
+            {
+                "name": "separator.composition.tsx",
+                "relativePath": "separator.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "separator.docs.mdx",
+                "relativePath": "separator.docs.mdx",
                 "test": false
             },
             {
@@ -302,8 +362,8 @@
                 "test": false
             },
             {
-                "name": "button.docs.tsx",
-                "relativePath": "button.docs.tsx",
+                "name": "button.docs.mdx",
+                "relativePath": "button.docs.mdx",
                 "test": false
             },
             {
@@ -341,8 +401,8 @@
                 "test": false
             },
             {
-                "name": "error.docs.tsx",
-                "relativePath": "error.docs.tsx",
+                "name": "error.docs.mdx",
+                "relativePath": "error.docs.mdx",
                 "test": false
             },
             {
@@ -1360,5 +1420,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.216"
+    "version": "14.8.9-dev.220"
 }
