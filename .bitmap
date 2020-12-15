@@ -297,6 +297,16 @@
     "teambit.base-ui/input/button@0.5.3": {
         "files": [
             {
+                "name": "button.composition.tsx",
+                "relativePath": "button.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "button.docs.tsx",
+                "relativePath": "button.docs.tsx",
+                "test": false
+            },
+            {
                 "name": "button.module.scss",
                 "relativePath": "button.module.scss",
                 "test": false
@@ -326,8 +336,23 @@
     "teambit.base-ui/input/error@0.5.3": {
         "files": [
             {
+                "name": "error.composition.tsx",
+                "relativePath": "error.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "error.docs.tsx",
+                "relativePath": "error.docs.tsx",
+                "test": false
+            },
+            {
                 "name": "error.module.scss",
                 "relativePath": "error.module.scss",
+                "test": false
+            },
+            {
+                "name": "error.spec.tsx",
+                "relativePath": "error.spec.tsx",
                 "test": false
             },
             {
@@ -1335,5 +1360,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.196"
+    "version": "14.8.9-dev.216"
 }

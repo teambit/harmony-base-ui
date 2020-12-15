@@ -4,12 +4,13 @@ import { expect } from 'chai';
 import { fake } from 'sinon';
 
 import Button from './button';
+import { BasicButton } from './button.composition';
 
 const testLoader = <span data-testid="test-loader">loading...</span>;
 
 it('should render with children', () => {
-	const { getByText } = render(<Button>actual button</Button>);
-	const rendered = getByText('actual button');
+	const { getByText } = render(<BasicButton />);
+	const rendered = getByText('Click');
 	expect(rendered).to.exist;
 });
 
@@ -63,8 +64,12 @@ it('should not show loader when explicitly set loading={false}', () => {
 });
 
 it('should not render children while loading', () => {
-	const { queryByText } = render(<Button loader={testLoader} loading={true}>actual children</Button>);
-	
+	const { queryByText } = render(
+		<Button loader={testLoader} loading={true}>
+			actual children
+		</Button>
+	);
+
 	expect(queryByText('actual children')).not.to.exist;
 });
 
