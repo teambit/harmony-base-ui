@@ -1,10 +1,10 @@
-[![bit components](https://img.shields.io/badge/dynamic/json.svg?color=6e3991&label=bit%20components&query=payload.totalComponents&url=https://api.bit.dev/scope/bit/base-ui?UseCache=1)](https://bit.dev/bit/base-ui)
+[![bit components](https://img.shields.io/badge/dynamic/json.svg?color=6e3991&label=bit%20components&query=payload.totalComponents&url=https://api.bit.dev/scope/teambit/base-ui?UseCache=1)](https://bit.dev/teambit/base-ui)
 <a href="https://opensource.org/licenses/Apache-2.0"><img alt="apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
 <a href="https://github.com/teambit/example-templates/blob/master/README.md#contributing"><img alt="prs" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
 
 # Base component design system of Bit.dev
 
-The [reusable set of infra-level React components](https://bit.dev/bit/base-ui)
+The [reusable set of infra-level React components](https://bit.dev/teambit/base-ui/)
  used to build [Bit.dev](https://bit.dev).
 
 ![screenshot](./docs/scope-screenshot.png)
@@ -12,7 +12,7 @@ The [reusable set of infra-level React components](https://bit.dev/bit/base-ui)
 
 ## Components
 
-All components in this frontend codebase were [contained and exposed using Bit](https://github.com/teambit/bit) as a set of independently-usable components. See the **[base collection on bit.dev](https://bit.dev/bit/base-ui)** to explore and integrate any component into your project.
+All components in this frontend codebase were [contained and exposed using Bit](https://github.com/teambit/harmony-base-ui) as a set of independently-usable components. See the **[base collection on bit.dev](https://bit.dev/teambit/base-ui/)** to explore and integrate any component into your project.
 
 - Install independent components with npm/yarn.
 - Use `bit import` to source and edit components locally for quick editing and integration.
