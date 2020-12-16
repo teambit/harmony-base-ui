@@ -994,6 +994,16 @@
     "teambit.base-ui/text/heading@0.5.4": {
         "files": [
             {
+                "name": "heading.composition.tsx",
+                "relativePath": "heading.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "heading.docs.mdx",
+                "relativePath": "heading.docs.mdx",
+                "test": false
+            },
+            {
                 "name": "heading.spec.tsx",
                 "relativePath": "heading.spec.tsx",
                 "test": false
@@ -1023,8 +1033,23 @@
                 "test": false
             },
             {
+                "name": "muted-text.composition.tsx",
+                "relativePath": "muted-text.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "muted-text.docs.mdx",
+                "relativePath": "muted-text.docs.mdx",
+                "test": false
+            },
+            {
                 "name": "muted-text.module.scss",
                 "relativePath": "muted-text.module.scss",
+                "test": false
+            },
+            {
+                "name": "muted-text.spec.tsx",
+                "relativePath": "muted-text.spec.tsx",
                 "test": false
             },
             {
