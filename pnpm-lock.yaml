@@ -1,6 +1,7 @@
 importers:
   .:
     dependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.5
       '@popperjs/core': registry.npmjs.org/@popperjs/core/2.6.0
       '@testing-library/jest-dom': registry.npmjs.org/@testing-library/jest-dom/5.11.6
       '@testing-library/user-event': registry.npmjs.org/@testing-library/user-event/12.6.0
@@ -31,7 +32,6 @@ importers:
       resize-observer-polyfill: registry.npmjs.org/resize-observer-polyfill/1.5.1
       typescript: registry.npmjs.org/typescript/3.9.7
     devDependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.5
       '@testing-library/react': registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0
       '@types/jest': registry.npmjs.org/@types/jest/26.0.19
       '@types/mocha': registry.npmjs.org/@types/mocha/8.0.0
@@ -198,12 +198,23 @@ packages:
   registry.npmjs.org/@babel/code-frame/7.10.4:
     dependencies:
       '@babel/highlight': registry.npmjs.org/@babel/highlight/7.10.4
+    dev: false
     name: '@babel/code-frame'
     resolution:
       integrity: sha512-vG6SvB6oYEhvgisZNFRmRCUkLz11c7rp+tbNTynGqc6mS1d5ATd/sGyV6W0KZZnXRKMTzZDRgQT3Ou9jhpAfUg==
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.10.4.tgz'
     version: 7.10.4
+  registry.npmjs.org/@babel/code-frame/7.12.11:
+    dependencies:
+      '@babel/highlight': registry.npmjs.org/@babel/highlight/7.10.4
+    dev: true
+    name: '@babel/code-frame'
+    resolution:
+      integrity: sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.12.11.tgz'
+    version: 7.12.11
   registry.npmjs.org/@babel/code-frame/7.8.3:
     dependencies:
       '@babel/highlight': registry.npmjs.org/@babel/highlight/7.10.4
@@ -521,12 +532,20 @@ packages:
       tarball: 'https://registry.npmjs.org/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.11.0.tgz'
     version: 7.11.0
   registry.npmjs.org/@babel/helper-validator-identifier/7.10.4:
+    dev: false
     name: '@babel/helper-validator-identifier'
     resolution:
       integrity: sha512-3U9y+43hz7ZM+rzG24Qe2mufW5KhvFg/NhnNph+i9mgCtdTCtMJuI1TMkrIUiK7Ix4PYlRF9I5dhqaLYA/ADXw==
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.10.4.tgz'
     version: 7.10.4
+  registry.npmjs.org/@babel/helper-validator-identifier/7.12.11:
+    name: '@babel/helper-validator-identifier'
+    resolution:
+      integrity: sha512-np/lG3uARFybkoHokJUmf1QfEvRVCPbmQeUQpKow5cQ3xWrV9i3rUHodKDJPQfTVX61qKi+UdYk8kik84n7XOw==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.12.11.tgz'
+    version: 7.12.11
   registry.npmjs.org/@babel/helper-validator-option/7.12.1:
     dev: false
     name: '@babel/helper-validator-option'
@@ -562,7 +581,7 @@ packages:
     version: 7.12.5
   registry.npmjs.org/@babel/highlight/7.10.4:
     dependencies:
-      '@babel/helper-validator-identifier': registry.npmjs.org/@babel/helper-validator-identifier/7.10.4
+      '@babel/helper-validator-identifier': registry.npmjs.org/@babel/helper-validator-identifier/7.12.11
       chalk: registry.npmjs.org/chalk/2.4.2
       js-tokens: registry.npmjs.org/js-tokens/4.0.0
     name: '@babel/highlight'
@@ -2568,7 +2587,7 @@ packages:
     version: 4.3.3
   registry.npmjs.org/@testing-library/dom/7.29.0:
     dependencies:
-      '@babel/code-frame': registry.npmjs.org/@babel/code-frame/7.10.4
+      '@babel/code-frame': registry.npmjs.org/@babel/code-frame/7.12.11
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.5
       '@types/aria-query': registry.npmjs.org/@types/aria-query/4.2.0
       aria-query: registry.npmjs.org/aria-query/4.2.2
