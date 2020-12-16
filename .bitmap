@@ -991,7 +991,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/text/heading@0.5.4": {
+    "teambit.base-ui/text/heading@0.5.5": {
         "files": [
             {
                 "name": "heading.composition.tsx",
@@ -1025,7 +1025,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/text/muted-text@0.5.4": {
+    "teambit.base-ui/text/muted-text@0.5.5": {
         "files": [
             {
                 "name": "index.ts",
