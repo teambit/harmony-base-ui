@@ -1072,6 +1072,16 @@
                 "test": false
             },
             {
+                "name": "paragraph.composition.tsx",
+                "relativePath": "paragraph.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "paragraph.docs.mdx",
+                "relativePath": "paragraph.docs.mdx",
+                "test": false
+            },
+            {
                 "name": "paragraph.module.scss",
                 "relativePath": "paragraph.module.scss",
                 "test": false
@@ -1101,8 +1111,23 @@
                 "test": false
             },
             {
+                "name": "text-separator.composition.tsx",
+                "relativePath": "text-separator.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "text-separator.docs.mdx",
+                "relativePath": "text-separator.docs.mdx",
+                "test": false
+            },
+            {
                 "name": "text-separator.module.scss",
                 "relativePath": "text-separator.module.scss",
+                "test": false
+            },
+            {
+                "name": "text-separator.spec.tsx",
+                "relativePath": "text-separator.spec.tsx",
                 "test": false
             },
             {
@@ -1125,8 +1150,23 @@
                 "test": false
             },
             {
+                "name": "themed-text.composition.tsx",
+                "relativePath": "themed-text.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "themed-text.docs.mdx",
+                "relativePath": "themed-text.docs.mdx",
+                "test": false
+            },
+            {
                 "name": "themed-text.module.scss",
                 "relativePath": "themed-text.module.scss",
+                "test": false
+            },
+            {
+                "name": "themed-text.spec.tsx",
+                "relativePath": "themed-text.spec.tsx",
                 "test": false
             },
             {
@@ -1445,5 +1485,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.220"
+    "version": "14.8.9-dev.224"
 }

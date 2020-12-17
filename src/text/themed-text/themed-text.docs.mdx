@@ -1,0 +1,21 @@
+---
+labels: ['react', 'typescript', 'text']
+description: 'themed text'
+---
+
+import { ThemedText, themedText } from './themed-text';
+
+### Overview
+Text colored with the current base color.  
+using css variable: `--base-color`.  
+Themed text example:  
+```js live=true
+<ThemedText>text</ThemedText>
+```
+
+<br />
+
+Same component as a pure-css class:  
+```js live=true
+<span className={themedText}>text</span>
+```
