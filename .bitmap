@@ -1025,7 +1025,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/text/muted-text@0.5.9": {
+    "teambit.base-ui/text/muted-text@0.5.10": {
         "files": [
             {
                 "name": "index.ts",
@@ -1485,5 +1485,5 @@
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.224"
+    "version": "14.8.9-dev.228"
 }
