@@ -14,6 +14,12 @@ export type BaseImageProps = {
 	fullWidth?: boolean;
 } & React.ImgHTMLAttributes<HTMLImageElement>;
 
+/**
+ * Template component for images.
+ * Accepts all the arguments of native html image.
+ * @example
+ * 	<BaseImage alt="avatar" src="https://storage.com/asdlkfjsdf.png">
+ */
 export function BaseImage({ alt, className, fullWidth, ...rest }: BaseImageProps) {
 	return (
 		<img

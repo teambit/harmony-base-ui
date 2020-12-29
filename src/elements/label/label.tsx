@@ -9,6 +9,16 @@ export type LabelProps = {
 	color?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
+/**
+ * Short text block with background.
+ *
+ * ### CSS variables:
+ * The following variables apply to this component
+ * -   `--base-color` (background color)
+ * -   `--primary-label-text` (text color)
+ * -   `--primary-label-width` (max-width)
+ * -   `--primary-label-height` (height)
+ */
 export function Label({ color, className, ...rest }: LabelProps) {
 	return (
 		<div

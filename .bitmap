@@ -145,7 +145,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/elements/image@0.5.9": {
+    "teambit.base-ui/elements/image@0.5.10": {
         "files": [
             {
                 "name": "image.composition.tsx",
@@ -184,7 +184,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/elements/label@0.5.9": {
+    "teambit.base-ui/elements/label@0.5.10": {
         "files": [
             {
                 "name": "index.tsx",
@@ -223,7 +223,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/elements/link@0.5.9": {
+    "teambit.base-ui/elements/link@0.5.10": {
         "files": [
             {
                 "name": "index.ts",
@@ -257,7 +257,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/elements/separator@0.5.9": {
+    "teambit.base-ui/elements/separator@0.5.10": {
         "files": [
             {
                 "name": "index.tsx",
@@ -354,7 +354,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/input/button@0.5.9": {
+    "teambit.base-ui/input/button@0.5.10": {
         "files": [
             {
                 "name": "button.composition.tsx",
@@ -393,7 +393,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/input/error@0.5.9": {
+    "teambit.base-ui/input/error@0.5.10": {
         "files": [
             {
                 "name": "error.composition.tsx",
@@ -991,7 +991,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/text/heading@0.5.9": {
+    "teambit.base-ui/text/heading@0.5.10": {
         "files": [
             {
                 "name": "heading.composition.tsx",
@@ -1025,7 +1025,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/text/muted-text@0.5.11": {
+    "teambit.base-ui/text/muted-text@0.5.12": {
         "files": [
             {
                 "name": "index.ts",
@@ -1064,7 +1064,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/text/paragraph@0.5.9": {
+    "teambit.base-ui/text/paragraph@0.5.10": {
         "files": [
             {
                 "name": "index.tsx",
@@ -1103,7 +1103,7 @@
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/text/text-separator@0.5.9": {
+    "teambit.base-ui/text/text-separator@0.5.10": {
         "files": [
             {
                 "name": "index.ts",
