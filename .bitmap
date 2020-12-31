@@ -16,7 +16,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/constants/storage",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -40,7 +39,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/css-components/elevation",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -59,7 +57,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/css-components/pill",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -83,7 +80,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/css-components/roundness",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -122,7 +118,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/elements/dots-loader",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -141,7 +136,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/elements/icon",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -180,7 +174,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/elements/image",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -219,7 +212,6 @@
         ],
         "mainFile": "index.tsx",
         "rootDir": "src/elements/label",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -253,7 +245,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/elements/link",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -292,7 +283,6 @@
         ],
         "mainFile": "index.tsx",
         "rootDir": "src/elements/separator",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -316,7 +306,6 @@
         ],
         "mainFile": "curve-peek.tsx",
         "rootDir": "src/geometry/curve-peek",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -350,7 +339,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/hooks/use-click-outside",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -389,7 +377,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/input/button",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -428,7 +415,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/input/error",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -452,7 +438,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/layout/align",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -466,7 +451,6 @@
         ],
         "mainFile": "_breakpoints.scss",
         "rootDir": "src/layout/breakpoints",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -495,7 +479,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/layout/col-span",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -534,7 +517,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/layout/grid-component",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -553,7 +535,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/layout/grid-presets/four-way-grid",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -572,7 +553,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/layout/grid-presets/z-grid",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -596,7 +576,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/layout/page-frame",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -620,7 +599,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/effects/ref-tooltip",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -669,7 +647,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/abs-container",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -688,7 +665,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/background",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -707,7 +683,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/bedrock",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -736,7 +711,6 @@
         ],
         "mainFile": "index.tsx",
         "rootDir": "src/surfaces/card",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -755,7 +729,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/click-outside",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -789,7 +762,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/drawer",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -813,7 +785,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/split-pane/collapsed-pane",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -842,7 +813,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/split-pane/fat-splitter",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -866,7 +836,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/split-pane/hover-splitter",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -885,7 +854,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/split-pane/layout",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -909,11 +877,10 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/split-pane/pane",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
-    "teambit.base-ui/surfaces/split-pane/split-pane@0.6.0": {
+    "teambit.base-ui/surfaces/split-pane/split-pane@0.6.1": {
         "files": [
             {
                 "name": "calc-split.tsx",
@@ -963,7 +930,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/split-pane/split-pane",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -987,7 +953,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/split-pane/splitter",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1021,7 +986,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/text/heading",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1060,7 +1024,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/text/muted-text",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1099,7 +1062,6 @@
         ],
         "mainFile": "index.tsx",
         "rootDir": "src/text/paragraph",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1138,7 +1100,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/text/text-separator",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1177,7 +1138,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/text/themed-text",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1191,7 +1151,6 @@
         ],
         "mainFile": "brand-colors.module.scss",
         "rootDir": "src/themes/brand-colors",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1210,7 +1169,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/themes/brand-definition",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1229,7 +1187,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/themes/color-definition",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1248,7 +1205,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/themes/color-palette",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1262,7 +1218,6 @@
         ],
         "mainFile": "colors.module.scss",
         "rootDir": "src/themes/colors",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1281,7 +1236,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/themes/dark-theme",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1300,7 +1254,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/themes/fonts/book",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1319,7 +1272,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/themes/heading-margin-definition",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1338,7 +1290,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/themes/shadow-definition",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1357,7 +1308,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/themes/size-definition",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1376,7 +1326,6 @@
         ],
         "mainFile": "sizes.ts",
         "rootDir": "src/themes/sizes",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1400,7 +1349,6 @@
         ],
         "mainFile": "index.tsx",
         "rootDir": "src/themes/theme-provider",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1419,7 +1367,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/utils/popper-js/ignore-popper-size",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1438,7 +1385,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/utils/popper-js/resize-to-match-reference",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1462,7 +1408,6 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/utils/sub-paths",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
@@ -1481,9 +1426,8 @@
         ],
         "mainFile": "index.ts",
         "rootDir": "src/utils/time-ago",
-        "origin": "AUTHORED",
         "exported": true,
         "lanes": []
     },
-    "version": "14.8.9-dev.238"
+    "version": "14.8.9-dev.239"
 }
