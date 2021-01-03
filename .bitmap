@@ -209,6 +209,10 @@
         "mainFile": "index.ts",
         "rootDir": "src/themes/fonts/book"
     },
+    "teambit.base-ui/theme/fonts/roboto@0.6.2": {
+        "mainFile": "index.ts",
+        "rootDir": "src/themes/fonts/roboto"
+    },
     "teambit.base-ui/theme/heading-margin-definition@0.6.2": {
         "mainFile": "index.ts",
         "rootDir": "src/themes/heading-margin-definition"
@@ -244,11 +248,6 @@
     "teambit.base-ui/utils/time-ago@0.6.2": {
         "mainFile": "index.ts",
         "rootDir": "src/utils/time-ago"
-    },
-    "theme/fonts/roboto@0.6.2": {
-        "mainFile": "index.ts",
-        "rootDir": "src/themes/fonts/roboto",
-        "exported": false
     },
     "version": "14.8.9-dev.246"
 }
