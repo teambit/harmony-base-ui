@@ -4,14 +4,61 @@ import { Size } from './split-pane';
 import { DragSnapshot } from './use-drag-tracker';
 
 export function calcSplit(snapshot: DragSnapshot | undefined, layout: Layout, defaultSize: Size): [Size, Size] {
-  const splitSize = calcPixels(snapshot, layout, defaultSize);
+  let splitSize = calcPixels(snapshot, layout, defaultSize);
 
 	// update values to match `flex-direction: *-reverse`
   if (layout.includes(LayoutFeatures.reverse)) {
     splitSize.reverse();
   }
 
+  if(splitSize[0] === undefined || splitSize[1] === undefined) {
+    splitSize = autoCalcComplementary(splitSize)
+  }
+
   return splitSize;
+}
+
+/**
+ * 
+ * cheks in case one of the sizes is undefined
+ */
+function autoCalcComplementary([a, b]: [Size, Size]): [Size, Size] {
+  if (a === undefined && b === undefined) return [undefined, undefined];
+  if (b === undefined) {
+    return [a, calcComplemetSize(a)]
+  }
+  if (a === undefined) {
+    return [calcComplemetSize(b), b]
+  }
+
+  return [a, b];
+}
+
+/**
+ * @example 
+ * 20 -> calc(100% - 20px)
+ * 20px -> calc(100% - 20px)
+ * 20% -> 80%
+ * '20' -> calc(100% - 20px)
+ */
+function calcComplemetSize(size: Size) {
+  if(size === undefined) return undefined;
+  if(typeof size === 'number') {
+    return `calc(100% - ${size}px)`;
+  }
+  if(size.endsWith('px')) {
+    return `calc(100% - ${size})`;
+  }
+  
+  if(size.endsWith('%')) {
+    const sizeAsNumber = +size.replace('%', '')
+    if(Number.isNaN(sizeAsNumber)) return undefined;
+    return `${100 - sizeAsNumber}%`; // check this works
+  }
+  
+  if(!Number.isNaN(+size)) return `calc(100% - ${size}px)`;
+
+  return undefined;
 }
 
 function calcPixels(snapshot: DragSnapshot | undefined, layout: Layout, defaultSize: Size): [Size, Size] {
@@ -55,6 +102,13 @@ function calcPixels(snapshot: DragSnapshot | undefined, layout: Layout, defaultS
 
 /**
  * handles negative syntax (e.g. size="-200px")
+ * @example "-200" -> [undefined, "200px"]
+ * "-200px" -> [undefined, "200px"]
+ * "200px" -> ["200px", undefined]
+ * "100%" -> ["100%", undefined]
+ * 100 -> [100, undefined]
+ * -50 -> [undefined, 50]
+ * 
  */
 function calcDefaultSize(defaultSize: Size): [Size, Size] {
   if (!defaultSize) return [undefined, undefined];
