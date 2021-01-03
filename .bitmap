@@ -45,6 +45,26 @@
         "mainFile": "curve-peek.tsx",
         "rootDir": "src/geometry/curve-peek"
     },
+    "teambit.base-ui/graph/tree/indent@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/graph/tree/indent"
+    },
+    "teambit.base-ui/graph/tree/inflate-paths@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/graph/tree/inflate-paths"
+    },
+    "teambit.base-ui/graph/tree/recursive-tree@0.0.1": {
+        "mainFile": "index.tsx",
+        "rootDir": "src/graph/tree/recursive-tree"
+    },
+    "teambit.base-ui/graph/tree/root-node@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/graph/tree/root-node"
+    },
+    "teambit.base-ui/graph/tree/tree-context@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/graph/tree/tree-context"
+    },
     "teambit.base-ui/hook/use-click-outside@0.6.0": {
         "mainFile": "index.ts",
         "rootDir": "src/hooks/use-click-outside"
