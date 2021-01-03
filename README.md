@@ -1,6 +1,7 @@
 [![bit components](https://img.shields.io/badge/dynamic/json.svg?color=6e3991&label=bit%20components&query=payload.totalComponents&url=https://api.bit.dev/scope/teambit/base-ui?UseCache=1)](https://bit.dev/teambit/base-ui)
 <a href="https://opensource.org/licenses/Apache-2.0"><img alt="apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
 <a href="https://github.com/teambit/example-templates/blob/master/README.md#contributing"><img alt="prs" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
+![Tests](https://github.com/teambit/harmony-base-ui/workflows/Tests/badge.svg)
 
 # Base component design system of Bit.dev
 
