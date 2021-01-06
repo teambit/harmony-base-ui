@@ -1,0 +1,56 @@
+$loader-height: 3px;
+$loader-fadeout-height: 7px;
+$transition-time: 1270ms;
+$fill-duration: 3300ms;
+
+.loader {
+  width: 100%;
+  transition: opacity $transition-time ease-out;
+
+  opacity: 0;
+  &.loading {
+    opacity: 1;
+  }
+
+  .progress {
+    animation: completed $transition-time forwards;
+  }
+  
+  &.loading > .progress {
+    animation: progress $fill-duration forwards ease-out infinite;
+  }
+}
+
+.progress {
+  background: var(--base-color, #6c5ce7);
+
+  height: $loader-height; //expands .loader from inside
+  width: 0%;
+  max-width: 100%;
+  border-radius: 4px;
+
+  box-shadow: 0 0 $loader-height rgba(var(--base-color, #6c5ce7), 0.381);
+}
+
+@keyframes progress {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes completed {
+  0% {
+    height: $loader-height;
+  }
+
+  50% {
+    width: 100%;
+    height: $loader-fadeout-height; //expands .loader from inside
+  }
+
+  100% {
+    width: 100%;
+    height: $loader-height;
+    opacity: 0;
+  }
+}
