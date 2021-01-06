@@ -11,7 +11,6 @@ export interface LoaderRibbonProps extends React.HTMLAttributes<HTMLDivElement> 
  * A progress-bar like loader, with a fadeout animation to emphasize completion.
  */
 export function LoaderRibbon({ active, className, ...rest }: LoaderRibbonProps) {
-	console.log('active', active);
 	return (
 		<div
 			{...rest}

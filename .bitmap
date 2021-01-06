@@ -105,7 +105,7 @@
         "mainFile": "index.ts",
         "rootDir": "src/layout/page-frame"
     },
-    "teambit.base-ui/loaders/loader-ribbon@0.0.1": {
+    "teambit.base-ui/loaders/loader-ribbon@0.0.2": {
         "mainFile": "index.ts",
         "rootDir": "src/loaders/loader-ribbon"
     },
