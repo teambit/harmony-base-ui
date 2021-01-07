@@ -9,8 +9,11 @@ export const classes = {
 	defaultCheckbox: styles.defaultCheckbox,
 };
 
+/**
+ * 'Vanilla' base component for checkbox indicator. Mirrors preceding checkbox.
+ */
 export function CheckboxIndicator(props: CheckboxIndicatorProps) {
-	return (
-		<span {...props} className={classnames(props.className, classes.checkedIndicator)} />
-	);
+	const { className = classes.defaultCheckbox } = props;
+
+	return <span {...props} className={classnames(className, classes.checkedIndicator)} />;
 }
