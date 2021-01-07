@@ -21,19 +21,23 @@
    * main configuration for component dependency resolution.
   **/
   "teambit.dependencies/dependency-resolver": {
-    "policy": {
-      "peerDependencies": {
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1"
-      },
-      "dependencies": {
-        "core-js": "3.7.0"
-      }
-    },
     /**
      * choose the package manager for Bit to use. you can choose between 'npm', 'yarn', 'pnpm'
     */
     "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "core-js": "3.7.0"
+      },
+      "peerDependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+      }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "*.spec.ts"
+    ],
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -70,8 +74,7 @@
       "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {
-            "react": "-",
-            "@babel/runtime": "^7.8.4"
+            "react": "-"
           },
           "devDependencies": {
             "@types/react": "16.9.43",

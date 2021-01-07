@@ -6,7 +6,7 @@ export type SeparatorProps = {
 	/**
 	 * set as vertical / horizontal separator
 	 */
-	layout: 'vertical' | 'horizontal',
+	layout: 'vertical' | 'horizontal';
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**

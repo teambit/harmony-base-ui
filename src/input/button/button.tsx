@@ -15,16 +15,16 @@ export type ButtonProps = {
 	/**
 	 * loader to show while button is busy. Turns on when onClick returns a promise (until it resolves), or when `loading={true}`.
 	 */
-	loader?: ReactNode,
+	loader?: ReactNode;
 	/**
 	 * explicitly toggle loader on and off
 	 */
-	loading?: boolean,
+	loading?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 /**
  * Base button, with very basic styles. Accepts all parameters of native html button.
- * 
+ *
  * If onClick returns a promise, BaseButton will show a loader automatically, until the promise is resolved or rejected.
  * @example
  * <Button onClick={() => api.submitUserData()} loader={<CustomLoader/> } />
@@ -33,7 +33,7 @@ export default class Button extends Component<ButtonProps> {
 	state = { isLoading: false };
 
 	static defaultProps = {
-		loader: <DotsLoader/>,
+		loader: <DotsLoader />,
 		loading: false,
 	};
 

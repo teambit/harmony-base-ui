@@ -5,7 +5,7 @@ import classNames from 'classnames';
 /**
  * Separating line spanning the whole line, with room for text. Behaves like a regular `div` element.<br/>
  * Currently, there is no way to customize the border-style.
- * 
+ *
  * Border color is applied from css variable `--separator-color`
  * @name TextSeparator
  */

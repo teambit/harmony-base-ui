@@ -1,0 +1,34 @@
+---
+labels: ['react', 'typescript', 'text', 'gray']
+description: 'muted text'
+---
+
+import { MutedText, mutedText } from './muted-text';
+export const examples = [
+    {
+      scope: {
+        MutedText
+      },
+      title: 'Muted text example:',
+      description: '',
+      code:`<MutedText>Muted text</MutedText>`
+    },
+    {
+      scope: {
+        mutedText
+      },
+      title: 'Using muted text class name:',
+      description: '',
+      code:`<span className={mutedText}>Muted text with class name</span>`
+    }
+]
+
+### Overview
+Text with muted (gray) color.  
+Behaves like a regular *span* element.  
+Applies text color with css variable `--text-muted`  
+
+<br />
+
+Pure css class name `.mutedText`, colors text as muted (gray).  
+Use this directly as a class name without creating a DOM element.

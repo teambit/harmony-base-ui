@@ -12,7 +12,8 @@ node_modules
 .pnp.js
 
 # bit
-dist
+/dist
+/public
 
 # testing
 /coverage

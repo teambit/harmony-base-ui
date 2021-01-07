@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-
 import styles from './muted-text.module.scss';
 
 /**
@@ -15,7 +14,7 @@ export function MutedText(props: React.HTMLAttributes<HTMLSpanElement>) {
 /**
  * Pure css class name, colors text as muted (gray).<br/>
  * Use this directly as a class name without creating a DOM element<br/>
- * 
+ *
  * Colors derives from css variable `--text-muted`
  * @name mutedText
  */
