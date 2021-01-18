@@ -2,6 +2,8 @@ import React, { ReactNode, ChangeEvent } from 'react';
 import { HiddenCheckbox } from '@teambit/base-ui.input.checkbox.hidden';
 import { CheckboxIndicator, classes } from '@teambit/base-ui.input.checkbox.indicator';
 
+export { HiddenCheckbox as Input };
+
 export interface CheckboxLabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
 	/**
 	 * Custom `input` element. Use this to pass any custom props to the input element.
@@ -26,7 +28,7 @@ export interface CheckboxLabelProps extends React.LabelHTMLAttributes<HTMLLabelE
 	disabled?: boolean;
 }
 
-// BooleanOption?
+/** Custom checkbox with text. */
 export function CheckboxLabel({
 	checked,
 	defaultChecked,

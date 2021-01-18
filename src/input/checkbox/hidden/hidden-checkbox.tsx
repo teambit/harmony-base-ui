@@ -4,6 +4,7 @@ import styles from './hidden-checkbox.module.scss';
 
 export type HiddenCheckboxProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'>;
 
+/** Hidden but interactive checkbox */
 export function HiddenCheckbox(props: HiddenCheckboxProps) {
 	return (
 		<input

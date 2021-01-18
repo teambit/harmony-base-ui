@@ -1,2 +1,2 @@
-export { CheckboxLabel } from './checkbox-label';
+export { CheckboxLabel, Input } from './checkbox-label';
 export type { CheckboxLabelProps } from './checkbox-label';

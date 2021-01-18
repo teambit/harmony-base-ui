@@ -1,0 +1,39 @@
+A complete Input Checkbox and text solution for user input.  
+This component is vanilla (without styles). Consider using the styled version from the Evangelist scope, [here](http://bit.dev/teambit/evangelist/input/checkbox/label).
+
+## Indicator
+The `<Input/>` tag is difficult to style, so it is hidden (using the `<HiddenInput/>` component), and replaced visually with a `<Indicator/>` component.
+The *indicator* is a `<span/>` element that mirrors the state of the *input* tag, showing checked/unchecked state, disabled state, and focus.
+
+Use the *indicator* prop to pass a custom indicator:
+
+```tsx
+<CheckboxLabel indicator={<NeonIndicator/>}>approve</CheckboxLabel>
+```
+
+## Accessing input
+Input related props are automatically forwarded to the hidden *input*.
+This includes the properties `checked`, `defaultChecked` `onInputChanged`, and `disabled`.
+If you need to pass custom props to the *input*, create a dedicate instance in your consuming code like so:
+
+```tsx
+import { CheckboxLabel, Input } from '...input.checkbox.label';
+
+function SelectAll() {
+	// ...	
+	return <CheckboxLabel input={<Input aria-orientation="rtl"/>}>select all</CheckboxLabel>
+}
+```
+
+Automatic forwarding will no longer occur, and you will have to supply props directly to the input:
+
+```tsx
+<CheckboxLabel input={(
+	<Input
+		aria-orientation="rtl"
+		onChange={handleChange}
+		checked={isChecked}
+	/>)}>
+		select all
+</CheckboxLabel>
+```
