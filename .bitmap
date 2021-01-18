@@ -73,6 +73,18 @@
         "mainFile": "index.ts",
         "rootDir": "src/input/button"
     },
+    "teambit.base-ui/input/checkbox/hidden@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/input/checkbox/hidden"
+    },
+    "teambit.base-ui/input/checkbox/indicator@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/input/checkbox/indicator"
+    },
+    "teambit.base-ui/input/checkbox/label@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/input/checkbox/label"
+    },
     "teambit.base-ui/input/error@0.6.2": {
         "mainFile": "index.ts",
         "rootDir": "src/input/error"
@@ -253,5 +265,5 @@
         "mainFile": "index.ts",
         "rootDir": "src/utils/time-ago"
     },
-    "version": "14.8.9-dev.252"
+    "version": "14.8.9-dev.269"
 }

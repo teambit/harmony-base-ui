@@ -1,0 +1,26 @@
+.checkedIndicator {
+	user-select: none;
+
+	cursor: pointer;
+	input:disabled + & {
+		cursor: auto;
+	}
+}
+
+.defaultCheckbox {
+	&::before {
+		content: '☐';
+	}
+
+	input:focus + & {
+		outline: auto;
+	}
+	
+	input:disabled + & {
+		opacity: 0.62;
+	}
+
+	input:checked + &::before {
+		content: '☑';
+	}
+}
