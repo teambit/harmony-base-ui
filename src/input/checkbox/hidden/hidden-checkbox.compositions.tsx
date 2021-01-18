@@ -1,4 +1,3 @@
-import { Unchecked } from '@teambit/base-ui.input.checkbox.designed.indicator/checkbox-indicator.compositions';
 import React, { useState } from 'react';
 import { HiddenCheckbox } from './hidden-checkbox';
 
