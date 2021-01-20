@@ -1,0 +1,12 @@
+```ts
+affix('?q=', 'cats');			// -> '?q=cats'
+affix(undefined, 'cats', '!');	// -> 'cats!'
+affix('?q=', 'cats', '!');		// -> '?q=cats!'
+```
+
+retruns empty string when target is undefined or empty:
+
+```ts
+affix('?q=', '', '!');			// -> ''
+affix('?q=', undefined, '!');	// -> ''
+```

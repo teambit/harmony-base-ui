@@ -265,5 +265,10 @@
         "mainFile": "index.ts",
         "rootDir": "src/utils/time-ago"
     },
-    "version": "14.8.9-dev.269"
+    "utils/string/affix@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/utils/string/affix",
+        "exported": false
+    },
+    "version": "14.8.9-dev.271"
 }

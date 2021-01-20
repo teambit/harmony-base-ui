@@ -39,7 +39,7 @@ importers:
       '@types/node': registry.npmjs.org/@types/node/12.19.14
       '@types/react': registry.npmjs.org/@types/react/16.9.43
       '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.7
-      core-js: registry.npmjs.org/core-js/3.8.2
+      core-js: registry.npmjs.org/core-js/3.8.3
       sinon: registry.npmjs.org/sinon/9.2.3
     specifiers:
       '@babel/runtime': ^7.12.5
@@ -62,7 +62,7 @@ importers:
       '@types/sinon': ^9.0.10
       chai: ^4.2.0
       classnames: ^2.2.6
-      core-js: ^3.8.2
+      core-js: ^3.8.3
       eslint-plugin-chai-friendly: ^0.6.0
       javascript-time-ago: ^2.3.4
       lodash.debounce: ^4.0.8
@@ -208,6 +208,8 @@ importers:
   src/utils/popper-js/ignore-popper-size:
     specifiers: {}
   src/utils/popper-js/resize-to-match-reference:
+    specifiers: {}
+  src/utils/string/affix:
     specifiers: {}
   src/utils/sub-paths:
     specifiers: {}
@@ -1984,7 +1986,7 @@ packages:
     version: 7.9.0
   registry.npmjs.org/@babel/runtime-corejs3/7.12.5:
     dependencies:
-      core-js-pure: registry.npmjs.org/core-js-pure/3.8.2
+      core-js-pure: registry.npmjs.org/core-js-pure/3.8.3
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.7
     name: '@babel/runtime-corejs3'
     resolution:
@@ -5674,14 +5676,14 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.8.1.tgz'
     version: 3.8.1
-  registry.npmjs.org/core-js-pure/3.8.2:
+  registry.npmjs.org/core-js-pure/3.8.3:
     name: core-js-pure
     requiresBuild: true
     resolution:
-      integrity: sha512-v6zfIQqL/pzTVAbZvYUozsxNfxcFb6Ks3ZfEbuneJl3FW9Jb8F6vLWB6f+qTmAu72msUdyb84V8d/yBFf7FNnw==
+      integrity: sha512-V5qQZVAr9K0xu7jXg1M7qTEwuxUgqr7dUOezGaNa7i+Xn9oXAU/d1fzqD9ObuwpVQOaorO5s70ckyi1woP9lVA==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.8.2.tgz'
-    version: 3.8.2
+      tarball: 'https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.8.3.tgz'
+    version: 3.8.3
   registry.npmjs.org/core-js/2.6.12:
     deprecated: 'core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
     dev: false
@@ -5701,15 +5703,15 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/core-js/-/core-js-3.8.1.tgz'
     version: 3.8.1
-  registry.npmjs.org/core-js/3.8.2:
+  registry.npmjs.org/core-js/3.8.3:
     dev: true
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-FfApuSRgrR6G5s58casCBd9M2k+4ikuu4wbW6pJyYU7bd9zvFc9qf7vr5xmrZOhT9nn+8uwlH1oRR9jTnFoA3A==
+      integrity: sha512-KPYXeVZYemC2TkNEkX/01I+7yd+nX3KddKwZ1Ww7SKWdI2wQprSgLmrTddT8nw92AjEklTsPBoSdQBhbI1bQ6Q==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/core-js/-/core-js-3.8.2.tgz'
-    version: 3.8.2
+      tarball: 'https://registry.npmjs.org/core-js/-/core-js-3.8.3.tgz'
+    version: 3.8.3
   registry.npmjs.org/core-util-is/1.0.2:
     dev: false
     name: core-util-is
