@@ -257,7 +257,7 @@
         "mainFile": "index.ts",
         "rootDir": "src/utils/popper-js/resize-to-match-reference"
     },
-    "teambit.base-ui/utils/string/affix@0.0.1": {
+    "teambit.base-ui/utils/string/affix@0.0.2": {
         "mainFile": "index.ts",
         "rootDir": "src/utils/string/affix"
     },

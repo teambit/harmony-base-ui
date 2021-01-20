@@ -1,1 +1,1 @@
-export { affix as optionalAffix } from './affix';
+export { affix } from './affix';
