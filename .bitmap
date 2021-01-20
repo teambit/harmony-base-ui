@@ -257,6 +257,10 @@
         "mainFile": "index.ts",
         "rootDir": "src/utils/popper-js/resize-to-match-reference"
     },
+    "teambit.base-ui/utils/string/affix@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/utils/string/affix"
+    },
     "teambit.base-ui/utils/sub-paths@0.6.2": {
         "mainFile": "index.ts",
         "rootDir": "src/utils/sub-paths"
@@ -264,11 +268,6 @@
     "teambit.base-ui/utils/time-ago@0.6.2": {
         "mainFile": "index.ts",
         "rootDir": "src/utils/time-ago"
-    },
-    "utils/string/affix@0.0.1": {
-        "mainFile": "index.ts",
-        "rootDir": "src/utils/string/affix",
-        "exported": false
     },
     "version": "14.8.9-dev.271"
 }
