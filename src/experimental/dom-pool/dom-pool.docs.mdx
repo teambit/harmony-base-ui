@@ -1,0 +1,73 @@
+Dom Pool creates a rendering area in a different part of the DOM, similar to how React Portal works.  
+
+```tsx
+<div>
+	<DomPool>
+		<div id="id">pooled content</div>
+	</DomPool>
+	
+	<Content>
+		{useNode("id", <div key="id">pooled content</div>)}
+	</Content>
+</div>
+```
+
+As the name suggests, the main advantage of this component is its ability to *reuse* and *pool* DOM elements.  
+For example, it can be used to keep iframes alive between sessions without unmounting them (which would lose their internal state).  
+
+```tsx
+function MyProfileSettings() {
+	const iframe =
+		<iframe key="profile" src="https://bit.dev/settings/profile"/>;
+	const unusedIframe =
+		<iframe key="profile" src="https://bit.dev/settings/profile" style={{ height: 1, width: 1 }}/>;
+	
+	useNode("profile", iframe, unusedIframe)
+	
+	return null;
+}
+```
+
+However, for most cases, like tooltips and modals (where there is no internal state), it might be cheaper to just unmount the target element when usused:
+
+```tsx
+function Modal({children}) {	
+	return ReactDOM.createPortal(
+		<div style={{position: 'fixed', top: '25%', left: '25%'}}>
+			{children}
+		</div>,
+		MODAL_ROOT_NODE
+	)
+}
+```
+
+
+The pooled node behaves like a regular ReactNode, with some caviates:
+```tsx
+function Menu(){
+	const ref = createRef(null);
+	const tooltipRef = createRef(null);
+	// could use setTooltipRef as a replacement for RefObject.
+	// const [tooltipRef, setTooltipRef] = useState(null);
+	
+	useNode(<div ref={tooltipRef}>tooltip</div>);
+	
+	usePositioning(ref, tooltipRef, 'bottom');
+	
+	useEffect(() => {
+		console.log(ref); // <div>...</div>
+		console.log(tooltipRef); // might be NULL when Menu mounts!
+	}, []);
+
+	return <ul ref={ref}>
+		<li>..</li>
+		<li>..</li>
+	</ul>
+}
+```
+
+## Todo:
+- [ ] Track released nodes using a LRU queue, and unmount them when exeeding pool size.
+- [ ] Improve triggers for DomPool renders (currently re-renders on every call to `useNode()` ).
+
+<!-- The main advantage of this compo -->

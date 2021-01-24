@@ -41,6 +41,10 @@
         "mainFile": "index.tsx",
         "rootDir": "src/elements/separator"
     },
+    "teambit.base-ui/experimental/dom-pool@0.0.1": {
+        "mainFile": "index.ts",
+        "rootDir": "src/experimental/dom-pool"
+    },
     "teambit.base-ui/geometry/curve-peek@0.6.2": {
         "mainFile": "curve-peek.tsx",
         "rootDir": "src/geometry/curve-peek"
@@ -269,5 +273,5 @@
         "mainFile": "index.ts",
         "rootDir": "src/utils/time-ago"
     },
-    "version": "14.8.9-dev.271"
+    "version": "14.8.9-dev.273"
 }
