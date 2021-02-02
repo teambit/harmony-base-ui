@@ -2,15 +2,7 @@ import React, { useState } from 'react';
 import { Drawer } from './drawer';
 import { Containee } from '@teambit/base-ui.surfaces.abs-container';
 
-export const Uncontrolled = () => {
-	return (
-		<div style={{ padding: 30 }}>
-			<Drawer placeholder="click me!">
-				<Containee>menu</Containee>
-			</Drawer>
-		</div>
-	);
-};
+const frameStyle = { border: '1px solid gray', borderRadius: 5, padding: 2 };
 
 export const Controlled = () => {
 	const [isOpen, setIsOpen] = useState(true);
@@ -21,8 +13,19 @@ export const Controlled = () => {
 				open={isOpen}
 				onChange={(event, open: boolean) => setIsOpen(open)}
 				placeholder="pre-opened"
+				style={frameStyle}
 			>
-				<Containee>menu</Containee>
+				<Containee style={frameStyle}>menu</Containee>
+			</Drawer>
+		</div>
+	);
+};
+
+export const Uncontrolled = () => {
+	return (
+		<div style={{ padding: 30 }}>
+			<Drawer placeholder="click me!" style={frameStyle}>
+				<Containee style={frameStyle}>menu</Containee>
 			</Drawer>
 		</div>
 	);
