@@ -18,5 +18,3 @@ export type TreeNode<Payload = any> = {
   children?: TreeNode<Payload>[];
   payload?: Payload;
 };
-
-export type StatusTypes = 'modified' | 'error' | 'new' | 'staged' | 'pending';
