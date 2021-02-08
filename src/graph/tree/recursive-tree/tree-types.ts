@@ -19,4 +19,4 @@ export type TreeNode<Payload = any> = {
   payload?: Payload;
 };
 
-export type StatusTypes = 'modified' | 'error' | 'new' | 'staged';
+export type StatusTypes = 'modified' | 'error' | 'new' | 'staged' | 'pending';
