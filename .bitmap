@@ -53,15 +53,15 @@
         "mainFile": "index.ts",
         "rootDir": "src/graph/tree/indent"
     },
-    "teambit.base-ui/graph/tree/inflate-paths@0.6.3": {
+    "teambit.base-ui/graph/tree/inflate-paths@0.6.4": {
         "mainFile": "index.ts",
         "rootDir": "src/graph/tree/inflate-paths"
     },
-    "teambit.base-ui/graph/tree/recursive-tree@0.6.3": {
+    "teambit.base-ui/graph/tree/recursive-tree@0.6.4": {
         "mainFile": "index.tsx",
         "rootDir": "src/graph/tree/recursive-tree"
     },
-    "teambit.base-ui/graph/tree/root-node@0.6.3": {
+    "teambit.base-ui/graph/tree/root-node@0.6.4": {
         "mainFile": "index.ts",
         "rootDir": "src/graph/tree/root-node"
     },
