@@ -1,34 +1,3 @@
-// import { useEffect, useState, useContext } from 'react';
-// import { request, GraphQLClient } from 'graphql-request';
-// import { gqlContext } from '@harmony-mfe/scopes.ui.graphql-context';
-
-// export type UseGqlRequestProps = {
-//   variables?: Record<string, any>;
-// };
-// export function useGqlRequest<T = any>(query: string, { variables }: UseGqlRequestProps) {
-//   const [data, setData] = useState<T | undefined>(undefined);
-//   const [loading, setLoading] = useState(false);
-//   const [error, setError] = useState(undefined);
-//   const server = useContext(gqlContext);
-
-//   const client = new GraphQLClient(server, { method });
-//   useEffect(() => {
-//     setLoading(true);
-
-//     request(query, variables)
-//       .then((result: T) => {
-//         setData(result);
-//         setLoading(false);
-//       })
-//       .catch((e) => {
-//         console.log('e', e);
-//         setError(e);
-//         setLoading(false);
-//       });
-//   }, [query, variables]);
-//   return { data, loading, error };
-// }
-
 import { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { useDeepCompareMemo } from 'use-deep-compare';
@@ -38,8 +7,11 @@ import 'graphql';
 export { gql } from 'graphql-request';
 
 type Primitive = number | string | boolean;
+export type Variables = {
+	[key: string]: Primitive | Primitive[] | Variables | Variables[];
+};
 export type UseGqlRequestOptions = {
-	variables?: Record<string, Primitive>;
+	variables?: Variables;
 	server?: string;
 };
 type GqlState<T> = {

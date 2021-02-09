@@ -1,0 +1,29 @@
+A light implementation of a GraphQL react hook, using `graphql-request`.
+
+```tsx
+const server = '/graphql';
+const query = gql`
+	query {
+		countries { name }
+	}
+`;
+
+export const Page = () => {
+	const varibales = { cats: 'brown' };
+	const { loading, data, error } = useGqlRequest(query, { variables, server });
+	
+	return ...;
+}
+```
+
+could also pass server from context:
+
+```tsx
+const server = '/graphql';
+
+export const App = () => {
+	<GqlServerProvider value="https://countries.trevorblades.com/">
+		<Page/>
+	</GqlServerProvider>
+}
+```
