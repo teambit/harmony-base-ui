@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/{
+**/ {
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -102,11 +102,14 @@
       },
       "teambit.react/react": {}
     },
-    "src/hooks/use-graphql-light": {
+    "{hooks/use-graphql-light}": {
       "teambit.dependencies/dependency-resolver": {
         "policy": {
+          "dependencies": {
+            "graphql": "-"
+          },
           "peerDependencies": {
-            "graphql": "^14.3.1"
+            "graphql": "^14.0.0 || ^15.0.0"
           }
         }
       }
