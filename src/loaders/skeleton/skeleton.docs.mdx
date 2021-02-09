@@ -1,0 +1,21 @@
+The skeletons make every attempt to be *theme agnostic*, require the minimum styles, and 'just work' in any context they are put.
+
+```tsx
+return <div>
+  <Title>{props.title || <WordSkeleton />}</Title>
+  <SubTitle>{props.subTitle || <WordSkeleton />}</SubTitle>
+  <Description>{props.description || <LineSkeleton count={3} />}</Description>
+</div>
+```
+
+## Color
+The skeletons match the existing text color of the flow, using the `currentColor` css property, and the `opacity: 0.23` effect.  
+The result gives the impression of a text outline, or "**text viewed from a distance**".
+
+```tsx
+// blue skeleton
+<WordSkeleton style={{ color: 'blue' }}/>
+```
+
+## Discussion
+- Maybe the opacity effect should only apply to `<WordSkeleton/>` and `<LineSkeleton/>`, as they are text placeholders, while `<CircleSkeleton>` might need to explicitly given a lighter value, without `opacity`

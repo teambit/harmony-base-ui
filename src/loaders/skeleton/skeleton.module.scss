@@ -1,0 +1,38 @@
+.skeleton {
+  background: currentColor;
+}
+
+.skeletonContent {
+  > * {
+    background: currentColor;
+    display: inline-block;
+    line-height: 1;
+  }
+}
+
+.word {
+  @extend .skeletonContent;
+  display: inline-block;
+  font-family: monospace;
+  user-select: none;
+  // line-height: 0;
+  // height: 1em;
+}
+
+.line {
+  @extend .skeletonContent;
+
+}
+
+.circle {
+  @extend .skeleton;
+  display: inline-block;
+  line-height: 0;
+  width: 1em;
+  height: 1em;
+  border-radius: 50% !important; //ugh
+}
+
+.block {
+  @extend .skeleton;
+}

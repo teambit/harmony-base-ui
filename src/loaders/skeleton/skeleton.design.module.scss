@@ -1,0 +1,65 @@
+.skeleton {
+  @extend .shimmer;
+  filter: opacity(0.23);
+}
+
+.skeletonContent {
+  filter: opacity(0.23);
+  
+  > * {
+    @extend .shimmer;
+    border-radius: 4px;
+  }
+}
+
+.shimmer {
+  animation: placeHolderShimmer 1.5s infinite forwards linear;
+  background-image: linear-gradient(to right, currentColor 0%, #ffffff61 30%, #ffffff61 70%, currentColor 100%);
+  background-repeat: no-repeat;
+  background-size: 10vw;
+}
+
+@keyframes skeleton-effect-fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -10vw 0;
+  }
+  100% {
+    background-position: 100vw 0;
+  }
+}
+
+.word {
+  @extend .skeletonContent;
+  > * {
+    border-radius: 4px;
+  }
+}
+
+.line {
+  @extend .skeletonContent;
+  > * {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+.circle {
+  @extend .skeleton;
+}
+
+.block {
+  @extend .skeleton;
+  border-radius: 4px;
+}
