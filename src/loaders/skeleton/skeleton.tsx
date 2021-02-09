@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import classnames from 'classnames';
 
 import styles from './skeleton.module.scss';
-import design from './skeleton.design.module.scss';
+import design from './skeleton-design.module.scss';
 
 const NBSP = ' ';
 

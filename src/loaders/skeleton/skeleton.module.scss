@@ -22,6 +22,9 @@
 .line {
   @extend .skeletonContent;
 
+  > * {
+    width: 100%;
+  }
 }
 
 .circle {

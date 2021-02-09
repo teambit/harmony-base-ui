@@ -42,17 +42,10 @@
 
 .word {
   @extend .skeletonContent;
-  > * {
-    border-radius: 4px;
-  }
 }
 
 .line {
   @extend .skeletonContent;
-  > * {
-    width: 100%;
-    border-radius: 4px;
-  }
 }
 
 .circle {

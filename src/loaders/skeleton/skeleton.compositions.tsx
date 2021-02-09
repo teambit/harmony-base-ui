@@ -57,11 +57,11 @@ export function DocsSkeleton() {
 				<WordSkeleton />
 			</div>
 
-			<p style={{ margin: '0 0 94 0' }}>
+			<div style={{ margin: '0 0 94 0' }}>
 				<LineSkeleton width="61%" />
 				<LineSkeleton width="38%" />
 				<LineSkeleton width="9%" />
-			</p>
+			</div>
 
 			<div style={{ fontSize: 18, marginTop: 46, marginBottom: 22 }}>
 				<WordSkeleton length={8} />
@@ -185,10 +185,10 @@ export const AdaptiveColor = () => {
 				}}
 			>
 				<div style={{ fontSize: '1.6em' }}>Warning</div>
-				<p style={{ margin: '8px 0' }}>
+				<div style={{ margin: '8px 0' }}>
 					<div>Deletion is irreversible!</div>
 					<div>Continue?</div>
-				</p>
+				</div>
 				<button style={{ float: 'right' }}>ok</button>
 			</div>
 
@@ -224,10 +224,10 @@ export const AdaptiveColor = () => {
 				}}
 			>
 				<div style={{ fontSize: '1.6em' }}>Success</div>
-				<p style={{ margin: '8px 0' }}>
+				<div style={{ margin: '8px 0' }}>
 					<div>New data created</div>
 					<div>Great!</div>
-				</p>
+				</div>
 				<button style={{ float: 'right' }}>ok</button>
 			</div>
 		</div>
