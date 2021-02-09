@@ -15,6 +15,8 @@ importers:
       chai: registry.npmjs.org/chai/4.3.0
       classnames: registry.npmjs.org/classnames/2.2.6
       eslint-plugin-chai-friendly: registry.npmjs.org/eslint-plugin-chai-friendly/0.6.0
+      graphql: registry.npmjs.org/graphql/15.5.0
+      graphql-request: registry.npmjs.org/graphql-request/3.4.0_graphql@15.5.0
       javascript-time-ago: registry.npmjs.org/javascript-time-ago/2.3.4
       lodash.debounce: registry.npmjs.org/lodash.debounce/4.0.8
       mocha: registry.npmjs.org/mocha/8.2.1
@@ -31,6 +33,7 @@ importers:
       reset-css: registry.npmjs.org/reset-css/5.0.1
       resize-observer-polyfill: registry.npmjs.org/resize-observer-polyfill/1.5.1
       typescript: registry.npmjs.org/typescript/3.9.7
+      use-deep-compare: registry.npmjs.org/use-deep-compare/1.1.0_react@16.14.0
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.13
       '@testing-library/react': registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0
@@ -64,6 +67,8 @@ importers:
       classnames: ^2.2.6
       core-js: ^3.8.3
       eslint-plugin-chai-friendly: ^0.6.0
+      graphql: 15.5.0
+      graphql-request: 3.4.0
       javascript-time-ago: ^2.3.4
       lodash.debounce: ^4.0.8
       mocha: ^8.2.1
@@ -81,6 +86,7 @@ importers:
       resize-observer-polyfill: ^1.5.1
       sinon: ^9.2.4
       typescript: ^3.9.7
+      use-deep-compare: 1.1.0
   src/constants/storage:
     specifiers: {}
   src/css-components/elevation:
@@ -119,6 +125,8 @@ importers:
     specifiers: {}
   src/hooks/use-click-outside:
     specifiers: {}
+  src/hooks/use-graphql-light:
+    specifiers: {}
   src/input/button:
     specifiers: {}
   src/input/checkbox/hidden:
@@ -144,6 +152,8 @@ importers:
   src/layout/page-frame:
     specifiers: {}
   src/loaders/loader-ribbon:
+    specifiers: {}
+  src/loaders/skeleton:
     specifiers: {}
   src/surfaces/abs-container:
     specifiers: {}
@@ -5043,7 +5053,7 @@ packages:
       check-error: registry.npmjs.org/check-error/1.0.2
       deep-eql: registry.npmjs.org/deep-eql/3.0.1
       get-func-name: registry.npmjs.org/get-func-name/2.0.0
-      pathval: registry.npmjs.org/pathval/1.1.0
+      pathval: registry.npmjs.org/pathval/1.1.1
       type-detect: registry.npmjs.org/type-detect/4.0.8
     dev: false
     engines:
@@ -5827,6 +5837,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/create-hmac/-/create-hmac-1.1.7.tgz
     version: 1.1.7
+  registry.npmjs.org/cross-fetch/3.0.6:
+    dependencies:
+      node-fetch: registry.npmjs.org/node-fetch/2.6.1
+    dev: false
+    name: cross-fetch
+    resolution:
+      integrity: sha512-KBPUbqgFjzWlVcURG+Svp9TlhA5uliYtiNx/0r8nv0pdypeQCRJ9IaSIc3q/x3q8t3F75cHuwxVql1HFGHCNJQ==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.0.6.tgz
+    version: 3.0.6
   registry.npmjs.org/cross-spawn/3.0.1:
     dependencies:
       lru-cache: registry.npmjs.org/lru-cache/4.1.5
@@ -6564,6 +6584,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/depd/-/depd-1.1.2.tgz
     version: 1.1.2
+  registry.npmjs.org/dequal/1.0.0:
+    dev: false
+    engines:
+      node: '>=6'
+    name: dequal
+    resolution:
+      integrity: sha512-/Nd1EQbQbI9UbSHrMiKZjFLrXSnU328iQdZKPQf78XQI6C+gutkFUeoHpG5J08Ioa6HeRbRNFpSIclh1xyG0mw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/dequal/-/dequal-1.0.0.tgz
+    version: 1.0.0
   registry.npmjs.org/des.js/1.0.1:
     dependencies:
       inherits: registry.npmjs.org/inherits/2.0.4
@@ -7844,6 +7874,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/extglob/-/extglob-2.0.4.tgz
     version: 2.0.4
+  registry.npmjs.org/extract-files/9.0.0:
+    dev: false
+    engines:
+      node: ^10.17.0 || ^12.0.0 || >= 13.7.0
+    name: extract-files
+    resolution:
+      integrity: sha512-CvdFfHkC95B4bBBk36hcEmvdR2awOdhhVUYH6S/zrVj3477zven/fJMYg7121h4T1xHZC+tetUpubpAhxwI7hQ==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/extract-files/-/extract-files-9.0.0.tgz
+    version: 9.0.0
   registry.npmjs.org/extsprintf/1.3.0:
     dev: false
     engines:
@@ -8289,6 +8329,20 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/form-data/-/form-data-2.3.3.tgz
     version: 2.3.3
+  registry.npmjs.org/form-data/3.0.0:
+    dependencies:
+      asynckit: registry.npmjs.org/asynckit/0.4.0
+      combined-stream: registry.npmjs.org/combined-stream/1.0.8
+      mime-types: registry.npmjs.org/mime-types/2.1.28
+    dev: false
+    engines:
+      node: '>= 6'
+    name: form-data
+    resolution:
+      integrity: sha512-CKMFDglpbMi6PyN+brwB9Q/GOw0eAnsrEZDgcsH5Krhz5Od/haKHAX0NmQfha2zPPz0JpWzA7GJHGSnvCRLWsg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/form-data/-/form-data-3.0.0.tgz
+    version: 3.0.0
   registry.npmjs.org/forwarded/0.1.2:
     dev: false
     engines:
@@ -8759,6 +8813,32 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.4.tgz
     version: 4.2.4
+  registry.npmjs.org/graphql-request/3.4.0_graphql@15.5.0:
+    dependencies:
+      cross-fetch: registry.npmjs.org/cross-fetch/3.0.6
+      extract-files: registry.npmjs.org/extract-files/9.0.0
+      form-data: registry.npmjs.org/form-data/3.0.0
+      graphql: registry.npmjs.org/graphql/15.5.0
+    dev: false
+    id: registry.npmjs.org/graphql-request/3.4.0
+    name: graphql-request
+    peerDependencies:
+      graphql: 14.x || 15.x
+    resolution:
+      integrity: sha512-acrTzidSlwAj8wBNO7Q/UQHS8T+z5qRGquCQRv9J1InwR01BBWV9ObnoE+JS5nCCEj8wSGS0yrDXVDoRiKZuOg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/graphql-request/-/graphql-request-3.4.0.tgz
+    version: 3.4.0
+  registry.npmjs.org/graphql/15.5.0:
+    dev: false
+    engines:
+      node: '>= 10.x'
+    name: graphql
+    resolution:
+      integrity: sha512-OmaM7y0kaK31NKG31q4YbD2beNYa6jBBKtMFT6gLYJljHLJr42IqJ8KX08u3Li/0ifzTU5HjmoOOrwa5BRLeDA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/graphql/-/graphql-15.5.0.tgz
+    version: 15.5.0
   registry.npmjs.org/growl/1.10.5:
     dev: false
     engines:
@@ -12004,6 +12084,18 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/mime-types/-/mime-types-2.1.27.tgz
     version: 2.1.27
+  registry.npmjs.org/mime-types/2.1.28:
+    dependencies:
+      mime-db: registry.npmjs.org/mime-db/1.45.0
+    dev: false
+    engines:
+      node: '>= 0.6'
+    name: mime-types
+    resolution:
+      integrity: sha512-0TO2yJ5YHYr7M2zzT7gDU1tbwHxEUWBCLt0lscSNpcdAfFyJOVEpRYNS7EXVcTLNj/25QO8gulHC5JtTzSE2UQ==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/mime-types/-/mime-types-2.1.28.tgz
+    version: 2.1.28
   registry.npmjs.org/mime/1.6.0:
     dev: false
     engines:
@@ -12425,6 +12517,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/no-case/-/no-case-3.0.4.tgz
     version: 3.0.4
+  registry.npmjs.org/node-fetch/2.6.1:
+    dev: false
+    engines:
+      node: 4.x || >=6.0.0
+    name: node-fetch
+    resolution:
+      integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.1.tgz
+    version: 2.6.1
   registry.npmjs.org/node-forge/0.10.0:
     dev: false
     engines:
@@ -13566,14 +13668,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz
     version: 4.0.0
-  registry.npmjs.org/pathval/1.1.0:
+  registry.npmjs.org/pathval/1.1.1:
     dev: false
     name: pathval
     resolution:
-      integrity: sha1-uULm1L3mUwBe9rcTYd74cn0GReA=
+      integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/pathval/-/pathval-1.1.0.tgz
-    version: 1.1.0
+      tarball: https://registry.npmjs.org/pathval/-/pathval-1.1.1.tgz
+    version: 1.1.1
   registry.npmjs.org/pbkdf2/3.1.1:
     dependencies:
       create-hash: registry.npmjs.org/create-hash/1.2.0
@@ -18342,6 +18444,20 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/url/-/url-0.11.0.tgz
     version: 0.11.0
+  registry.npmjs.org/use-deep-compare/1.1.0_react@16.14.0:
+    dependencies:
+      dequal: registry.npmjs.org/dequal/1.0.0
+      react: registry.npmjs.org/react/16.14.0
+    dev: false
+    id: registry.npmjs.org/use-deep-compare/1.1.0
+    name: use-deep-compare
+    peerDependencies:
+      react: '>=16.8.0'
+    resolution:
+      integrity: sha512-6yY3zmKNCJ1jjIivfZMZMReZjr8e6iC6Uqtp701jvWJ6ejC/usXD+JjmslZDPJQgX8P4B1Oi5XSLHkOLeYSJsA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/use-deep-compare/-/use-deep-compare-1.1.0.tgz
+    version: 1.1.0
   registry.npmjs.org/use/3.1.1:
     dev: false
     engines:
