@@ -118,18 +118,3 @@ export function title() {
 		</div>
 	);
 }
-
-// TODO
-export function useRandomFraction(min: number, max: number) {
-	return useMemo(() => {
-		const rnd = Math.random() * max;
-		return min + rnd;
-	}, []);
-}
-
-export function useRandom(min: number, max: number) {
-	return useMemo(() => {
-		const rnd = Math.random() * max;
-		return min + rnd;
-	}, []);
-}

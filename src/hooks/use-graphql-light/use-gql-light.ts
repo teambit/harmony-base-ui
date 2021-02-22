@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { request } from 'graphql-request';
 import { useDeepCompareMemo } from 'use-deep-compare';
 import { useGqlServer } from './server-context';
-import 'graphql';
 
 export { gql } from 'graphql-request';
 

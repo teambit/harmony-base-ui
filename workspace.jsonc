@@ -101,6 +101,15 @@
         }
       },
       "teambit.react/react": {}
+    },
+    "src/hooks/use-graphql-light": {
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "peerDependencies": {
+            "graphql": "^14.3.1"
+          }
+        }
+      }
     }
   }
 }
