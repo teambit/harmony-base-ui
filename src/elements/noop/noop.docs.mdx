@@ -1,0 +1,23 @@
+When writing a react component, it may recieve a context provider (or similar) as a prop:
+```tsx
+function Agatha({ MagicProvider = 'div' }: { MagicProvider?: ReactComponent }) {
+	<div>
+		<MagicProvider>
+			It was Agatha all along!
+		</MagicProvider>
+	</div>
+}
+```
+
+As you can see, we use `div` as a default value for consumers without a provider.  
+Noop saves the extra dom element by rendering children directly:
+
+```tsx
+function Agatha({ MagicProvider = Noop }: { MagicProvider?: ReactComponent }) {
+	<div>
+		<MagicProvider>
+			It was Agatha all along!
+		</MagicProvider>
+	</div>
+}
+```
