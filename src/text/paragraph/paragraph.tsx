@@ -1,8 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
-
 import { PossibleSizes } from '@teambit/base-ui.theme.sizes';
-import styles from './paragraph.module.scss';
+import { textSize } from '@teambit/base-ui.text.text-sizes';
+
+export { PossibleSizes };
 
 export type ParagraphProps = {
 	/**
@@ -24,7 +25,7 @@ export type ParagraphProps = {
 export function Paragraph({ className, size, element: Element, ...rest }: ParagraphProps) {
 	return (
 		<Element
-			className={classNames(styles[size], className)}
+			className={classNames(textSize[size], className)}
 			data-bit-id="bit.base-ui/text/paragraph"
 			{...rest}
 		/>
