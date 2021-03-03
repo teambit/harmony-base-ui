@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Bit config
         run: |
-          ln -s /usr/local/bin/bbit /usr/local/bin/bit
           bit config set interactive false
           bit config set analytics_reporting false
           bit config set anonymous_reporting false
