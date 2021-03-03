@@ -51,8 +51,9 @@
   "teambit.base-ui/surfaces/split-pane/splitter@0.6.7": {"mainFile":"index.ts","rootDir":"src/surfaces/split-pane/splitter"},
   "teambit.base-ui/text/heading@0.6.7": {"mainFile":"index.ts","rootDir":"src/text/heading"},
   "teambit.base-ui/text/muted-text@0.6.7": {"mainFile":"index.ts","rootDir":"src/text/muted-text"},
-  "teambit.base-ui/text/paragraph@0.6.7": {"mainFile":"index.tsx","rootDir":"src/text/paragraph"},
+  "teambit.base-ui/text/paragraph@0.6.8": {"mainFile":"index.tsx","rootDir":"src/text/paragraph"},
   "teambit.base-ui/text/text-separator@0.6.7": {"mainFile":"index.ts","rootDir":"src/text/text-separator"},
+  "teambit.base-ui/text/text-sizes@0.0.1": {"mainFile":"index.ts","rootDir":"src/text/text-sizes"},
   "teambit.base-ui/text/themed-text@0.6.7": {"mainFile":"index.ts","rootDir":"src/text/themed-text"},
   "teambit.base-ui/theme/brand-colors@0.6.7": {"mainFile":"brand-colors.module.scss","rootDir":"src/themes/brand-colors"},
   "teambit.base-ui/theme/brand-definition@0.6.7": {"mainFile":"index.ts","rootDir":"src/themes/brand-definition"},
@@ -72,6 +73,5 @@
   "teambit.base-ui/utils/string/affix@0.6.7": {"mainFile":"index.ts","rootDir":"src/utils/string/affix"},
   "teambit.base-ui/utils/sub-paths@0.6.7": {"mainFile":"index.ts","rootDir":"src/utils/sub-paths"},
   "teambit.base-ui/utils/time-ago@0.6.7": {"mainFile":"index.ts","rootDir":"src/utils/time-ago"},
-  "text/text-sizes": {"mainFile":"index.ts","rootDir":"src/text/text-sizes","exported":false},
   "version": "14.8.9-dev.296"
 }
