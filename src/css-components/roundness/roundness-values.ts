@@ -1,1 +1,1 @@
-export type Roundness = 'sharp' | 'default' | 'medium' | 'circle';
+export type Roundness = 'sharp' | 'default' | 'small' | 'medium' | 'circle';
