@@ -5,6 +5,7 @@ export * from './roundness-values';
 export const roundnessClass: { [key in Roundness]: string } = {
 	circle: styles.circle,
 	default: styles.default,
+	small: styles.small,
 	medium: styles.medium,
 	sharp: styles.sharp,
 };
