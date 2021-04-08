@@ -2,7 +2,7 @@ import React, { ReactNode, ChangeEvent } from 'react';
 import { HiddenCheckbox } from '@teambit/base-ui.input.checkbox.hidden';
 import { CheckboxIndicator, classes } from '@teambit/base-ui.input.checkbox.indicator';
 
-export { HiddenCheckbox as Input };
+ export { HiddenCheckbox as Input };
 
 export interface CheckboxLabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
 	/**
