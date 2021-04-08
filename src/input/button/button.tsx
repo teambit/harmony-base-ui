@@ -20,6 +20,11 @@ export type ButtonProps = {
 	 * explicitly toggle loader on and off
 	 */
 	loading?: boolean;
+
+	/**
+	 * allow clicking on button even while loading. (i.e. make simultaneous triggers)
+	 */
+	activeWhenLoading?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 /**
@@ -31,36 +36,63 @@ export type ButtonProps = {
  */
 export default class Button extends Component<ButtonProps> {
 	state = { isLoading: false };
+	private activePromises = new Set<Promise<any>>();
+	private unmounted = false;
 
 	static defaultProps = {
 		loader: <DotsLoader />,
 		loading: false,
 	};
 
-	handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+	componentWillUnmount() {
+		this.unmounted = false;
+		this.activePromises = new Set<Promise<any>>();
+	}
+
+	private handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 		const { onClick } = this.props;
 		if (!onClick) return;
 
 		this.setState({ isLoading: true });
 
-		Promise.resolve(onClick.call(this, event))
-			.catch(() => {})
-			.then(() => {
-				this.setState({ isLoading: false });
-			});
+		const promise = Promise.resolve(onClick.call(this, event)).catch(() => {});
+		this.activePromises.add(promise);
+
+		promise.then(() => this.handleResolve(promise));
 	};
 
-	render() {
-		const { onClick, className, children, loader, loading, ...rest } = this.props;
-		const { isLoading } = this.state;
+	private handleResolve(p: Promise<any>) {
+		if (this.unmounted) return;
 
-		//ignore internal state when component is controlled
-		const content = (loading !== undefined && loading) || isLoading ? loader : children;
+		this.activePromises.delete(p);
+		if (this.activePromises.size === 0) {
+			this.setState({ isLoading: false });
+		}
+	}
+
+	render() {
+		const {
+			onClick,
+			className,
+			children,
+			loader,
+			loading,
+			disabled,
+			activeWhenLoading = false,
+			...rest
+		} = this.props;
+
+		// ignore internal state when component is controlled
+		const isLoading = (loading !== undefined && loading) || this.state.isLoading;
+
+		const content = isLoading ? loader : children;
+		const disabledByLoading = isLoading && !activeWhenLoading;
 
 		return (
 			<button
 				data-bit-id="bit.base-ui/input/button"
 				{...rest}
+				disabled={disabled || disabledByLoading}
 				onClick={this.handleClick}
 				className={classNames(className, styles.vanillaButton)}
 			>

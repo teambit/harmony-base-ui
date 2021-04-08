@@ -5,12 +5,40 @@ description: 'base button'
 
 import Button from './button';
 
-### Overview
 Base button, with very basic styles.  
-Accepts all parameters of native html button.   
-<br />
+Accepts all parameters of native html button.
 
-Basic button example:
+## Loading
+
+The base-ui button has built in support for loading!  
+Simply return a Promise from `onClick`, and button will automatically show a loader until it resolves.
+
 ```js live=true
-<Button onClick={() => alert('on click')}>Click</Button>
+<Button onClick={() => new Promise((res) => setTimeout(res, 1500))}>
+	Click here to see loader
+</Button>
+```
+
+You can also turn on the loading animation explicitly, using the `loading={isBusy}` prop.
+
+> Using and maintaining a promise is usually easier and more flexible.  
+> Prefer using it when possible, and avoid the explicit `loading` prop.
+
+```js live=true
+<Button loading />
+```
+
+## Multi trigger
+
+By default, the button is disabled while loading (to prevent duplicate triggers). This can be changed by using the `activeWhenLoading` prop.
+
+```js live=true
+<>
+	<Button onClick={() => new Promise((res) => setTimeout(res, 1000))} activeWhenLoading>
+		click me repeatedly
+	</Button>{' '}
+	<Button onClick={() => new Promise((res) => setTimeout(res, 1000))}>
+		(cannot) click me repeatedly
+	</Button>
+</>
 ```
