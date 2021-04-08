@@ -38,9 +38,9 @@
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": [
-      "*.spec.ts"
-    ],
+    // "devFilePatterns": [
+    //   "*.spec.ts"
+    // ],
     /**
     * If true, then Bit will add the "--strict-peer-dependencies" option when invoking package managers.
     * This causes "bit install" to fail if there are unsatisfied peer dependencies, which is
@@ -74,23 +74,7 @@
   **/
   "teambit.workspace/variants": {
     "*": {
-      "teambit.dependencies/dependency-resolver": {
-        "policy": {
-          "dependencies": {
-            "react": "-"
-          },
-          "devDependencies": {
-            "@types/react": "16.9.43",
-            "@types/jest": "~26.0.9",
-            "@types/mocha": "8.0.0",
-            "@types/react-router-dom": "^5.1.5"
-          },
-          "peerDependencies": {
-            "react": "^16.13.1",
-            "react-dom": "^16.13.1"
-          }
-        }
-      },
+      "teambit.dependencies/dependency-resolver": {},
       "teambit.pkg/pkg": {
         "packageManagerPublishArgs": [
           "--access public"
