@@ -1,10 +1,10 @@
 .skeleton {
   @extend .shimmer;
-  filter: opacity(0.23);
+  // filter: opacity(0.23);
 }
 
 .skeletonContent {
-  filter: opacity(0.23);
+  // filter: opacity(0.23);
   
   > * {
     @extend .shimmer;

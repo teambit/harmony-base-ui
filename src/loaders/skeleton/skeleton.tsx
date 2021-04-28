@@ -61,8 +61,8 @@ export function LineSkeleton({
 			className={classnames(styles.line, designClass, className)}
 			style={{ width, ...style }}
 		>
-			{Array.from({ length: count }).map(() => (
-				<div>{NBSP}</div>
+			{Array.from({ length: count }).map((x, index) => (
+				<div key={index}>{NBSP}</div>
 			))}
 		</div>
 	);
