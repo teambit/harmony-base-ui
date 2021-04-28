@@ -30,7 +30,7 @@ export function Card({
 }: CardProps) {
 	return (
 		<div
-			data-bit-id="bit.base-ui/surfaces/card"
+			data-bit-id="teambit.base-ui/surfaces/card"
 			className={classNames(
 				styles.card,
 				backgrounds.layer,

@@ -17,7 +17,7 @@ export type BaseIconProps = {
  */
 export function BaseIcon({ of: iconName, className, ...rest }: BaseIconProps) {
 	return <span
-		data-bit-id="bit.base-ui/elements/icon"
+		data-bit-id="teambit.base-ui/elements/icon"
 		className={classnames(iconName, className)}
 		{...rest} 
 	/>;

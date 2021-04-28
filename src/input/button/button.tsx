@@ -90,7 +90,7 @@ export default class Button extends Component<ButtonProps> {
 
 		return (
 			<button
-				data-bit-id="bit.base-ui/input/button"
+				data-bit-id="teambit.base-ui/input/button"
 				{...rest}
 				disabled={disabled || disabledByLoading}
 				onClick={this.handleClick}

@@ -21,7 +21,7 @@ export type SeparatorProps = {
 export function Separator({ layout, className, ...rest }: SeparatorProps) {
 	return (
 		<div
-			data-bit-id="bit.base-ui/elements/separator"
+			data-bit-id="teambit.base-ui/elements/separator"
 			className={classNames(styles.separator, styles[layout], className)}
 			{...rest}
 		/>

@@ -24,7 +24,7 @@ export function Label({ color, className, ...rest }: LabelProps) {
 		<div
 			className={classNames(styles.label, className)}
 			style={{ background: color }}
-			data-bit-id="bit.base-ui/elements/label"
+			data-bit-id="teambit.base-ui/elements/label"
 			{...rest}
 		/>
 	);

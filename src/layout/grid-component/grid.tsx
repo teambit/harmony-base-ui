@@ -69,7 +69,7 @@ export class Grid extends PureComponent<GridProps> {
 
 		return (
 			<div
-				data-bit-id="bit.base-ui/layout/grid-component"
+				data-bit-id="teambit.base-ui/layout/grid-component"
 				{...rest}
 				className={classNames(...classes)}
 			/>
