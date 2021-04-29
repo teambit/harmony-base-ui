@@ -9,7 +9,7 @@
     },
     "css-components/elevation": {
         "scope": "teambit.base-ui",
-        "version": "0.6.10",
+        "version": "0.6.11",
         "mainFile": "index.ts",
         "rootDir": "src/css-components/elevation"
     },
@@ -111,7 +111,7 @@
     },
     "hook/use-click-outside": {
         "scope": "teambit.base-ui",
-        "version": "0.6.10",
+        "version": "0.6.11",
         "mainFile": "index.ts",
         "rootDir": "src/hooks/use-click-outside"
     },
@@ -231,7 +231,7 @@
     },
     "surfaces/card": {
         "scope": "teambit.base-ui",
-        "version": "0.6.11",
+        "version": "0.6.12",
         "mainFile": "index.tsx",
         "rootDir": "src/surfaces/card"
     },
@@ -243,7 +243,7 @@
     },
     "surfaces/drawer": {
         "scope": "teambit.base-ui",
-        "version": "0.6.10",
+        "version": "0.6.11",
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/drawer"
     },
