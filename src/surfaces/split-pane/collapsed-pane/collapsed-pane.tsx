@@ -12,7 +12,7 @@ export default class CollapsedPane extends PureComponent<CollapsedPaneProps> {
     return (
       <div className="collapsedFileExplorer">
         <Tooltip overlay="expand navigator" placement="bottom" mouseLeaveDelay={0}>
-          <span className="file-li-action" onClick={onClick && onClick}>
+          <span className="file-li-action" onClick={onClick}>
             <i className="playcon-slide-right" />
           </span>
         </Tooltip>
