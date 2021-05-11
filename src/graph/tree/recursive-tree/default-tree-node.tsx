@@ -13,7 +13,7 @@ export function DefaultTreeNode({ node, depth }: TreeNodeProps) {
     <>
       <div className={indentClass}>{node.id}</div>
 
-      <div style={indentStyle(depth + 1)}>
+      <div style={indentStyle(depth)}>
         <TreeLayer childNodes={node.children} depth={depth} />
       </div>
     </>
