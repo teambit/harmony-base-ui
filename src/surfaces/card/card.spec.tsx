@@ -1,13 +1,12 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { expect } from "chai";
 
 import { Card } from "./card";
 
 it("should render default card", () => {
   const { getByText } = render(<Card>base Card</Card>);
   const rendered = getByText("base Card");
-  expect(rendered).to.exist;
+  expect(rendered).toBeInstanceOf(HTMLElement);
 });
 
 // it("should render card with high elevation", () => {

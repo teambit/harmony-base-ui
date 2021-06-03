@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { expect } from 'chai';
 
 import { BaseImage } from './image';
 import { BaseImageExample } from './image.composition';
@@ -9,9 +8,9 @@ it('should render', () => {
 	const { getByTestId } = render(<BaseImageExample />);
 	const rendered = getByTestId('test-img');
 
-	expect(rendered.tagName).to.equal('IMG');
-	expect(rendered.getAttribute('alt')).to.equal('alt world');
-	expect(rendered.getAttribute('src')).to.equal('https://static.bit.dev/bit-logo.svg');
+	expect(rendered.tagName).toEqual('IMG');
+	expect(rendered.getAttribute('alt')).toEqual('alt world');
+	expect(rendered.getAttribute('src')).toEqual('https://static.bit.dev/bit-logo.svg');
 });
 
 it('should pass classname', () => {
@@ -20,5 +19,5 @@ it('should pass classname', () => {
 	);
 	const rendered = getByTestId('test-img');
 
-	expect(rendered.className).to.include('testclass');
+	expect(rendered.className).toContain('testclass');
 });

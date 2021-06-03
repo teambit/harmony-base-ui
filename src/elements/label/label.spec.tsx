@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { expect } from 'chai';
+
 import { LabelWithText, LabelWithCustomBackgroundColor } from './label.composition';
 
 it('should render correct text in Label', () => {
 	const { getByText } = render(<LabelWithText />);
 	const rendered = getByText('label');
-	expect(rendered).to.exist;
+	expect(rendered).toBeInstanceOf(HTMLElement);
 });
 
 it('should apply background color', () => {
@@ -15,5 +15,5 @@ it('should apply background color', () => {
 
 	const styles = window.getComputedStyle(rendered);
 
-	expect(styles.background).to.equal('blue');
+	expect(styles.background).toEqual('blue');
 });
