@@ -1,11 +1,9 @@
-import { expect } from 'chai';
-
 import { keyTreeToNodeTree } from './key-tree-to-node-tree';
 
 it('should handle empty tree', () => {
   const result = keyTreeToNodeTree('/', {});
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '/',
     children: [],
   });
@@ -14,7 +12,7 @@ it('should handle empty tree', () => {
 it('should handle undefined tree', () => {
   const result = keyTreeToNodeTree('/');
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '/',
     children: undefined,
   });
@@ -23,7 +21,7 @@ it('should handle undefined tree', () => {
 it('should handle leaf nodes', () => {
   const result = keyTreeToNodeTree('/', { hello: undefined });
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '/',
     children: [
       {
@@ -37,7 +35,7 @@ it('should handle leaf nodes', () => {
 it('should handle inner nodes', () => {
   const result = keyTreeToNodeTree('/', { 'hello/': {} });
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '/',
     children: [
       {
@@ -51,7 +49,7 @@ it('should handle inner nodes', () => {
 it('should handle nested nodes', () => {
   const result = keyTreeToNodeTree('/', { 'hello/': { one: undefined, two: undefined } });
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '/',
     children: [
       {
@@ -74,7 +72,7 @@ it('should handle nested nodes', () => {
 it('should handle nested nodes', () => {
   const result = keyTreeToNodeTree('/', { 'hello/': { 'hello/one': undefined, 'hello/two': undefined } });
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '/',
     children: [
       {
@@ -97,7 +95,7 @@ it('should handle nested nodes', () => {
 it('should leaf and inner nodes with the same name', () => {
   const result = keyTreeToNodeTree('/', { 'hello/': {}, hello: undefined });
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '/',
     children: [
       {
@@ -115,7 +113,7 @@ it('should leaf and inner nodes with the same name', () => {
 it('should sort inner nodes first and alphabetically', () => {
   const result = keyTreeToNodeTree('/', { 'b/': {}, c: undefined, 'd/': {}, a: undefined });
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '/',
     children: [
       {

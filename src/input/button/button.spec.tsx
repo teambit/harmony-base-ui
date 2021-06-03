@@ -1,7 +1,5 @@
 import React from 'react';
-import { render, fireEvent, waitForElementToBeRemoved } from '@testing-library/react';
-import { expect } from 'chai';
-import { fake } from 'sinon';
+import { render, fireEvent /* waitForElementToBeRemoved */ } from '@testing-library/react';
 
 import Button from './button';
 import { BasicButton } from './button.composition';
@@ -11,18 +9,18 @@ const testLoader = <span data-testid="test-loader">loading...</span>;
 it('should render with children', () => {
 	const { getByText } = render(<BasicButton />);
 	const rendered = getByText('Click');
-	expect(rendered).to.exist;
+	expect(rendered).toBeInstanceOf(HTMLElement);
 });
 
 it('should trigger onClick', () => {
-	const onClick = fake();
+	const onClick = jest.fn();
 	const { getByText } = render(<Button onClick={onClick}>actual button</Button>);
 	const rendered = getByText('actual button');
 
 	//could use userEvents.click(), in @testing-library/user-event
 	fireEvent.click(rendered);
 
-	expect(onClick.called).to.be.true;
+	expect(onClick).toHaveBeenCalled();
 });
 
 // it('should remove loader after onClick has been resolved', async () => {
@@ -54,13 +52,13 @@ it('should trigger onClick', () => {
 it('should show loader when explicitly set loading={true}', () => {
 	const { getByTestId } = render(<Button loader={testLoader} loading={true} />);
 
-	expect(getByTestId('test-loader')).to.exist;
+	expect(getByTestId('test-loader')).toBeInstanceOf(HTMLElement);
 });
 
 it('should not show loader when explicitly set loading={false}', () => {
 	const { queryByTestId } = render(<Button loader={testLoader} loading={false} />);
 
-	expect(queryByTestId('test-loader')).not.to.exist;
+	expect(queryByTestId('test-loader')).not.toBeInstanceOf(HTMLElement);
 });
 
 it('should not render children while loading', () => {
@@ -70,13 +68,13 @@ it('should not render children while loading', () => {
 		</Button>
 	);
 
-	expect(queryByText('actual children')).not.to.exist;
+	expect(queryByText('actual children')).not.toBeInstanceOf(HTMLElement);
 });
 
 it('should remove loader when changing loading back to ={false}', () => {
 	const { queryByTestId, rerender } = render(<Button loader={testLoader} loading={true} />);
-	expect(queryByTestId('test-loader')).to.exist;
+	expect(queryByTestId('test-loader')).toBeInstanceOf(HTMLElement);
 
 	rerender(<Button loader={testLoader} loading={false} />);
-	expect(queryByTestId('test-loader')).not.to.exist;
+	expect(queryByTestId('test-loader')).not.toBeInstanceOf(HTMLElement);
 });

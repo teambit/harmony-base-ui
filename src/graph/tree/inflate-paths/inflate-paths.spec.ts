@@ -1,11 +1,9 @@
-import { expect } from 'chai';
-
 import { inflateToTree } from './inflate-paths';
 
 it('build tree from paths', () => {
   const result = inflateToTree(['path'], (x) => x);
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: 'path',
     children: undefined,
   });
@@ -14,7 +12,7 @@ it('build tree from paths', () => {
 it('should use key selector', () => {
   const result = inflateToTree([{ id: 'path' }], (x) => x.id);
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: 'path',
     children: undefined,
   });
@@ -23,7 +21,7 @@ it('should use key selector', () => {
 it('should use key selector', () => {
   const result = inflateToTree([{ id: 'path' }], (x) => x.id);
 
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: 'path',
     children: undefined,
   });
@@ -31,7 +29,7 @@ it('should use key selector', () => {
 
 it('should create virtual root when items have no common ancestor', () => {
   const result = inflateToTree(['path', 'another'], (x) => x);
-  expect(result).to.deep.equal({
+  expect(result).toEqual({
     id: '',
     children: [
       {
