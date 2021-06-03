@@ -464,7 +464,7 @@
         "rootDir": "src/utils/popper-js/resize-to-match-reference"
     },
     "utils/primitives": {
-        "scope": "",
+        "scope": "teambit.base-ui",
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/utils/primitives"
