@@ -44,17 +44,13 @@
         "graphql": "15.5.0",
         "javascript-time-ago": "^2.0.13",
         "lodash.debounce": "^4.0.8",
-        "node-sass": "^4.14.1",
         "number-abbreviate": "^2.0.0",
         "path-browserify": "^1.0.1",
         "rc-tooltip": "^4.2.1",
         "react-create-ref": "^1.0.1",
-        "react-dom": "^16.13.1",
         "react-onclickoutside": "^6.9.0",
         "react-scripts": "3.4.1",
         "react-slick": "^0.27.0",
-        "react": "^16.13.1",
-        "reset-css": "^5.0.1",
         "resize-observer-polyfill": "^1.5.1",
         "typescript": "^3.8.3",
         "url-parse": "1.5.1",
@@ -67,6 +63,9 @@
       }
     },
     "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
     // "devFilePatterns": [
     //   "*.spec.ts"
     // ],
