@@ -23,16 +23,19 @@
 	--bit-accent-bg-heavy: #{$p30};
 
 	// -- background -- //
+	// // higher number = more important, and 'closer' to the user.
+	// --bit-bg-01: #{$w10};
+	// --bit-bg-03: #{$w20};
+	// --bit-bg-05: #{$d10};
+	// --bit-bg-07: #{$d15};
+	// --bit-bg-09: #{$d20};
+	// --bit-bg-11: #{$d30};
 	--bit-bg-color: #{$w10}; // default background
+	--bit-bg-heavy: #{$w20}; // e.g. when active hovering
 	--bit-bg-bedrock: #{$w10}; // i.e. <body/> background
-	// higher number = more important, and 'closer' to the user.
-	--bit-bg-01: #{$w10};
-	--bit-bg-03: #{$w20};
-	--bit-bg-05: #{$d10};
-	--bit-bg-07: #{$d15};
-	--bit-bg-09: #{$d20};
-	--bit-bg-11: #{$d30};
-
+	--bit-navigation: #{$w20}; // i.e. <body/> background
+	--bit-bg-overlay: #{$w10}; // e.g. button, input, etc
+	--bit-bg-modal: #{$w10}; // e.g. button, input, etc
 	--bit-bg-tooltip: #{$w10}; // e.g. button, input, etc
 	--bit-bg-tooltip-heavy: #{$w20};
 	--bit-bg-dent: #{$w20};
