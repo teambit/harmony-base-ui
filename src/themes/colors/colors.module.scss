@@ -59,13 +59,13 @@ $r20: #fdeff2;
 
 
 // dark
-$d80: #cccfd4; // light grey
 $d70: #0c0c0c; // lucifer
 $d60: #2b2b2b; // doom
 $d50: #414141; // darkness
 $d40: #6c707c; // battleship
 $d30: #878c9a; // steel
 $d20: #babec9; // silver
+$d15: #cccfd4; // light grey
 $d10: #ededed; // pearl
 $w20: #f6f6f6; // cloud
 $w10: #ffffff; // white
@@ -84,3 +84,7 @@ $s40: rgba(108, 112, 124, 0.5);
 $s30: rgba(135, 140, 154, 0.5);
 $s20: rgba(186, 190, 201, 0.5);
 $s10: rgba(237, 237, 237, 0.5);
+
+
+// DO NOT USE, WILL BE REMOVED:
+$d80: #cccfd4; // light grey
