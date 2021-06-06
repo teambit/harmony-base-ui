@@ -9,6 +9,7 @@
 	--bit-text-color: #{$d50};
 	--bit-text-color-heavy: #{$d60};
 	--bit-text-color-light: #{$d40};
+	--bit-text-inactive: #{$d30}; // TBD
 
 	--bit-border-color: #{$d20};
 	--bit-border-color-heavy: #{$d30};
@@ -48,9 +49,9 @@
 	--bit-error-bg: #{$r20};
 	--bit-error-bg-heavy: #{$r20};
 
-	/////////////////////////////////////
+	//////////////////////////////////////
 	// temp, will be removed next week: //
-	/////////////////////////////////////
+	//////////////////////////////////////
 
 	color: $d50;
 	--text-highlight: #{$d60};
