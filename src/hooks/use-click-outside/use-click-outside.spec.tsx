@@ -1,8 +1,9 @@
 import React, { createRef } from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { ClickOutside } from './click-outside';
+import type { ClickOutsideProps } from './click-outside';
+import { useClickOutside } from './use-click-outside';
 
-describe('click outside node (React15 hooks-less)', () => {
+describe('click outside node, using hooks', () => {
 	it('should not trigger, when clicking inside', () => {
 		const handleOutside = jest.fn(() => {});
 		const { getByText } = render(<Scenario onOutside={handleOutside} />);
@@ -71,7 +72,7 @@ function Scenario({
 	return (
 		<div>
 			<div>
-				<ClickOutside targetRef={ref} handler={onOutside} enabled={enabled} />
+				<HookedClickOutside targetRef={ref} handler={onOutside} enabled={enabled} />
 				<div ref={ref}>
 					inside
 					<div>nested child</div>
@@ -81,4 +82,13 @@ function Scenario({
 			</div>
 		</div>
 	);
+}
+
+// is this the right way to test hooks?
+
+/** useClickOutside wrapper, for components that can't use hooks directly */
+export function HookedClickOutside({ targetRef, handler, enabled }: ClickOutsideProps) {
+	useClickOutside(targetRef, handler, enabled);
+
+	return null;
 }
