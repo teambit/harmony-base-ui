@@ -4,11 +4,8 @@ importers:
       '@popperjs/core': registry.npmjs.org/@popperjs/core/2.9.2
       '@testing-library/jest-dom': registry.npmjs.org/@testing-library/jest-dom/5.13.0
       '@testing-library/user-event': registry.npmjs.org/@testing-library/user-event/12.8.3
-      '@types/javascript-time-ago': registry.npmjs.org/@types/javascript-time-ago/2.0.2
       '@types/lodash.debounce': registry.npmjs.org/@types/lodash.debounce/4.0.6
-      '@types/react-onclickoutside': registry.npmjs.org/@types/react-onclickoutside/6.7.3
       '@types/react-slick': registry.npmjs.org/@types/react-slick/0.23.4
-      '@types/url-parse': registry.npmjs.org/@types/url-parse/1.4.3
       classnames: registry.npmjs.org/classnames/2.3.1
       core-js: registry.npmjs.org/core-js/3.14.0
       graphql: registry.npmjs.org/graphql/15.5.0
@@ -31,10 +28,14 @@ importers:
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@testing-library/react': registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0
+      '@types/javascript-time-ago': registry.npmjs.org/@types/javascript-time-ago/2.0.2
       '@types/jest': registry.npmjs.org/@types/jest/26.0.23
       '@types/node': registry.npmjs.org/@types/node/12.20.4
       '@types/react': registry.npmjs.org/@types/react/17.0.9
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.6
+      '@types/react-onclickoutside': registry.npmjs.org/@types/react-onclickoutside/6.7.3
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
+      '@types/url-parse': registry.npmjs.org/@types/url-parse/1.4.3
     specifiers:
       '@babel/runtime': 7.12.18
       '@popperjs/core': ^2.9.2
@@ -49,6 +50,7 @@ importers:
       '@types/react-dom': ^17.0.6
       '@types/react-onclickoutside': ^6.7.3
       '@types/react-slick': ^0.23.4
+      '@types/testing-library__jest-dom': 5.9.5
       '@types/url-parse': 1.4.3
       classnames: ^2.3.1
       core-js: ^3.14.0
@@ -152,6 +154,8 @@ importers:
   src/routing/nav-link:
     specifiers: {}
   src/routing/routing-provider:
+    specifiers: {}
+  src/styles/flex-center:
     specifiers: {}
   src/surfaces/abs-container:
     specifiers: {}
@@ -2775,7 +2779,7 @@ packages:
       tarball: https://registry.npmjs.org/@types/istanbul-reports/-/istanbul-reports-3.0.1.tgz
     version: 3.0.1
   registry.npmjs.org/@types/javascript-time-ago/2.0.2:
-    dev: false
+    dev: true
     name: '@types/javascript-time-ago'
     resolution:
       integrity: sha512-uBUXwIG8YzPuWw5c6yV5RGvskkNOxnR+9hctOv8cptyMlB0IgfzeqFo0jkK+Ich8zGchvWghOT3Ryqr3bZmH3A==
@@ -2869,7 +2873,7 @@ packages:
   registry.npmjs.org/@types/react-onclickoutside/6.7.3:
     dependencies:
       '@types/react': registry.npmjs.org/@types/react/16.14.5
-    dev: false
+    dev: true
     name: '@types/react-onclickoutside'
     resolution:
       integrity: sha512-ByQX2ns3KlOrOzJBVhQ2VZmQVV6w718TXFVAdCdHBeXMXr5QseQVN+BsOmLf2+KZGz7+Y4ov9jPxRDCDNJZMLg==
@@ -2891,7 +2895,6 @@ packages:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
       csstype: registry.npmjs.org/csstype/3.0.8
-    dev: false
     name: '@types/react'
     resolution:
       integrity: sha512-YRRv9DNZhaVTVRh9Wmmit7Y0UFhEVqXqCSw3uazRWMxa2x85hWQZ5BN24i7GXZbaclaLXEcodEeIHsjBA8eAMw==
@@ -2928,7 +2931,6 @@ packages:
   registry.npmjs.org/@types/testing-library__jest-dom/5.9.5:
     dependencies:
       '@types/jest': registry.npmjs.org/@types/jest/26.0.23
-    dev: false
     name: '@types/testing-library__jest-dom'
     resolution:
       integrity: sha512-ggn3ws+yRbOHog9GxnXiEZ/35Mow6YtPZpd7Z5mKDeZS/o7zx3yAle0ov/wjhVB5QT4N2Dt+GNoGCdqkBGCajQ==
@@ -2936,7 +2938,7 @@ packages:
       tarball: https://registry.npmjs.org/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.5.tgz
     version: 5.9.5
   registry.npmjs.org/@types/url-parse/1.4.3:
-    dev: false
+    dev: true
     name: '@types/url-parse'
     resolution:
       integrity: sha512-4kHAkbV/OfW2kb5BLVUuUMoumB3CP8rHqlw48aHvFy5tf9ER0AfOonBlX29l/DD68G70DmyhRlSYfQPSYpC5Vw==

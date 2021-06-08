@@ -247,6 +247,12 @@
         "mainFile": "index.ts",
         "rootDir": "src/routing/routing-provider"
     },
+    "styles/flex-center": {
+        "scope": "teambit.base-ui",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "src/styles/flex-center"
+    },
     "surfaces/abs-container": {
         "scope": "teambit.base-ui",
         "version": "0.6.11",
