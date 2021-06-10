@@ -6,9 +6,9 @@ export function Preview() {
 		<div
 			className={flexCenter}
 			style={{
-				width: 200,
-				height: 100,
-				margin: 50,
+				width: 100,
+				height: 50,
+				margin: 16,
 				border: '1px solid black',
 				borderRadius: 5,
 			}}
@@ -17,5 +17,3 @@ export function Preview() {
 		</div>
 	);
 }
-
-export const Problematic = 'this will never render';
