@@ -1,0 +1,18 @@
+Defines the colors for the whole app.  
+Included in the `theme-provider` component.
+
+```tsx
+import { primaryPalette } from '@teambit/base-ui.theme.accent-color';
+
+function ApplicationContext({ children }) {
+	return <div className={primaryPalette}>{children}</div>;
+}
+```
+
+We have a couple of main groups:
+
+-   texts color
+-   accent color (the 'primary', intent color).  
+    You can override it with the `accent-color` component.
+-   backgrounds
+-   ~~errors~~ (prefer to use accent 'error' instead)

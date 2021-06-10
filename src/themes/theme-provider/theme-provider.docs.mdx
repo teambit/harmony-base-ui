@@ -1,0 +1,19 @@
+Adds all the theme context and colors for the project.
+
+This includes:
+- Colors
+- Headers and paragraphs font-size, margins, etc
+- Brand font
+- Shadows
+
+```tsx
+import { Theme } from '@teambit/base-ui.theme.theme-provider';
+
+function ApplicationContext({ children }) {
+	return (
+		<Theme className={styles.additionalClasses}>
+			{children}
+		</Theme>
+	);
+}
+```

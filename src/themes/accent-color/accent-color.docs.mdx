@@ -1,0 +1,18 @@
+import { Preview } from './accent-color.compositions';
+
+Use this component to set the `accent` ("primary") color.
+
+```tsx
+import { colorPalette } from '@teambit/base-ui.theme.accent-color';
+
+function Page(props) {
+	return (
+		<div className={colorPalette.action}>
+			<Button onCick={props.onDeleteAccount}>This button will be red</Button>
+		</div>
+	);
+}
+```
+
+Try it out!
+<Preview />
