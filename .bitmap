@@ -27,7 +27,7 @@
     },
     "elements/dots-loader": {
         "scope": "teambit.base-ui",
-        "version": "0.6.13",
+        "version": "0.6.14",
         "mainFile": "index.ts",
         "rootDir": "src/elements/dots-loader"
     },
@@ -75,7 +75,7 @@
     },
     "geometry/curve-peek": {
         "scope": "teambit.base-ui",
-        "version": "0.6.13",
+        "version": "0.6.14",
         "mainFile": "index.ts",
         "rootDir": "src/geometry/curve-peek"
     },
@@ -123,7 +123,7 @@
     },
     "input/button": {
         "scope": "teambit.base-ui",
-        "version": "0.7.1",
+        "version": "0.7.2",
         "mainFile": "index.ts",
         "rootDir": "src/input/button"
     },
@@ -147,7 +147,7 @@
     },
     "input/error": {
         "scope": "teambit.base-ui",
-        "version": "0.7.1",
+        "version": "0.7.2",
         "mainFile": "index.ts",
         "rootDir": "src/input/error"
     },
@@ -219,31 +219,31 @@
     },
     "routing/link": {
         "scope": "teambit.base-ui",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "src/routing/link"
     },
     "routing/native-link": {
         "scope": "teambit.base-ui",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "src/routing/native-link"
     },
     "routing/native-nav-link": {
         "scope": "teambit.base-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/routing/native-nav-link"
     },
     "routing/nav-link": {
         "scope": "teambit.base-ui",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "src/routing/nav-link"
     },
     "routing/routing-provider": {
         "scope": "teambit.base-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/routing/routing-provider"
     },
@@ -333,25 +333,25 @@
     },
     "text/heading": {
         "scope": "teambit.base-ui",
-        "version": "0.7.1",
+        "version": "0.7.2",
         "mainFile": "index.ts",
         "rootDir": "src/text/heading"
     },
     "text/muted-text": {
         "scope": "teambit.base-ui",
-        "version": "0.7.1",
+        "version": "0.7.2",
         "mainFile": "index.ts",
         "rootDir": "src/text/muted-text"
     },
     "text/paragraph": {
         "scope": "teambit.base-ui",
-        "version": "0.7.1",
+        "version": "0.7.2",
         "mainFile": "index.tsx",
         "rootDir": "src/text/paragraph"
     },
     "text/text-separator": {
         "scope": "teambit.base-ui",
-        "version": "0.7.1",
+        "version": "0.7.2",
         "mainFile": "index.ts",
         "rootDir": "src/text/text-separator"
     },
@@ -363,13 +363,13 @@
     },
     "text/themed-text": {
         "scope": "teambit.base-ui",
-        "version": "0.7.1",
+        "version": "0.7.2",
         "mainFile": "index.ts",
         "rootDir": "src/text/themed-text"
     },
     "theme/accent-color": {
         "scope": "teambit.base-ui",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "src/themes/accent-color"
     },
@@ -387,37 +387,37 @@
     },
     "theme/color-definition": {
         "scope": "teambit.base-ui",
-        "version": "0.7.0",
+        "version": "0.7.1",
         "mainFile": "index.ts",
         "rootDir": "src/themes/color-definition"
     },
     "theme/color-palette": {
         "scope": "teambit.base-ui",
-        "version": "0.6.12",
+        "version": "0.6.13",
         "mainFile": "index.ts",
         "rootDir": "src/themes/color-palette"
     },
     "theme/colors": {
         "scope": "teambit.base-ui",
-        "version": "0.7.0",
+        "version": "0.7.1",
         "mainFile": "colors.module.scss",
         "rootDir": "src/themes/colors"
     },
     "theme/dark-theme": {
         "scope": "teambit.base-ui",
-        "version": "0.7.0",
+        "version": "0.7.1",
         "mainFile": "index.ts",
         "rootDir": "src/themes/dark-theme"
     },
     "theme/fonts/book": {
         "scope": "teambit.base-ui",
-        "version": "0.6.10",
+        "version": "0.6.11",
         "mainFile": "index.ts",
         "rootDir": "src/themes/fonts/book"
     },
     "theme/fonts/roboto": {
         "scope": "teambit.base-ui",
-        "version": "0.6.10",
+        "version": "0.6.11",
         "mainFile": "index.ts",
         "rootDir": "src/themes/fonts/roboto"
     },
@@ -447,7 +447,7 @@
     },
     "theme/theme-provider": {
         "scope": "teambit.base-ui",
-        "version": "0.6.13",
+        "version": "0.6.14",
         "mainFile": "index.tsx",
         "rootDir": "src/themes/theme-provider"
     },
