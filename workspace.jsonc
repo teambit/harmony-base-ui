@@ -14,7 +14,7 @@
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
-    "defaultDirectory": "src/components",
+    "defaultDirectory": "src/components/{name}",
     "vendorDirectory": "vendor"
   },
   /**
