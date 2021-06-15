@@ -4,7 +4,7 @@
 	position: relative;
 	flex: none;
 
-	background: var(--border-color, #ededed);
+	background: var(--bit-border-color-lightest, #ededed);
 }
 
 .highlighter {
@@ -23,7 +23,7 @@
 	&:hover::after,
 	[data-is-dragging='true'] > .hoverSplitter > &::before,
 	[data-is-dragging='true'] > .hoverSplitter > &::after {
-		background: var(--base-color, #6c5ce7);
+		background: var(--bit-accent-color, #6c5ce7);
 		// fade in
 		transition-delay: 0.18s;
 	}

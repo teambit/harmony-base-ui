@@ -5,7 +5,7 @@ import styles from './error.module.scss';
 /**
  * Shows an error message. Avoids rendering when prop `children` is empty.<br/>
  *
- * Uses error color from css variable `--error-color`
+ * Uses error color from css variable `--bit-error-color`
  * @name Error
  */
 export function Error(props: HTMLAttributes<HTMLDivElement>) {

@@ -5,7 +5,7 @@
 
 .line {
 	flex: 1 1 100%;
-	border-bottom: 2px dashed var(--separator-color, #ededed);
+	border-bottom: 2px dashed var(--bit-border-color, #ededed);
 
 	&:first-child {
 		margin-right: 11px;

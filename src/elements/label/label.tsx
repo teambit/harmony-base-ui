@@ -14,7 +14,7 @@ export type LabelProps = {
  *
  * ### CSS variables:
  * The following variables apply to this component
- * -   `--base-color` (background color)
+ * -   `--bit-accent-color` (background color)
  * -   `--primary-label-text` (text color)
  * -   `--primary-label-width` (max-width)
  * -   `--primary-label-height` (height)

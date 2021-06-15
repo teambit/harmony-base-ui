@@ -1,30 +1,30 @@
 .displacement {
 	&[data-position^='top'] {
-		margin-bottom: var(--drawer-margin);
+		margin-bottom: var(--bit-drawer-margin);
 	}
 	&[data-position^='right'] {
-		margin-left: var(--drawer-margin);
+		margin-left: var(--bit-drawer-margin);
 	}
 	&[data-position^='bottom'] {
-		margin-top: var(--drawer-margin);
+		margin-top: var(--bit-drawer-margin);
 	}
 	&[data-position^='left'] {
-		margin-right: var(--drawer-margin);
+		margin-right: var(--bit-drawer-margin);
 	}
 }
 
 .displacement {
 	&[data-position='bottom-start'], &[data-position='top-start'] {
-		margin-left: var(--drawer-indent);
+		margin-left: var(--bit-drawer-indent);
 	}
 	&[data-position='bottom-end'], &[data-position='top-end'] {
-		margin-right: var(--drawer-indent);
+		margin-right: var(--bit-drawer-indent);
 	}
 	
 	&[data-position^='right-start'], &[data-position^='left-start'] {
-		margin-top: var(--drawer-indent);
+		margin-top: var(--bit-drawer-indent);
 	}
 	&[data-position^='right-end'], &[data-position^='left-end'] {
-		margin-bottom: var(--drawer-indent);
+		margin-bottom: var(--bit-drawer-indent);
 	}
 }

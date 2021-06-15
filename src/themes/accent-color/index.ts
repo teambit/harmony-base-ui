@@ -1,7 +1,7 @@
 import colorStyles from './accent-color.module.scss';
 
 /**
- * Sets the `--base-color` and `--base-highlight` for the specific use case.<br/>
+ * Sets the `--bit-accent-color` and `--bit-accent-heavy` for the specific use case.<br/>
  * Effects the color of many elements, such as `<ThemedText>` and `<Button>`.
  * @name colorPalette
  */

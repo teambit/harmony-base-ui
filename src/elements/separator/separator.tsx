@@ -13,7 +13,7 @@ export type SeparatorProps = {
  * Separating line.
  *
  * Use these implicit CSS variables to style:
- * -   `--separator-color`
+ * -   `--bit-border-color`
  * @name Separator
  * @example
  * <Separator />
