@@ -22,14 +22,14 @@ $fill-duration: 3300ms;
 }
 
 .progress {
-  background: var(--base-color, #6c5ce7);
+  background: var(--bit-accent-color, #6c5ce7);
 
   height: $loader-height; //expands .loader from inside
   width: 0%;
   max-width: 100%;
   border-radius: 4px;
 
-  box-shadow: 0 0 $loader-height rgba(var(--base-color, #6c5ce7), 0.381);
+  box-shadow: 0 0 $loader-height rgba(var(--bit-accent-color, #6c5ce7), 0.381);
 }
 
 @keyframes progress {

@@ -1,13 +1,13 @@
 import colorStyles from './accent-color.module.scss';
 
 /**
- * Sets the `--base-color` and `--base-highlight` for the specific use case.<br/>
+ * Sets the accent color variables for the specific use case.<br/>
  * Effects the color of many elements, such as `<ThemedText>` and `<Button>`.
  * @name colorPalette
  */
 export const colorPalette = {
 	primary: colorStyles.primary,
-	primaryLight: colorStyles.muted,
+	// primaryLight: colorStyles.muted,
 	complementary: colorStyles.process,
 
 	neutral: colorStyles.neutral,
@@ -18,7 +18,7 @@ export const colorPalette = {
 	success: colorStyles.success,
 
 	// intents:
-	aciton: colorStyles.impulsive,
+	action: colorStyles.impulsive,
 	consider: colorStyles.hungry,
 	continue: colorStyles.success,
 	process: colorStyles.process,
