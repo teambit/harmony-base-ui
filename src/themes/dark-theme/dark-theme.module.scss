@@ -16,6 +16,9 @@
 	--bit-accent-color: #{$p30};
 	--bit-accent-heavy: #{$p20};
 	--bit-accent-light: #{$p40};
+	--bit-accent-text: #{$p30};
+	--bit-accent-text-heavy: #{$p20};
+	--bit-text-on-accent: var(--bit-text-color, #{$d10});
 	--bit-accent-bg: #{$p50};
 	--bit-accent-bg-heavy: #{$p40};
 

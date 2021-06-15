@@ -20,6 +20,9 @@
 	--bit-accent-color: #{$p50};
 	--bit-accent-heavy: #{$p60};
 	--bit-accent-light: #{$p40};
+	--bit-accent-text: #{$p50};
+	--bit-accent-text-heavy: #{$p60};
+	--bit-text-on-accent: var(--bit-text-color, #{$d50});
 	--bit-accent-bg: #{$p20};
 	--bit-accent-bg-heavy: #{$p30};
 
@@ -31,10 +34,15 @@
 	// --bit-bg-07: #{$d15};
 	// --bit-bg-09: #{$d20};
 	// --bit-bg-11: #{$d30};
-	--bit-bg-color: #{$w10}; // default background
-	--bit-bg-heavy: #{$w20}; // e.g. when active hovering
+
+	// intractable item
+	--bit-bg-color: #{$w10};	// when resting
+	--bit-bg-heavy: #{$w20};	// when hovering, focus
+	--bit-bg-heaviest: #{$d10}; // when active (clicked)
+
+	--bit-bg-heaviest: #{$d10}; // e.g. when active hovering
 	--bit-bg-bedrock: #{$w10}; // i.e. <body/> background
-	--bit-navigation: #{$w20}; // i.e. <body/> background
+	--bit-bg-navigation: #{$w20}; // i.e. <body/> background
 	--bit-bg-overlay: #{$w10}; // e.g. button, input, etc
 	--bit-bg-modal: #{$w10}; // e.g. button, input, etc
 	--bit-bg-tooltip: #{$w10}; // e.g. button, input, etc
@@ -47,7 +55,7 @@
 	--bit-error-heavy: #{$r60};
 	--bit-error-light: #{$r40};
 	--bit-error-bg: #{$r20};
-	--bit-error-bg-heavy: #{$r20};
+	--bit-error-bg-heavy: #{$r30};
 
 	//////////////////////////////////////
 	// temp, will be removed next week: //
