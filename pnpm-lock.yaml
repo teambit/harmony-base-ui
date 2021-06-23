@@ -4,13 +4,15 @@ importers:
       '@popperjs/core': registry.npmjs.org/@popperjs/core/2.9.2
       '@testing-library/jest-dom': registry.npmjs.org/@testing-library/jest-dom/5.14.1
       '@testing-library/user-event': registry.npmjs.org/@testing-library/user-event/12.8.3
+      '@types/javascript-time-ago': registry.npmjs.org/@types/javascript-time-ago/2.0.2
       '@types/lodash.debounce': registry.npmjs.org/@types/lodash.debounce/4.0.6
+      '@types/react-onclickoutside': registry.npmjs.org/@types/react-onclickoutside/6.7.3
       '@types/react-slick': registry.npmjs.org/@types/react-slick/0.23.4
       '@types/url-parse': registry.npmjs.org/@types/url-parse/1.4.3
       classnames: registry.npmjs.org/classnames/2.3.1
-      core-js: registry.npmjs.org/core-js/3.14.0
-      graphql: registry.npmjs.org/graphql/15.5.0
-      graphql-request: registry.npmjs.org/graphql-request/3.4.0_graphql@15.5.0
+      core-js: registry.npmjs.org/core-js/3.15.0
+      graphql: registry.npmjs.org/graphql/15.5.1
+      graphql-request: registry.npmjs.org/graphql-request/3.4.0_graphql@15.5.1
       javascript-time-ago: registry.npmjs.org/javascript-time-ago/2.3.7
       lodash.debounce: registry.npmjs.org/lodash.debounce/4.0.8
       number-abbreviate: registry.npmjs.org/number-abbreviate/2.0.0
@@ -29,12 +31,10 @@ importers:
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@testing-library/react': registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0
-      '@types/javascript-time-ago': registry.npmjs.org/@types/javascript-time-ago/2.0.2
       '@types/jest': registry.npmjs.org/@types/jest/26.0.23
       '@types/node': registry.npmjs.org/@types/node/12.20.4
       '@types/react': registry.npmjs.org/@types/react/17.0.11
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.8
-      '@types/react-onclickoutside': registry.npmjs.org/@types/react-onclickoutside/6.7.3
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
     specifiers:
       '@babel/runtime': 7.12.18
@@ -53,8 +53,8 @@ importers:
       '@types/testing-library__jest-dom': 5.9.5
       '@types/url-parse': 1.4.3
       classnames: ^2.3.1
-      core-js: ^3.14.0
-      graphql: ^15.5.0
+      core-js: ^3.15.0
+      graphql: ^15.5.1
       graphql-request: 3.4.0
       javascript-time-ago: ^2.3.7
       lodash.debounce: ^4.0.8
@@ -2065,18 +2065,18 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@babel/runtime-corejs3/-/runtime-corejs3-7.13.17.tgz
     version: 7.13.17
-  registry.npmjs.org/@babel/runtime-corejs3/7.14.6:
+  registry.npmjs.org/@babel/runtime-corejs3/7.14.7:
     dependencies:
-      core-js-pure: registry.npmjs.org/core-js-pure/3.14.0
+      core-js-pure: registry.npmjs.org/core-js-pure/3.15.0
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.7
     engines:
       node: '>=6.9.0'
     name: '@babel/runtime-corejs3'
     resolution:
-      integrity: sha512-Xl8SPYtdjcMoCsIM4teyVRg7jIcgl8F2kRtoCcXuHzXswt9UxZCS6BzRo8fcnCuP6u2XtPgvyonmEPF57Kxo9Q==
+      integrity: sha512-Wvzcw4mBYbTagyBVZpAJWI06auSIj033T/yNE0Zn1xcup83MieCddZA7ls3kme17L4NOGBrQ09Q+nKB41RLWBA==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@babel/runtime-corejs3/-/runtime-corejs3-7.14.6.tgz
-    version: 7.14.6
+      tarball: https://registry.npmjs.org/@babel/runtime-corejs3/-/runtime-corejs3-7.14.7.tgz
+    version: 7.14.7
   registry.npmjs.org/@babel/runtime/7.12.18:
     dependencies:
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.7
@@ -2821,7 +2821,7 @@ packages:
       tarball: https://registry.npmjs.org/@types/istanbul-reports/-/istanbul-reports-3.0.1.tgz
     version: 3.0.1
   registry.npmjs.org/@types/javascript-time-ago/2.0.2:
-    dev: true
+    dev: false
     name: '@types/javascript-time-ago'
     resolution:
       integrity: sha512-uBUXwIG8YzPuWw5c6yV5RGvskkNOxnR+9hctOv8cptyMlB0IgfzeqFo0jkK+Ich8zGchvWghOT3Ryqr3bZmH3A==
@@ -2915,7 +2915,7 @@ packages:
   registry.npmjs.org/@types/react-onclickoutside/6.7.3:
     dependencies:
       '@types/react': registry.npmjs.org/@types/react/16.14.5
-    dev: true
+    dev: false
     name: '@types/react-onclickoutside'
     resolution:
       integrity: sha512-ByQX2ns3KlOrOzJBVhQ2VZmQVV6w718TXFVAdCdHBeXMXr5QseQVN+BsOmLf2+KZGz7+Y4ov9jPxRDCDNJZMLg==
@@ -2937,6 +2937,7 @@ packages:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
       csstype: registry.npmjs.org/csstype/3.0.8
+    dev: false
     name: '@types/react'
     resolution:
       integrity: sha512-YRRv9DNZhaVTVRh9Wmmit7Y0UFhEVqXqCSw3uazRWMxa2x85hWQZ5BN24i7GXZbaclaLXEcodEeIHsjBA8eAMw==
@@ -3666,7 +3667,7 @@ packages:
   registry.npmjs.org/aria-query/4.2.2:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      '@babel/runtime-corejs3': registry.npmjs.org/@babel/runtime-corejs3/7.14.6
+      '@babel/runtime-corejs3': registry.npmjs.org/@babel/runtime-corejs3/7.14.7
     engines:
       node: '>=6.0'
     name: aria-query
@@ -5550,14 +5551,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.11.1.tgz
     version: 3.11.1
-  registry.npmjs.org/core-js-pure/3.14.0:
+  registry.npmjs.org/core-js-pure/3.15.0:
     name: core-js-pure
     requiresBuild: true
     resolution:
-      integrity: sha512-YVh+LN2FgNU0odThzm61BsdkwrbrchumFq3oztnE9vTKC4KS2fvnPmcx8t6jnqAyOTCTF4ZSiuK8Qhh7SNcL4g==
+      integrity: sha512-RO+LFAso8DB6OeBX9BAcEGvyth36QtxYon1OyVsITNVtSKr/Hos0BXZwnsOJ7o+O6KHtK+O+cJIEj9NGg6VwFA==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.14.0.tgz
-    version: 3.14.0
+      tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.15.0.tgz
+    version: 3.15.0
   registry.npmjs.org/core-js/2.6.12:
     deprecated: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
     dev: false
@@ -5577,15 +5578,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/core-js/-/core-js-3.10.2.tgz
     version: 3.10.2
-  registry.npmjs.org/core-js/3.14.0:
+  registry.npmjs.org/core-js/3.15.0:
     dev: false
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-3s+ed8er9ahK+zJpp9ZtuVcDoFzHNiZsPbNAAE4KXgrRHbjSqqNN6xGSXq6bq7TZIbKj4NLrLb6bJ5i+vSVjHA==
+      integrity: sha512-GUbtPllXMYRzIgHNZ4dTYTcUemls2cni83Q4Q/TrFONHfhcg9oEGOtaGHfb0cpzec60P96UKPvMkjX1jET8rUw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/core-js/-/core-js-3.14.0.tgz
-    version: 3.14.0
+      tarball: https://registry.npmjs.org/core-js/-/core-js-3.15.0.tgz
+    version: 3.15.0
   registry.npmjs.org/core-util-is/1.0.2:
     dev: false
     name: core-util-is
@@ -8397,12 +8398,12 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.6.tgz
     version: 4.2.6
-  registry.npmjs.org/graphql-request/3.4.0_graphql@15.5.0:
+  registry.npmjs.org/graphql-request/3.4.0_graphql@15.5.1:
     dependencies:
       cross-fetch: registry.npmjs.org/cross-fetch/3.1.4
       extract-files: registry.npmjs.org/extract-files/9.0.0
       form-data: registry.npmjs.org/form-data/3.0.1
-      graphql: registry.npmjs.org/graphql/15.5.0
+      graphql: registry.npmjs.org/graphql/15.5.1
     dev: false
     id: registry.npmjs.org/graphql-request/3.4.0
     name: graphql-request
@@ -8413,16 +8414,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/graphql-request/-/graphql-request-3.4.0.tgz
     version: 3.4.0
-  registry.npmjs.org/graphql/15.5.0:
+  registry.npmjs.org/graphql/15.5.1:
     dev: false
     engines:
       node: '>= 10.x'
     name: graphql
     resolution:
-      integrity: sha512-OmaM7y0kaK31NKG31q4YbD2beNYa6jBBKtMFT6gLYJljHLJr42IqJ8KX08u3Li/0ifzTU5HjmoOOrwa5BRLeDA==
+      integrity: sha512-FeTRX67T3LoE3LWAxxOlW2K3Bz+rMYAC18rRguK4wgXaTZMiJwSUwDmPFo3UadAKbzirKIg5Qy+sNJXbpPRnQw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/graphql/-/graphql-15.5.0.tgz
-    version: 15.5.0
+      tarball: https://registry.npmjs.org/graphql/-/graphql-15.5.1.tgz
+    version: 15.5.1
   registry.npmjs.org/growly/1.3.0:
     dev: false
     name: growly

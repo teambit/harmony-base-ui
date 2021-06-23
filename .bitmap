@@ -369,7 +369,7 @@
     },
     "theme/accent-color": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "mainFile": "index.ts",
         "rootDir": "src/themes/accent-color"
     },
@@ -405,7 +405,7 @@
     },
     "theme/dark-theme": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "src/themes/dark-theme"
     },
