@@ -1,0 +1,74 @@
+.container {
+	background-color: var(--bit-bg-bedrock);
+	height: 100%;
+	padding: 16px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+
+	* {
+		transition: all 80ms;
+	}
+}
+
+.regular {
+	padding: 8px;
+}
+
+.bg {
+	background: var(--bit-bg-color);
+	border: 1px solid var(--bit-border-color);
+	padding: 8px;
+	border-radius: 4px;
+
+	&:hover {
+		background: var(--bit-bg-heavy);
+		border: 1px solid var(--bit-border-color-heavy);
+	}
+}
+
+.accentText {
+	color: var(--bit-accent-text);
+}
+
+.strongText {
+	// can also be achieves with bold
+	color: var(--bit-text-color-heavy);
+}
+
+.btn {
+	background: var(--bit-accent-color);
+	color: var(--bit-text-on-accent);
+
+	&:hover {
+		background: var(--bit-accent-heavy);
+		// color: var(--bit-text-color-heavy);
+	}
+}
+
+.accentBg {
+	background: var(--bit-accent-bg);
+
+	border: 1px solid var(--bit-border-color);
+	padding: 8px;
+	border-radius: 4px;
+
+	&:hover {
+		background: var(--bit-accent-bg-heavy);
+		border: 1px solid var(--bit-border-color-heavy);
+		// color: var(--bit-text-color-heavy);
+	}
+}
+
+.accentCard {
+	border: 1px solid var(--bit-accent-color);
+	background: var(--bit-bg-color);
+	padding: 8px;
+	border-radius: 4px;
+
+	&:hover {
+		border-color: var(--bit-accent-heavy);
+		background: var(--bit-bg-heavy);
+		box-shadow: 0 0 0 0.125em var(--bit-accent-bg);
+	}
+}

@@ -8,20 +8,20 @@
 	--bit-text-inactive: #{$d40};
 	--bit-text-inactive-heavy: #{$d30};
 
-	--bit-border-color: #{$d50};
-	--bit-border-color-heavy: #{$d40};
-	--bit-border-color-light: #{$d60};
-	--bit-border-color-lightest: #{$d60}; //TBD
+	--bit-border-color: #{$d40};
+	--bit-border-color-heavy: #{$d30};
+	--bit-border-color-light: #{$d50}; // TBD
+	--bit-border-color-lightest: #{$d50};
 
 	// -- accent -- //
-	--bit-accent-color: #{$p30};
-	--bit-accent-heavy: #{$p20};
-	--bit-accent-light: #{$p40};
+	--bit-accent-color: #{$p60};
+	--bit-accent-heavy: #{$p50};
+	--bit-accent-light: #{$p70};
 	--bit-accent-text: #{$p30};
 	--bit-accent-text-heavy: #{$p20};
 	--bit-text-on-accent: var(--bit-text-color, #{$d10});
-	--bit-accent-bg: #{$p50};
-	--bit-accent-bg-heavy: #{$p40};
+	--bit-accent-bg: #1a1452; // #{$p110}; TBD!
+	--bit-accent-bg-heavy: #221967; // #{$p100}; TBD!
 
 	// -- background -- //
 	// // higher number = more important, and 'closer' to the user.
@@ -31,8 +31,9 @@
 	// --bit-bg-07: #{$d15};
 	// --bit-bg-09: #{$d20};
 	// --bit-bg-11: #{$d30};
-	--bit-bg-color: #{$d70}; // default background
-	--bit-bg-heavy: #{$d60}; // e.g. when active hovering
+	--bit-bg-color: #{$d60}; // default background for interactive elements
+	--bit-bg-heavy: #{$d50}; // e.g. when hovering
+	--bit-bg-heaviest: #{$d40}; // e.g. when active ('pressed')
 	--bit-bg-bedrock: #{$d70}; // i.e. <body/> background
 	--bit-navigation: #{$d60}; // i.e. <body/> background
 	--bit-bg-overlay: #{$d60}; // e.g. button, input, etc
@@ -50,3 +51,17 @@
 	--bit-error-bg-heavy: #{$r60};
 
 }
+
+
+// extended primary palette (WIP)
+// name 	color	lightness
+// $p110: #1a1452;	// 19.6%
+// $p100: #221967;	// 25%
+// $p90: #22158a;	// 31%
+// $p80: #2c1bb1;	// 40%
+// $p70: #3e29df;	// 52%
+// $p60: #5d4aec;	// 61$
+// $p50: #6c5ce7;	// 63%
+// $p40: #897dec;
+// $p30: #c9c3f6;
+// $p20: #eceaff;
