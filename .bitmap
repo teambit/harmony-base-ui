@@ -261,19 +261,19 @@
     },
     "surfaces/background": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/background"
     },
     "surfaces/bedrock": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/bedrock"
     },
     "surfaces/card": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.tsx",
         "rootDir": "src/surfaces/card"
     },
