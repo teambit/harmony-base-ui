@@ -13,8 +13,8 @@ jobs:
       - name: Bit config
         run: |
           bit config set user.token ${{ env.BIT_TOKEN }}
-          bit config set no_warnings true
-          bit config set user.name symphony_backend
+          bit config set anonymous_reporting false
+          bit config set user.name base-ui-github-actions
       - uses: actions/checkout@v2      
       - name: Config registry
         run: |  
