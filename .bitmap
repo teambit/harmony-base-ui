@@ -75,7 +75,7 @@
     },
     "geometry/curve-peek": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "mainFile": "index.ts",
         "rootDir": "src/geometry/curve-peek"
     },
