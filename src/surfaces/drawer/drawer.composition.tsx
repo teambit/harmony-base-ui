@@ -21,6 +21,54 @@ export const Controlled = () => {
 	);
 };
 
+export const UsingMargin = () => {
+	const [margin, setMargin] = useState(16);
+	const [indent, setIndent] = useState(16);
+
+	return (
+		<div style={{ padding: 30 }}>
+			<div>
+				Margin
+				<input
+					type="range"
+					min="0"
+					max="40"
+					value={margin}
+					onChange={(e) => {
+						setMargin(+e.target.value);
+					}}
+				/>
+			</div>
+			<div>
+				Indent
+				<input
+					type="range"
+					min="0"
+					max="40"
+					value={indent}
+					onChange={(e) => {
+						setIndent(+e.target.value);
+					}}
+				/>
+			</div>
+
+			<br />
+
+			<Drawer
+				open={true}
+				placeholder={`Margin ${margin}, indent ${indent}`}
+				margin={margin}
+				indent={indent}
+				style={frameStyle}
+			>
+				<Containee position="bottom-start" style={frameStyle}>
+					menu
+				</Containee>
+			</Drawer>
+		</div>
+	);
+};
+
 export const Uncontrolled = () => {
 	return (
 		<div style={{ padding: 30 }}>
