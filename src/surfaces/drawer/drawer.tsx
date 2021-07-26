@@ -12,6 +12,9 @@ export interface DrawerProps
 	open?: boolean;
 	PlaceholderComponent?: ComponentType<DrawerPlaceholderProps>;
 	placeholder: ReactNode;
+	
+	margin?: string | number;
+	indent?: string | number;
 
 	clickToggles?: boolean;
 	clickPlaceholderToggles?: boolean;
@@ -157,7 +160,7 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 		return (
 			<Container
 				{...rest}
-				ref={this.ref}
+				forwardRef={this.ref}
 				open={isOpen}
 				onMouseLeave={this.handleLeaveContainer}
 				onMouseEnter={this.handleEnterContainer}

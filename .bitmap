@@ -255,7 +255,7 @@
     },
     "surfaces/abs-container": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/abs-container"
     },
@@ -285,7 +285,7 @@
     },
     "surfaces/drawer": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/surfaces/drawer"
     },
