@@ -27,7 +27,7 @@
     },
     "elements/dots-loader": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/elements/dots-loader"
     },
@@ -123,7 +123,7 @@
     },
     "input/button": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/input/button"
     },
@@ -147,7 +147,7 @@
     },
     "input/error": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/input/error"
     },
@@ -333,25 +333,25 @@
     },
     "text/heading": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/text/heading"
     },
     "text/muted-text": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/text/muted-text"
     },
     "text/paragraph": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.tsx",
         "rootDir": "src/text/paragraph"
     },
     "text/text-separator": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/text/text-separator"
     },
@@ -363,7 +363,7 @@
     },
     "text/themed-text": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/text/themed-text"
     },
@@ -411,7 +411,7 @@
     },
     "theme/fonts/book": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "src/themes/fonts/book"
     },
@@ -447,7 +447,7 @@
     },
     "theme/theme-provider": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.3",
         "mainFile": "index.tsx",
         "rootDir": "src/themes/theme-provider"
     },
