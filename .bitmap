@@ -209,7 +209,7 @@
     },
     "loaders/skeleton": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/loaders/skeleton"
     },
