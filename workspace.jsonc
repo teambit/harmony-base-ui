@@ -81,6 +81,8 @@
     * It is strongly recommended to set strictPeerDependencies=true.
     */
     "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true,
+    "savePrefix": "",
     /**
      * map of extra arguments to pass to the configured package manager upon the installation
      * of dependencies.
