@@ -40,6 +40,7 @@
         "@types/url-parse": "1.4.3",
         "classnames": "^2.2.6",
         "core-js": "3.7.0",
+        "duration": "0.2.2",
         "graphql-request": "3.4.0",
         "graphql": "15.5.0",
         "javascript-time-ago": "^2.0.13",

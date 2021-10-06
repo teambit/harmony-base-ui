@@ -1,0 +1,24 @@
+---
+description: A component for rendering time durations.
+labels: ['time', 'duration', 'react', 'formatting']
+---
+
+import { Duration as TimeDuration } from '@teambit/toolbox.date.duration';
+import { Duration } from './duration';
+
+A component for rendering time durations.
+
+## Render duration from milliseconds.
+```tsx live=true
+() => {
+  return <Duration time={3600} />;
+}
+```
+
+## Render duration from minutes using the `Duration` module.
+```tsx live=true
+() => {
+  const durationMs = 240 * 60 * 1000;
+  return <Duration time={durationMs} />;
+}
+```
