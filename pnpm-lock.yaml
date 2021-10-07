@@ -9,7 +9,6 @@ importers:
       classnames: registry.npmjs.org/classnames/2.3.1
       core-js: registry.npmjs.org/core-js/3.18.2
       duration: registry.npmjs.org/duration/0.2.2
-      es5-ext: registry.npmjs.org/es5-ext/0.10.53
       graphql: registry.npmjs.org/graphql/15.6.1
       graphql-request: registry.npmjs.org/graphql-request/3.4.0_graphql@15.6.1
       javascript-time-ago: registry.npmjs.org/javascript-time-ago/2.3.9
@@ -59,7 +58,6 @@ importers:
       classnames: ^2.3.1
       core-js: ^3.18.2
       duration: 0.2.2
-      es5-ext: 0.10.53
       graphql: ^15.6.1
       graphql-request: 3.4.0
       javascript-time-ago: ^2.3.9
@@ -255,6 +253,7 @@ packages:
   registry.npmjs.org/@babel/code-frame/7.14.5:
     dependencies:
       '@babel/highlight': registry.npmjs.org/@babel/highlight/7.14.5
+    dev: false
     engines:
       node: '>=6.9.0'
     name: '@babel/code-frame'
@@ -263,6 +262,18 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.14.5.tgz
     version: 7.14.5
+  registry.npmjs.org/@babel/code-frame/7.15.8:
+    dependencies:
+      '@babel/highlight': registry.npmjs.org/@babel/highlight/7.14.5
+    dev: true
+    engines:
+      node: '>=6.9.0'
+    name: '@babel/code-frame'
+    resolution:
+      integrity: sha512-2IAnmn8zbvC/jKYhq5Ki9I+DwjlrtMPUCH/CpHvqI4dNnlwHwsxoIhlc8WcYY5LSYknXQtAlFYuHfqAFCvQ4Wg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.15.8.tgz
+    version: 7.15.8
   registry.npmjs.org/@babel/code-frame/7.8.3:
     dependencies:
       '@babel/highlight': registry.npmjs.org/@babel/highlight/7.14.5
@@ -2834,7 +2845,7 @@ packages:
     version: 4.3.3
   registry.npmjs.org/@testing-library/dom/7.31.2:
     dependencies:
-      '@babel/code-frame': registry.npmjs.org/@babel/code-frame/7.14.5
+      '@babel/code-frame': registry.npmjs.org/@babel/code-frame/7.15.8
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@types/aria-query': registry.npmjs.org/@types/aria-query/4.2.2
       aria-query: registry.npmjs.org/aria-query/4.2.2

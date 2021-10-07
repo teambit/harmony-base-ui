@@ -6,32 +6,36 @@ description: 'separating line'
 import { Separator } from './separator';
 
 ### Overview
+
 Use these implicit CSS variables to style:  
-`--bit-border-color`  
+`--bit-border-color-lightest`
+
 <br />
 
 Separator is horizontal by default:
+
 ```js live=true
 <div>
-	top
-	<Separator />
-	bottom
+  top
+  <Separator />
+  bottom
 </div>
 ```
 
 Set separator to be vertical:
+
 ```js live=true
 <div
-	style={{
-		width: 200,
-		height: 40,
-		display: 'flex',
-		flexDirection: 'row',
-		justifyContent: 'space-evenly',
-	}}
-	>
-	left
-		<Separator layout="vertical" />
-	right
+  style={{
+    width: 200,
+    height: 40,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+  }}
+>
+  left
+  <Separator layout="vertical" />
+  right
 </div>
 ```
