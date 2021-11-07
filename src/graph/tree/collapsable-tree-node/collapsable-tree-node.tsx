@@ -1,8 +1,7 @@
 import React, { ReactNode, HTMLAttributes } from 'react';
-import classNames from 'classnames';
 import AnimateHeight from 'react-animate-height';
 import { TreeLayer, TreeNodeProps } from '@teambit/base-ui.graph.tree.recursive-tree';
-import { indentClass, indentStyle } from '@teambit/base-ui.graph.tree.indent';
+import { indentStyle } from '@teambit/base-ui.graph.tree.indent';
 import styles from './collapsable-tree-node.module.scss';
 
 export type CollapsableTreeNodeProps = {
@@ -24,7 +23,7 @@ export function CollapsableTreeNode({ title, isOpen = false, node, depth, classN
       {title}
       {node.children && (
         <AnimateHeight height={isOpen ? 'auto' : 0}>
-          <div className={classNames(indentClass, styles.childrenTree)} style={indentStyle(depth + 1)}>
+          <div className={styles.childrenTree} style={indentStyle(depth + 1)}>
             <TreeLayer childNodes={node.children} depth={depth + 1} />
           </div>
         </AnimateHeight>
