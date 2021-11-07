@@ -5,14 +5,18 @@ import { CollapsableTreeNode } from './collapsable-tree-node';
 
 export const BasicCollapsableTreeNode = () => {
   const [isOpen, setOpen] = useState(false);
-  const Title = <div onClick={() => setOpen(!isOpen)}>My Folder</div>;
-  const Content = <div>Some content</div>;
-  return <CollapsableTreeNode Title={Title} Content={Content} isOpen={isOpen} />;
+  const title = <div onClick={() => setOpen(!isOpen)}>My Folder</div>;
+  const content = <div>Some content</div>;
+  return (
+    <CollapsableTreeNode title={title} isOpen={isOpen}>
+      {content}
+    </CollapsableTreeNode>
+  );
 };
 
 export const CollapsableTreeNodeExample = () => {
   const [isOpen, setOpen] = useState(false);
-  const Title = (
+  const title = (
     <div onClick={() => setOpen(!isOpen)} style={{ paddingRight: 8 }}>
       <BaseIcon
         of="bitcon-fat-arrow-down"
@@ -26,11 +30,15 @@ export const CollapsableTreeNodeExample = () => {
       <span>My Folder</span>
     </div>
   );
-  const Content = (
+  const content = (
     <div className={indentClass} style={indentStyle(2)}>
       <div>content 1</div>
       <div>content 2</div>
     </div>
   );
-  return <CollapsableTreeNode Title={Title} Content={Content} isOpen={isOpen} />;
+  return (
+    <CollapsableTreeNode title={title} isOpen={isOpen}>
+      {content}
+    </CollapsableTreeNode>
+  );
 };

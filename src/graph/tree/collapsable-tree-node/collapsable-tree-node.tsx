@@ -1,28 +1,28 @@
-import React, { ReactElement, HTMLAttributes } from 'react';
+import React, { ReactElement, ReactNode, HTMLAttributes } from 'react';
 import AnimateHeight from 'react-animate-height';
 
 export type CollapsableTreeNodeProps = {
   /**
    * The title to be rendered and to be clicked to open the content.
    */
-  Title: ReactElement;
+  title: ReactNode;
 
   /**
    * The content to be rendred in the animated height.
    */
-  Content: ReactElement;
+  children: ReactNode;
 
   /**
    * If the content is open or not.
    */
   isOpen?: boolean;
-} & HTMLAttributes<HTMLDivElement>;
+} & Omit<HTMLAttributes<HTMLDivElement>, 'title'>;
 
-export function CollapsableTreeNode({ Title, isOpen = false, Content, className }: CollapsableTreeNodeProps) {
+export function CollapsableTreeNode({ title, isOpen = false, children, className }: CollapsableTreeNodeProps) {
   return (
     <div className={className}>
-      {Title}
-      <AnimateHeight height={isOpen ? 'auto' : 0}>{Content}</AnimateHeight>
+      {title}
+      <AnimateHeight height={isOpen ? 'auto' : 0}>{children}</AnimateHeight>
     </div>
   );
 }
