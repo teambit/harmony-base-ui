@@ -22,11 +22,13 @@ export function CollapsableTreeNode({ title, isOpen = false, node, depth, classN
   return (
     <div className={className}>
       {title}
-      <AnimateHeight height={isOpen ? 'auto' : 0}>
-        <div className={classNames(indentClass, styles.childrenTree)} style={indentStyle(depth + 1)}>
-          {node.children && <TreeLayer childNodes={node.children} depth={depth + 1} />}
-        </div>
-      </AnimateHeight>
+      {node.children && (
+        <AnimateHeight height={isOpen ? 'auto' : 0}>
+          <div className={classNames(indentClass, styles.childrenTree)} style={indentStyle(depth + 1)}>
+            <TreeLayer childNodes={node.children} depth={depth + 1} />
+          </div>
+        </AnimateHeight>
+      )}
     </div>
   );
 }
