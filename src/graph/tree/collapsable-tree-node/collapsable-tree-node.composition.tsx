@@ -21,7 +21,7 @@ export const BasicCollapsableTreeNode = () => {
 export const CollapsableTreeNodeWithIcon = () => {
   const [isOpen, setOpen] = useState(false);
   const title = (
-    <div onClick={() => setOpen(!isOpen)} style={{ paddingRight: 8 }}>
+    <div onClick={() => setOpen(!isOpen)}>
       <BaseIcon
         of="bitcon-fat-arrow-down"
         style={{
