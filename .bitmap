@@ -87,6 +87,12 @@
         "mainFile": "index.ts",
         "rootDir": "src/geometry/curve-peek"
     },
+    "graph/tree/collapsable-tree-node": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "src/graph/tree/collapsable-tree-node"
+    },
     "graph/tree/indent": {
         "scope": "teambit.base-ui",
         "version": "1.0.0",
