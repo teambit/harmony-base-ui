@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 import { BaseIcon } from '@teambit/base-ui.elements.icon';
-import { indentClass, indentStyle } from '@teambit/base-ui.graph.tree.indent';
+import { TreeNode } from '@teambit/base-ui.graph.tree.recursive-tree';
 import { CollapsableTreeNode } from './collapsable-tree-node';
+
+const node: TreeNode<any> = {
+  id: '1',
+  children: [
+    { id: 'Content 1' },
+    { id: 'Content 2' },
+    { id: 'Content 3', children: [{ id: 'Content 4' }, { id: 'Content 5' }] },
+  ],
+};
 
 export const BasicCollapsableTreeNode = () => {
   const [isOpen, setOpen] = useState(false);
   const title = <div onClick={() => setOpen(!isOpen)}>My Folder</div>;
-  const content = <div>Some content</div>;
-  return (
-    <CollapsableTreeNode title={title} isOpen={isOpen}>
-      {content}
-    </CollapsableTreeNode>
-  );
+  return <CollapsableTreeNode title={title} isOpen={isOpen} node={node} depth={1} />;
 };
 
-export const CollapsableTreeNodeExample = () => {
+export const CollapsableTreeNodeWithIcon = () => {
   const [isOpen, setOpen] = useState(false);
   const title = (
     <div onClick={() => setOpen(!isOpen)} style={{ paddingRight: 8 }}>
@@ -30,15 +34,5 @@ export const CollapsableTreeNodeExample = () => {
       <span>My Folder</span>
     </div>
   );
-  const content = (
-    <div className={indentClass} style={indentStyle(2)}>
-      <div>content 1</div>
-      <div>content 2</div>
-    </div>
-  );
-  return (
-    <CollapsableTreeNode title={title} isOpen={isOpen}>
-      {content}
-    </CollapsableTreeNode>
-  );
+  return <CollapsableTreeNode title={title} isOpen={isOpen} node={node} depth={1} />;
 };

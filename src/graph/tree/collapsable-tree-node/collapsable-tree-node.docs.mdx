@@ -12,9 +12,13 @@ A basic component that renders a collapsable content.
 
 ```js live
 () => {
+  const node = {
+    id: '1',
+    children: [{ id: '2', children: [{ id: '3' }] }],
+  };
+
   const [isOpen, setOpen] = useState(false);
-  const Title = <div onClick={() => setOpen(!isOpen)}>My Folder</div>;
-  const Content = <div>Some content</div>;
-  return <CollapsableTreeNode Title={Title} Content={Content} isOpen={isOpen} />;
+  const title = <div onClick={() => setOpen(!isOpen)}>My Folder</div>;
+  return <CollapsableTreeNode title={title} isOpen={isOpen} node={node} depth={1} />;
 };
 ```
