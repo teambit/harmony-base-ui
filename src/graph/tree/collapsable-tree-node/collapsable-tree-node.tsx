@@ -4,11 +4,6 @@ import { TreeLayer, TreeNodeProps } from '@teambit/base-ui.graph.tree.recursive-
 import { indentStyle } from '@teambit/base-ui.graph.tree.indent';
 import styles from './collapsable-tree-node.module.scss';
 
-export type FolderPayload = {
-  icon?: string | ReactNode;
-  open?: boolean;
-};
-
 export type CollapsableTreeNodeProps = {
   /**
    * The title to be rendered and to be clicked to open the content.
@@ -20,7 +15,7 @@ export type CollapsableTreeNodeProps = {
    */
   isOpen?: boolean;
 } & Omit<HTMLAttributes<HTMLDivElement>, 'title'> &
-  TreeNodeProps<FolderPayload>;
+  TreeNodeProps<any>;
 
 export function CollapsableTreeNode({ title, isOpen = false, node, depth, className }: CollapsableTreeNodeProps) {
   return (
