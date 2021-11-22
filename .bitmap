@@ -347,7 +347,7 @@
     },
     "text/heading": {
         "scope": "teambit.base-ui",
-        "version": "1.0.3",
+        "version": "1.0.4",
         "mainFile": "index.ts",
         "rootDir": "src/text/heading"
     },
