@@ -14,7 +14,7 @@ importers:
       '@types/jest': ^26.0.24
       '@types/lodash.debounce': ^4.0.6
       '@types/node': 12.20.4
-      '@types/react': ^17.0.34
+      '@types/react': ^17.0.36
       '@types/react-dom': ^17.0.11
       '@types/react-onclickoutside': ^6.7.4
       '@types/react-slick': ^0.23.7
@@ -75,7 +75,7 @@ importers:
       '@types/javascript-time-ago': registry.npmjs.org/@types/javascript-time-ago/2.0.3
       '@types/jest': registry.npmjs.org/@types/jest/26.0.24
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/17.0.34
+      '@types/react': registry.npmjs.org/@types/react/17.0.36
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
       '@types/react-onclickoutside': registry.npmjs.org/@types/react-onclickoutside/6.7.4
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
@@ -2063,10 +2063,10 @@ packages:
       - supports-color
     dev: false
 
-  registry.npmjs.org/@babel/runtime-corejs3/7.16.0:
-    resolution: {integrity: sha512-Oi2qwQ21X7/d9gn3WiwkDTJmq3TQtYNz89lRnoFy8VeZpWlsyXvzSwiRrRZ8cXluvSwqKxqHJ6dBd9Rv+p0ZGQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@babel/runtime-corejs3/-/runtime-corejs3-7.16.0.tgz}
+  registry.npmjs.org/@babel/runtime-corejs3/7.16.3:
+    resolution: {integrity: sha512-IAdDC7T0+wEB4y2gbIL0uOXEYpiZEeuFUTVbdGq+UwCcF35T/tS8KrmMomEwEc5wBbyfH3PJVpTSUqrhPDXFcQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@babel/runtime-corejs3/-/runtime-corejs3-7.16.3.tgz}
     name: '@babel/runtime-corejs3'
-    version: 7.16.0
+    version: 7.16.3
     engines: {node: '>=6.9.0'}
     dependencies:
       core-js-pure: registry.npmjs.org/core-js-pure/3.19.1
@@ -2756,7 +2756,7 @@ packages:
     name: '@types/react-dom'
     version: 17.0.11
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.34
+      '@types/react': registry.npmjs.org/@types/react/17.0.36
     dev: true
 
   registry.npmjs.org/@types/react-onclickoutside/6.7.4:
@@ -2764,7 +2764,7 @@ packages:
     name: '@types/react-onclickoutside'
     version: 6.7.4
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.34
+      '@types/react': registry.npmjs.org/@types/react/17.0.36
     dev: true
 
   registry.npmjs.org/@types/react-slick/0.23.7:
@@ -2772,17 +2772,17 @@ packages:
     name: '@types/react-slick'
     version: 0.23.7
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.34
+      '@types/react': registry.npmjs.org/@types/react/17.0.36
     dev: false
 
-  registry.npmjs.org/@types/react/17.0.34:
-    resolution: {integrity: sha512-46FEGrMjc2+8XhHXILr+3+/sTe3OfzSPU9YGKILLrUYbQ1CLQC9Daqo1KzENGXAWwrFwiY0l4ZbF20gRvgpWTg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/react/-/react-17.0.34.tgz}
+  registry.npmjs.org/@types/react/17.0.36:
+    resolution: {integrity: sha512-CUFUp01OdfbpN/76v4koqgcpcRGT3sYOq3U3N6q0ZVGcyeP40NUdVU+EWe3hs34RNaTefiYyBzOpxBBidCc5zw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/react/-/react-17.0.36.tgz}
     name: '@types/react'
-    version: 17.0.34
+    version: 17.0.36
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.4
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.2
-      csstype: registry.npmjs.org/csstype/3.0.9
+      csstype: registry.npmjs.org/csstype/3.0.10
 
   registry.npmjs.org/@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz}
@@ -3360,7 +3360,7 @@ packages:
     engines: {node: '>=6.0'}
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      '@babel/runtime-corejs3': registry.npmjs.org/@babel/runtime-corejs3/7.16.0
+      '@babel/runtime-corejs3': registry.npmjs.org/@babel/runtime-corejs3/7.16.3
 
   registry.npmjs.org/arity-n/1.0.4:
     resolution: {integrity: sha1-2edrEXM+CFacCEeuezmyhgswt0U=, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/arity-n/-/arity-n-1.0.4.tgz}
@@ -5276,10 +5276,10 @@ packages:
       cssom: registry.npmjs.org/cssom/0.3.8
     dev: false
 
-  registry.npmjs.org/csstype/3.0.9:
-    resolution: {integrity: sha512-rpw6JPxK6Rfg1zLOYCSwle2GFOOsnjmDYDaBwEcwoOg4qlsIVCN789VkBZDJAGi4T07gI4YSutR43t9Zz4Lzuw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/csstype/-/csstype-3.0.9.tgz}
+  registry.npmjs.org/csstype/3.0.10:
+    resolution: {integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/csstype/-/csstype-3.0.10.tgz}
     name: csstype
-    version: 3.0.9
+    version: 3.0.10
 
   registry.npmjs.org/cyclist/1.0.1:
     resolution: {integrity: sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/cyclist/-/cyclist-1.0.1.tgz}
@@ -11906,7 +11906,7 @@ packages:
       classnames: registry.npmjs.org/classnames/2.3.1
       dom-align: registry.npmjs.org/dom-align/1.12.2
       lodash: registry.npmjs.org/lodash/4.17.21
-      rc-util: registry.npmjs.org/rc-util/5.14.0_react-dom@16.14.0+react@16.14.0
+      rc-util: registry.npmjs.org/rc-util/5.15.0_react-dom@16.14.0+react@16.14.0
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
       resize-observer-polyfill: registry.npmjs.org/resize-observer-polyfill/1.5.1
@@ -11924,7 +11924,7 @@ packages:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       classnames: registry.npmjs.org/classnames/2.3.1
       raf: registry.npmjs.org/raf/3.4.1
-      rc-util: registry.npmjs.org/rc-util/5.14.0_react-dom@16.14.0+react@16.14.0
+      rc-util: registry.npmjs.org/rc-util/5.15.0_react-dom@16.14.0+react@16.14.0
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -11954,17 +11954,17 @@ packages:
       raf: registry.npmjs.org/raf/3.4.1
       rc-align: registry.npmjs.org/rc-align/4.0.11_react-dom@16.14.0+react@16.14.0
       rc-motion: registry.npmjs.org/rc-motion/1.1.2_react-dom@16.14.0+react@16.14.0
-      rc-util: registry.npmjs.org/rc-util/5.14.0_react-dom@16.14.0+react@16.14.0
+      rc-util: registry.npmjs.org/rc-util/5.15.0_react-dom@16.14.0+react@16.14.0
     transitivePeerDependencies:
       - react
       - react-dom
     dev: false
 
-  registry.npmjs.org/rc-util/5.14.0_react-dom@16.14.0+react@16.14.0:
-    resolution: {integrity: sha512-2vy6/Z1BJUcwLjm/UEJb/htjUTQPigITUIemCcFEo1fQevAumc9sA32x2z5qyWoa9uhrXbiAjSDpPIUqyg65sA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/rc-util/-/rc-util-5.14.0.tgz}
-    id: registry.npmjs.org/rc-util/5.14.0
+  registry.npmjs.org/rc-util/5.15.0_react-dom@16.14.0+react@16.14.0:
+    resolution: {integrity: sha512-8RI8sjOCXD3FhD3dzQNBQetpGol6BBd3sHQ/8jSGk9NPT0CH3JGtBfPODnASyE7AdDpCFQMOmgcp9CBs3S/1hg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/rc-util/-/rc-util-5.15.0.tgz}
+    id: registry.npmjs.org/rc-util/5.15.0
     name: rc-util
-    version: 5.14.0
+    version: 5.15.0
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -14967,7 +14967,7 @@ packages:
     name: xregexp
     version: 4.4.1
     dependencies:
-      '@babel/runtime-corejs3': registry.npmjs.org/@babel/runtime-corejs3/7.16.0
+      '@babel/runtime-corejs3': registry.npmjs.org/@babel/runtime-corejs3/7.16.3
     dev: false
 
   registry.npmjs.org/xtend/4.0.2:
