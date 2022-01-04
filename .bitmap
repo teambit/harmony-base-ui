@@ -17,7 +17,7 @@
     },
     "css-components/elevation": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/css-components/elevation"
     },
@@ -287,7 +287,7 @@
     },
     "surfaces/card": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.tsx",
         "rootDir": "src/surfaces/card"
     },
