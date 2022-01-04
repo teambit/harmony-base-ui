@@ -5,40 +5,40 @@ importers:
   .:
     specifiers:
       '@babel/runtime': 7.12.18
-      '@popperjs/core': ^2.10.2
+      '@popperjs/core': ^2.0.0
       '@teambit/toolbox.date.duration': 0.0.6
-      '@testing-library/jest-dom': ^5.15.0
-      '@testing-library/react': ^10.4.9
-      '@testing-library/user-event': ^12.8.3
-      '@types/javascript-time-ago': ^2.0.3
-      '@types/jest': ^26.0.24
+      '@testing-library/jest-dom': ^5.11.1
+      '@testing-library/react': ^10.4.7
+      '@testing-library/user-event': ^12.0.11
+      '@types/javascript-time-ago': ^2.0.1
+      '@types/jest': ^26.0.0
       '@types/lodash.debounce': ^4.0.6
       '@types/node': 12.20.4
-      '@types/react': ^17.0.36
-      '@types/react-dom': ^17.0.11
-      '@types/react-onclickoutside': ^6.7.4
-      '@types/react-slick': ^0.23.7
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/react-onclickoutside': ^6.7.3
+      '@types/react-slick': ^0.23.4
       '@types/testing-library__jest-dom': 5.9.5
       '@types/url-parse': 1.4.3
-      classnames: ^2.3.1
-      core-js: ^3.19.1
+      classnames: ^2.2.6
+      core-js: ^3.0.0
       duration: 0.2.2
-      graphql: ^15.7.2
+      graphql: ^14.0.0 || ^15.0.0
       graphql-request: 3.4.0
-      javascript-time-ago: ^2.3.10
+      javascript-time-ago: ^2.0.13
       lodash.debounce: ^4.0.8
       number-abbreviate: ^2.0.0
       path-browserify: ^1.0.1
-      rc-tooltip: ^4.2.3
-      react: ^16.14.0
+      rc-tooltip: ^4.2.1
+      react: ^16.13.1
       react-animate-height: 2.0.23
       react-create-ref: ^1.0.1
-      react-dom: ^16.14.0
-      react-onclickoutside: ^6.12.0
+      react-dom: ^16.13.1
+      react-onclickoutside: ^6.9.0
       react-scripts: 3.4.1
-      react-slick: ^0.27.14
+      react-slick: ^0.27.0
       resize-observer-polyfill: ^1.5.1
-      typescript: ^3.9.10
+      typescript: ^3.8.3
       url-parse: 1.5.1
       use-deep-compare: 1.1.0
     dependencies:
@@ -4858,7 +4858,7 @@ packages:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz}
     name: core-js
     version: 2.6.12
-    deprecated: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+    deprecated: core-js@<3.4 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
     requiresBuild: true
     dev: false
 
