@@ -143,7 +143,7 @@
     },
     "input/checkbox/hidden": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "src/input/checkbox/hidden"
     },
@@ -155,7 +155,7 @@
     },
     "input/checkbox/label": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "src/input/checkbox/label"
     },
