@@ -1,17 +1,28 @@
 .hidden {
-	pointer-events: none;
-	overflow: hidden;
-	// opacity hinder accessibility. (consider replacing in the future)
-	opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  // opacity hinder accessibility. (consider replacing in the future)
+  opacity: 0;
 
-	// minimize, without removing from dom:
-	outline: 0;
-	// -1px to compensate for input's size
-	margin: 0 -1px 0 0;
-	border: 0;
-	width: 1px;
-	height: 1px;
-	background: none;
-	padding: 0;
+  // pos: abs removes the element from the normal flow,
+  // collapsing the space it occupies,
+  // without hindering screen readers, and focus.
+  // (this is important in Firefox where checkbox takes a min size of 4px)
+  position: absolute;
 
+  // minimize, without removing from dom:
+  outline: 0;
+  margin: 0 -1px 0 0; // compensate the input's size
+  border: 0;
+  width: 1px;
+  height: 1px;
+  background: none;
+  padding: 0;
 }
+
+// rules not to apply,
+// as screen readers will ignore them:
+
+// visibility: hidden;
+// display: none;
+// width: 0; height: 0;
