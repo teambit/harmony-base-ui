@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/{
+**/ {
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -14,7 +14,7 @@
     /**
      * set the default directory when there is no matching for the component in the components array.
      **/
-    "defaultDirectory": "src/components/{name}",
+    "defaultDirectory": "src/{scope}/{name}",
     "vendorDirectory": "vendor"
   },
   /**
@@ -104,14 +104,17 @@
    * new set of dependencies.
   **/
   "teambit.workspace/variants": {
-    "*": {
+    "base-react": {
+      "teambit.react/react": {}
+    },
+    "base-ui": {
       "teambit.dependencies/dependency-resolver": {},
       "teambit.pkg/pkg": {
         "packageManagerPublishArgs": [
           "--access public"
         ],
         "packageJson": {
-          "name": "@teambit/base-ui.{name}",
+          "name": "@teambit/{scope}.{name}",
           "private": false
         }
       },
