@@ -105,9 +105,19 @@
   **/
   "teambit.workspace/variants": {
     "base-react": {
-      "teambit.react/react": {}
+      "teambit.react/react": {},
+      "teambit.pkg/pkg": {
+        "packageManagerPublishArgs": [
+          "--access public"
+        ],
+        "packageJson": {
+          "name": "@teambit/{scope}.{name}",
+          "private": false
+        }
+      }
     },
     "base-ui": {
+      "teambit.react/react": {},
       "teambit.dependencies/dependency-resolver": {},
       "teambit.pkg/pkg": {
         "packageManagerPublishArgs": [
@@ -118,7 +128,6 @@
           "private": false
         }
       },
-      "teambit.react/react": {}
     },
     "{hooks/use-graphql-light}": {
       "teambit.dependencies/dependency-resolver": {
