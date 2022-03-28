@@ -125,23 +125,13 @@
     },
     "hook/use-click-outside": {
         "scope": "teambit.base-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
-        "rootDir": "src/base-ui/hooks/use-click-outside",
-        "config": {
-            "teambit.component/deprecation": {
-                "deprecate": true,
-                "newId": {
-                    "name": "hooks/use-click-outside",
-                    "scope": "teambit.base-react"
-                }
-            }
-        }
+        "rootDir": "src/base-ui/hooks/use-click-outside"
     },
     "hooks/use-click-outside": {
-        "scope": "",
+        "scope": "teambit.base-react",
         "version": "1.0.0",
-        "defaultScope": "teambit.base-react",
         "mainFile": "index.ts",
         "rootDir": "src/base-react/hooks/use-click-outside"
     },
@@ -315,7 +305,7 @@
     },
     "surfaces/drawer": {
         "scope": "teambit.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "src/base-ui/surfaces/drawer"
     },
