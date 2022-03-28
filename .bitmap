@@ -123,12 +123,6 @@
         "mainFile": "index.ts",
         "rootDir": "src/base-ui/graph/tree/tree-context"
     },
-    "hook/use-click-outside": {
-        "scope": "teambit.base-ui",
-        "version": "1.0.1",
-        "mainFile": "index.ts",
-        "rootDir": "src/base-ui/hooks/use-click-outside"
-    },
     "hooks/use-click-outside": {
         "scope": "teambit.base-react",
         "version": "1.0.0",

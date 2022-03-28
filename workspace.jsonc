@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
-**/ {
+**/{
   "$schema": "",
   /**
    * main configuration of the Bit workspace.
@@ -27,6 +27,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@teambit/base-ui.hook.use-click-outside": "1.0.1",
         "@testing-library/jest-dom": "^5.11.1",
         "@testing-library/react": "^10.4.7",
         "@testing-library/user-event": "^12.0.11",
@@ -127,7 +128,7 @@
           "name": "@teambit/{scope}.{name}",
           "private": false
         }
-      },
+      }
     },
     "{hooks/use-graphql-light}": {
       "teambit.dependencies/dependency-resolver": {
