@@ -45,7 +45,7 @@ export default class Button extends Component<ButtonProps> {
 	};
 
 	componentWillUnmount() {
-		this.unmounted = false;
+		this.unmounted = true;
 		this.activePromises = new Set<Promise<any>>();
 	}
 

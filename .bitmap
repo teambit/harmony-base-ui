@@ -137,7 +137,7 @@
     },
     "input/button": {
         "scope": "teambit.base-ui",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "mainFile": "index.ts",
         "rootDir": "src/base-ui/input/button"
     },
