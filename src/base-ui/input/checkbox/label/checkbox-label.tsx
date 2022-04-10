@@ -1,4 +1,4 @@
-import React, { ReactNode, ChangeEvent } from 'react';
+import React, { ReactNode, ChangeEvent, HTMLInputTypeAttribute } from 'react';
 import { HiddenCheckbox } from '@teambit/base-ui.input.checkbox.hidden';
 import { CheckboxIndicator, classes } from '@teambit/base-ui.input.checkbox.indicator';
 
@@ -23,6 +23,11 @@ export interface CheckboxLabelProps extends React.LabelHTMLAttributes<HTMLLabelE
 	 */
 	onInputChanged?: (event: ChangeEvent<HTMLInputElement>) => void;
 	/**
+	 * Set the `type` property of the default `input`. When using a custom `input`, pass props directly to it.
+	 * @default "checkbox"
+	 */
+	type?: HTMLInputTypeAttribute | undefined;
+	/**
 	 * Set the `disabled` property of the default `input`. When using a custom `input`, pass props directly to it.
 	 */
 	disabled?: boolean;
@@ -33,6 +38,7 @@ export function CheckboxLabel({
 	checked,
 	defaultChecked,
 	onInputChanged,
+	type,
 	disabled,
 	input = (
 		<HiddenCheckbox
@@ -40,6 +46,7 @@ export function CheckboxLabel({
 			onChange={onInputChanged}
 			checked={checked}
 			disabled={disabled}
+			type={type}
 		/>
 	),
 	indicator = <CheckboxIndicator className={classes.defaultCheckbox} />,

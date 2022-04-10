@@ -155,7 +155,7 @@
     },
     "input/checkbox/label": {
         "scope": "teambit.base-ui",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/base-ui/input/checkbox/label"
     },
