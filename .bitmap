@@ -125,7 +125,7 @@
     },
     "hooks/use-click-outside": {
         "scope": "teambit.base-react",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/base-react/hooks/use-click-outside"
     },

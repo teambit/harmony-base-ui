@@ -1,0 +1,34 @@
+A React hook to watch click events "outside" of a certain part of the DOM.  
+Useful for automatic escape from menus.
+
+## Basic usage
+
+In this example, clicking anywhere in the page (outside of Menu) will trigger `closeMenu`.  
+Clicking the menu itself will be ignored.
+
+```tsx
+function Menu({ closeMenu }) {
+  const ref = createRef();
+  useClickOutside(ref, () => closeMenu());
+
+  return <div ref={ref}>inside menu</div>;
+}
+```
+
+You can also use the React15 compatible version.  
+Note that `<ClickOutside />` can be placed anywhere, ie. inside or outside that target element.
+
+```tsx
+class Menu {
+  ref;
+
+  render() {
+    return (
+      <div ref={() => (this.ref = ref)}>
+        <ClickOutside targetRef={this.ref} handler={closeMenu} />
+        inside menu
+      </div>
+    );
+  }
+}
+```
