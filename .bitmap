@@ -466,17 +466,10 @@
         "rootDir": "src/base-ui/themes/theme-provider"
     },
     "themes/theme-switcher": {
-        "scope": "",
-        "version": "",
-        "defaultScope": "teambit.base-react",
+        "scope": "teambit.base-react",
+        "version": "1.0.1",
         "mainFile": "index.ts",
-        "rootDir": "src/base-react/themes/theme-switcher",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "src/base-react/themes/theme-switcher"
     },
     "time/duration": {
         "scope": "teambit.base-ui",
