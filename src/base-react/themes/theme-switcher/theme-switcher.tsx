@@ -7,11 +7,11 @@ export type ThemeSwitcherProps<ExtraProps = {}> = ExtraProps & {
   /** list of themes to toggle through */
   themes: ThemeOption<ExtraProps>[];
   /** explicit active theme. */
-  activeTheme?: string;
+  activeTheme?: string | ThemeOption<ExtraProps>;
   /** handle theme changes (i.e from context) */
-  handleThemeChange?: () => boolean;
+  handleThemeChange?: (theme: ThemeOption<ExtraProps>) => void;
   /** display name of the initial theme to use */
-  defaultTheme?: string;
+  defaultTheme?: string; // | ThemeOption<ExtraProps>;
 };
 
 // (*) 'theme' is as object based on ComponentType, which may be a function ("function component")
@@ -23,11 +23,12 @@ export function ThemeSwitcher<ExtraProps = {}>({
   themes,
   activeTheme,
   handleThemeChange,
-  defaultTheme = activeTheme,
+  defaultTheme,
   ...props
 }: ThemeSwitcherProps<ExtraProps>) {
-  const explicitValue = activeTheme && themes.find((x) => x.themeName === activeTheme);
-  const getInitialOption = () => (defaultTheme && themes.find((x) => x.themeName === defaultTheme)) || themes[0];
+  let explicitValue = typeof activeTheme === 'string' ? themes.find((x) => x.themeName === activeTheme) : activeTheme;
+  const getInitialOption = () =>
+    explicitValue || (defaultTheme && themes.find((x) => x.themeName === defaultTheme)) || themes[0];
 
   // workaround (*)
   const [theme, setTheme] = useState<ThemeOption<ExtraProps>>(getInitialOption);
@@ -36,7 +37,7 @@ export function ThemeSwitcher<ExtraProps = {}>({
 
   const picker: ThemePicker<ExtraProps> = {
     setTheme: (themeTarget) => {
-      handleThemeChange?.();
+      handleThemeChange?.(themeTarget);
       // workaround (*)
       setTheme(() => themeTarget);
     },

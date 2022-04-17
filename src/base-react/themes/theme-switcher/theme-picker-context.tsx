@@ -1,4 +1,4 @@
-import { createContext, ComponentType, useContext } from 'react';
+import { createContext, ComponentType, useContext, useCallback } from 'react';
 // import type { BaseThemeProps } from '@teambit/design.themes.base-theme';
 
 export type ThemeOption<ExtraProps = {}> = ComponentType<ExtraProps> & {
@@ -36,4 +36,24 @@ export const ThemePickerContext = createContext<ThemePicker<any> | undefined>(un
 
 export function useThemePicker() {
   return useContext(ThemePickerContext);
+}
+
+export function useThemeByName(themeName?: string) {
+  const themes = useThemePicker();
+  if (!themeName || !themes) return undefined;
+
+  return themes.options.find((theme) => theme.themeName === themeName);
+}
+
+export function useNextTheme() {
+  const themes = useThemePicker();
+
+  return useCallback(() => {
+    if (!themes) return;
+    const { options, setTheme, currentIdx } = themes;
+
+    const nextIdx = (currentIdx + 1) % options.length;
+    const next = options[nextIdx];
+    setTheme(next);
+  }, [themes]);
 }

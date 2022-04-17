@@ -11,7 +11,7 @@ it('should switch themes using the toggler context', () => {
   const { getByText } = render(<BasicThemeSwitcher />);
   expect(getByText('themeA')).toBeInTheDocument();
 
-  fireEvent.click(getByText('change theme'));
+  fireEvent.click(getByText('click here apply next theme'));
 
   expect(getByText('themeB')).toBeInTheDocument();
 });
@@ -20,7 +20,7 @@ it('should keep same theme, even when switching using context, when controlled',
   const { getByText } = render(<BasicThemeSwitcher activeTheme="theme-a" />);
   expect(getByText('themeA')).toBeInTheDocument();
 
-  fireEvent.click(getByText('change theme'));
+  fireEvent.click(getByText('click here apply next theme'));
 
   expect(getByText('themeA')).toBeInTheDocument();
 });

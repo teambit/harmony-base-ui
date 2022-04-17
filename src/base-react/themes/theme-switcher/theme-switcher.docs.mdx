@@ -1,0 +1,64 @@
+A theme switcher that toggles between a list of themes.
+
+## Basic usage
+
+```tsx
+import { ThemeSwitcher, ThemeToggler } from '@teambit/base-react.themes.theme-switcher';
+const themes = [LightTheme, DarkTheme, ChristmasTheme, HighContrast];
+
+function App() {
+  return (
+    <ThemeSwitcher themes={themes}>
+      {/* themed content */}
+      <ThemeToggler>click here apply next theme</ThemeToggler>
+    </ThemeSwitcher>
+  );
+}
+```
+
+## Selecting theme
+
+You can set the initial theme using the `defaultTheme` prop, like so:
+
+```tsx
+const ThemeA = ({ children }) => <div style={{ background: 'black' }}>{children}</div>;
+ThemeA.themeName = 'theme-a';
+const ThemeB = ({ children }) => <div style={{ background: 'beige' }}>{children}</div>;
+ThemeB.themeName = 'theme-a';
+
+<ThemeSwitcher themes={themes} defaultTheme={ThemeA.themeName}>
+  {/* ... */}
+</ThemeSwitcher>;
+```
+
+changing the theme is available in child components, using the theme picker context:
+```tsx
+function BlueThemeButton() {
+  const themes = useThemePicker();
+  const blueTheme = useThemeByName('blue-theme');
+  if (!themes || !blueTheme) return null;
+
+  const { options, setTheme } = themes;
+
+  return <button onClick={() => setTheme(blueTheme)}>use blue theme</button>;
+}
+```
+
+You can also fully control the current theme by using the `activeTheme` prop:
+
+```tsx
+function App() {
+  const [activeTheme, setTheme] = useState(ThemeA);
+
+  return (
+    <ThemeSwitcher
+      themes={themes}
+      activeTheme={activeTheme}
+      // handle internal theme changes, from context
+      handleThemeChange={nextTheme => setTheme(nextTheme)}
+    >
+      {/* ... */}
+    </ThemeSwitcher>
+  );
+}
+```
