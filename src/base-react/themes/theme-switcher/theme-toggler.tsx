@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import { useNextTheme as useThemeIncrementor, useThemePicker } from './theme-picker-context';
+import { useNextTheme as useThemeIncrementor } from './theme-picker-context';
 
-type ThemeTogglerProps = ButtonHTMLAttributes<HTMLButtonElement>;
+export type ThemeTogglerProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 export function ThemeToggler({ onClick, ...props }: ThemeTogglerProps) {
   const applyNextTheme = useThemeIncrementor();
