@@ -1,5 +1,4 @@
 import { createContext, ComponentType, useContext, useCallback } from 'react';
-// import type { BaseThemeProps } from '@teambit/design.themes.base-theme';
 
 export type ThemeOption<ExtraProps = {}> = ComponentType<ExtraProps> & {
   /**

@@ -467,7 +467,7 @@
     },
     "themes/theme-switcher": {
         "scope": "teambit.base-react",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "src/base-react/themes/theme-switcher"
     },
