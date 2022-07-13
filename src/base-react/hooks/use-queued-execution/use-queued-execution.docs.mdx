@@ -1,0 +1,32 @@
+---
+description: A UseQueuedExecution component.
+---
+
+Ensure execution order by canceling previous promises. Side effects may still apply.
+
+```tsx
+function MyComponent() {
+  const [results, setResults] = useState();
+  const queuedSearch = useQueuedExecution(search);
+
+  const handleClick = () => {
+    queuedSearch().then(
+      (searchResults) => setResults(searchResults),
+      (err) => {
+        // handle canceled, or browser handles the exception and takes a performance hit
+        if (!(err instanceof CancelablePromise)) throw err;
+      }
+    );
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick} />
+
+      {results.map((item) => (
+        <div>{item}</div>
+      ))}
+    </div>
+  );
+}
+```

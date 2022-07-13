@@ -1,0 +1,36 @@
+---
+description: A Use1DNav component.
+---
+
+A simple one dimensional navigation.
+
+```tsx
+import {} from './';
+
+export const MyMenu = () => {
+  const nav = use1dNav(list.length);
+
+  return (
+    <div>
+      {list.map((item, idx) => (
+        <div key={item.key} className={nav.isActive(idx) ? style.activeStyle : undefined}>
+          {item}
+        </div>
+      ))}
+
+      <button onClick={nav.decrement}>⬆️</button>
+      <button onClick={nav.increment}>⬇️</button>
+    </div>
+  );
+};
+```
+
+You can also use keyboard navigation, like so:
+
+```tsx
+function MyKeyboardControl({ nav, onKeyDown }) {
+  const onKeydown = useKey1dNav(onKeyDown, nav);
+
+  return <input onKeyDown={onKeydown} />;
+}
+```

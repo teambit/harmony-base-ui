@@ -123,6 +123,12 @@
         "mainFile": "index.ts",
         "rootDir": "src/base-ui/graph/tree/tree-context"
     },
+    "hooks/use-1d-nav": {
+        "scope": "teambit.base-react",
+        "version": "1.0.0",
+        "mainFile": "index.ts",
+        "rootDir": "src/base-react/hooks/use-1d-nav"
+    },
     "hooks/use-click-outside": {
         "scope": "teambit.base-react",
         "version": "1.0.1",
@@ -134,6 +140,12 @@
         "version": "1.0.0",
         "mainFile": "index.ts",
         "rootDir": "src/base-ui/hooks/use-graphql-light"
+    },
+    "hooks/use-queued-execution": {
+        "scope": "teambit.base-react",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "src/base-react/hooks/use-queued-execution"
     },
     "input/button": {
         "scope": "teambit.base-ui",
