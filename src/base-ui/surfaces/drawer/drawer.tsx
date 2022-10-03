@@ -8,7 +8,7 @@ import { DefaultPlaceholder } from './default-placeholder';
 
 export interface DrawerProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
   open?: boolean;
-  placeholderContent: ReactNode;
+  placeholderContent?: ReactNode;
 
   margin?: string | number;
   indent?: string | number;
@@ -128,7 +128,7 @@ export class Drawer extends Component<DrawerProps, DrawerState> {
 
   render() {
     const {
-      placeholderContent,
+      placeholderContent = '',
       children,
       clickOutside,
 
